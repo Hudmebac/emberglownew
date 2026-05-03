@@ -6,7 +6,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow: The Fire Within',
     subtitle: 'Book One of the Emberglow Saga',
     description: 'A meteor storm ignites the spark of a timid desert camel, awakening a fire that will reshape the world.',
-    coverImage: '/src/assets/images/emberglowthefirewithin.png',
+    coverImage: '/assets/images/emberglowthefirewithin.png',
     teaser: [
       '“The sky was on fire, and for the first time, he felt like he was too.”',
       '“Maybe the desert hadn’t been empty all this time. Maybe it had been waiting.”'
@@ -20,7 +20,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow: Guardian of the Sands',
     subtitle: 'Book Two of the Emberglow Saga',
     description: 'The desert is changing. The Oasis of Echoes is fading. Ancient guardians stir beneath the dunes.',
-    coverImage: '/src/assets/images/emberglowguardianofthesands.png',
+    coverImage: '/assets/images/emberglowguardianofthesands.png',
     teaser: [
       '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
       '“The desert whispered his name, not as a spark… but as a guardian.”'
@@ -34,7 +34,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow: The First Light',
     subtitle: 'Book Three of the Emberglow Saga',
     description: 'The sky fractures. Stars fall. Emberglow is called beyond the desert to confront the being that birthed all light.',
-    coverImage: '/src/assets/images/emberglowthefirstlight.png',
+    coverImage: '/assets/images/emberglowthefirstlight.png',
     teaser: [
       '“The First Light stirred, and the sky cracked open like a memory breaking.”',
       '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”'
@@ -48,7 +48,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow: Keeper of the Balance',
     subtitle: 'Book Four of the Emberglow Saga',
     description: 'A storm that should not exist tears open the desert, pulling Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir and memory itself begins to unravel.',
-    coverImage: '/src/assets/images/emberglowkeeperofthebalance.png',
+    coverImage: '/assets/images/emberglowkeeperofthebalance.png',
     teaser: [
       '“The storm wasn’t weather. It was memory — and it remembered him.”',
       '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”'
@@ -62,7 +62,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow: Shadow of Tomorrow',
     subtitle: 'Book Five of the Emberglow Saga',
     description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent.',
-    coverImage: '/src/assets/images/emberglowshadowoftomorrow.png',
+    coverImage: '/assets/images/emberglowshadowoftomorrow.png',
     teaser: [
       '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
       '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”'
@@ -76,7 +76,7 @@ export const BOOKS: Book[] = [
     title: 'Emberglow Universe Guidebook',
     subtitle: 'The Definitive Companion',
     description: 'Explore the complete lore, mythology, characters, worlds, creatures, and behind‑the‑scenes secrets of the Emberglow Universe.',
-    coverImage: '/src/assets/images/emberglowuniverseguidebook.png',
+    coverImage: '/assets/images/emberglowuniverseguidebook.png',
     teaser: [
       'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility.'
     ],
@@ -93,7 +93,7 @@ export const SONGS: Song[] = [
     title: 'March of the Mirror Guardian',
     artist: 'Emberglow Ensemble',
     duration: '3:58',
-    thumbnail: '/src/assets/images/guardiancrest.png',
+    thumbnail: '/assets/images/guardiancrest.png',
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
     description: 'A powerful, rhythmic theme for the noble protectors of the Oasis.',
     category: 'official'
@@ -103,27 +103,17 @@ export const SONGS: Song[] = [
     title: "Fizzle's Mischievous Flight",
     artist: 'Emberglow Ensemble',
     duration: '2:15',
-    thumbnail: '/src/assets/images/fizzle.png',
+    thumbnail: '/assets/images/fizzle.png',
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
     description: 'A playful, upbeat track following Ralph\'s favorite spirited companion.',
     category: 'official'
-  },
-  {
-    id: 'rocking-hero',
-    title: 'Rocking Hero',
-    artist: 'Emberglow is just Rocking it out',
-    duration: '3:55',
-    thumbnail: '/src/assets/images/emberglowthefirewithin.png',
-    audioUrl: '/music/RockingHero.m4a',
-    description: 'Emberglow is just Rocking it out',
-    category: 'new'
   },
   {
     id: 'zac-ember',
     title: 'ZacEmber',
     artist: 'Zac giving it a blast :)',
     duration: '5:05',
-    thumbnail: '/src/assets/images/starfall1.png',
+    thumbnail: '/assets/images/starfall1.png',
     audioUrl: '/music/ZacEmber.m4a',
     description: 'Zac giving it a blast :)',
     category: 'new',
@@ -143,7 +133,7 @@ Love you Zac :)`
     title: 'Desert Legend',
     artist: 'A beat in the Desert Landscape',
     duration: '4:12',
-    thumbnail: '/src/assets/images/sandwalkers.png',
+    thumbnail: '/assets/images/sandwalkers.png',
     audioUrl: '/music/Desert_Legend.m4a',
     description: 'A beat in the Desert Landscape',
     category: 'new',
@@ -200,7 +190,7 @@ The mythical camel, a timeless adventure
     title: 'Element Quest',
     artist: 'Un-uplifting growth with just a simple beat',
     duration: '4:30',
-    thumbnail: '/src/assets/images/realofpossibilities.png',
+    thumbnail: '/assets/images/realofpossibilities.png',
     audioUrl: '/music/Element_Quest.m4a',
     description: 'Un-uplifting growth with just a simple beat',
     category: 'new'
@@ -210,7 +200,7 @@ The mythical camel, a timeless adventure
     title: 'In the Desert',
     artist: 'Techno meets Sand',
     duration: '3:20',
-    thumbnail: '/src/assets/images/sandwalkers.png',
+    thumbnail: '/assets/images/sandwalkers.png',
     audioUrl: '/music/In_the_Desert.m4a',
     description: 'Techno meets Sand',
     category: 'new'
@@ -220,7 +210,7 @@ The mythical camel, a timeless adventure
     title: 'Ralph the Camel (Easy)',
     artist: 'A Fun Children song, letting Ralph come alive',
     duration: '2:45',
-    thumbnail: '/src/assets/images/emberglowguardianofthesands.png',
+    thumbnail: '/assets/images/emberglowguardianofthesands.png',
     audioUrl: '/music/Ralph_the_Camel_Easy.m4a',
     description: 'A Fun Children song, letting Ralph come alive',
     category: 'new',
@@ -276,7 +266,7 @@ Ralph, the Emberglow, we sing to you.`
     title: 'Ralph the Camel (Kids)',
     artist: 'Wow- this is the best- Ralph you are my Hero',
     duration: '2:30',
-    thumbnail: '/src/assets/images/emberglowthefirstlight.png',
+    thumbnail: '/assets/images/emberglowthefirstlight.png',
     audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
     description: 'Wow- this is the best- Ralph you are my Hero',
     category: 'new',
@@ -332,7 +322,7 @@ Ralph, the Emberglow, we sing to you.`
     title: "Emberglow's Fire",
     artist: 'Emberglow Ensemble',
     duration: '3:40',
-    thumbnail: '/src/assets/images/emberglowthefirewithin.png',
+    thumbnail: '/assets/images/emberglowthefirewithin.png',
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3',
     description: 'A soulful anthem about the heart of the fireborn camel.',
     category: 'official'
@@ -345,7 +335,7 @@ export const CHARACTERS: Character[] = [
     name: 'Emberglow',
     role: 'The spark who becomes a guardian.',
     description: 'A timid desert camel whose soul was ignited by a celestial meteor storm. Once anxious and overlooked, he now carries the radiant "Fire Within"—a primordial spark that allows him to bridge the gap between the physical sands and the mythic realms of memory. He is the reluctant guardian destined to restore the balance of the First Light.',
-    image: '/src/assets/images/earlyconcept2.png',
+    image: '/assets/images/earlyconcept2.png',
     category: 'main'
   },
   {
@@ -353,7 +343,7 @@ export const CHARACTERS: Character[] = [
     name: 'Fizzle',
     role: 'Joyful, loyal, and brighter than he knows.',
     description: 'A spirited, meerkat-like creature who serves as the heart of the journey. Brimming with infectious joy and a penchant for elemental mischief, Fizzle is more than just a loyal companion—he is an "Elemental Guardian" in his own right, whose unwavering optimism provides the warmth needed to navigate the coldest corners of the Understar.',
-    image: '/src/assets/images/fizzle.png',
+    image: '/assets/images/fizzle.png',
     category: 'main'
   },
   {
@@ -361,7 +351,7 @@ export const CHARACTERS: Character[] = [
     name: 'Emberion',
     role: 'The ancient guardian of the Celestial Dunes.',
     description: 'An ancient, towering entity of pure starlight who keeps vigil over the Celestial Dunes. As a Master of the Echoes, Emberion serves as the cosmic mentor to Emberglow, guiding him through the fractures of time and space. He possesses the wisdom of the First Memory and the burden of knowing the cost of every choice.',
-    image: '/src/assets/images/embarion1.png',
+    image: '/assets/images/embarion1.png',
     category: 'main'
   },
   {
@@ -369,7 +359,7 @@ export const CHARACTERS: Character[] = [
     name: 'New',
     role: 'The smallest spark with the biggest dream.',
     description: 'The smallest fragment of hope ever to escape the Echoing Deep. Though tiny in stature, New possesses the "Dream of the Unseen"—a power that can rewrite the very fabric of reality. He is the silent catalyst for change, reminding even the greatest guardians that the smallest spark can ignite a universe.',
-    image: '/src/assets/images/hollowspark2.png',
+    image: '/assets/images/hollowspark2.png',
     category: 'main'
   },
   {
@@ -377,7 +367,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Lost Light',
     role: 'A fractured remnant of the First Light.',
     description: 'A shimmering, fractured remnant of the original First Light, wandering the boundaries of the Understar. Burdened by the weight of forgotten epochs, this being is the living key to the ancient vaults of creation. Its presence is a haunting reminder of what the universe was before the Great Fracture.',
-    image: '/src/assets/images/lightflow1.png',
+    image: '/assets/images/lightflow1.png',
     category: 'cosmic'
   },
   {
@@ -385,7 +375,7 @@ export const CHARACTERS: Character[] = [
     name: 'The First Light',
     role: 'The cosmic spark that shaped the world.',
     description: 'The primordial source of all warmth, wisdom, and life. Born from a cosmic vibration, it was once a singular brilliance that shattered to create the realms of memory and sand. Now, its echoes reside in the hearts of true guardians, waiting for the one who can unify its scattered fragments.',
-    image: '/src/assets/images/lightflow1.png',
+    image: '/assets/images/lightflow1.png',
     category: 'cosmic'
   },
   {
@@ -393,7 +383,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Guardian Who Forgot',
     role: 'A broken protector of the Understar.',
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
-    image: '/src/assets/images/guardiancrest.png',
+    image: '/assets/images/guardiancrest.png',
     category: 'cosmic'
   },
   {
@@ -401,7 +391,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Shadow of Tomorrow',
     role: 'A fractured future desperate to exist.',
     description: 'A visually striking, translucent echo of a future that has not yet been permitted to exist. Desperate and flickering, it reaches back through the folds of the Celestial Dunes to plead for a path. It is the manifestation of "The Question"—a warning that the future is not a threat, but a choice yet to be made.',
-    image: '/src/assets/images/futureechoes.png',
+    image: '/assets/images/futureechoes.png',
     category: 'cosmic'
   }
 ];
@@ -491,106 +481,106 @@ export const GALLERIES: Gallery[] = [
     id: 'awakening', 
     title: 'The Awakening', 
     description: 'The spark beneath the desert sky and early artistic visions of Emberglow\'s first steps.', 
-    coverImage: '/src/assets/images/emberglowawakensinthedesert.png',
+    coverImage: '/assets/images/emberglowawakensinthedesert.png',
     images: [
-      '/src/assets/images/emberglowawakensinthedesert.png',
-      '/src/assets/images/emberglowthefirewithin.png',
-      '/src/assets/images/fizzleearly1.png',
-      '/src/assets/images/fizzleearly2.png',
-      '/src/assets/images/lightflow1.png'
+      '/assets/images/emberglowawakensinthedesert.png',
+      '/assets/images/emberglowthefirewithin.png',
+      '/assets/images/fizzleearly1.png',
+      '/assets/images/fizzleearly2.png',
+      '/assets/images/lightflow1.png'
     ]
   },
   { 
     id: 'desert', 
     title: 'Desert of Echoes', 
     description: 'The shifting sands of memory, where day and night cycle through forgotten whispers.', 
-    coverImage: '/src/assets/images/sandwalkers.png',
+    coverImage: '/assets/images/sandwalkers.png',
     images: [
-      '/src/assets/images/sandwalkers.png',
-      '/src/assets/images/desert1.png',
-      '/src/assets/images/desert2.png',
-      '/src/assets/images/cycledayandnight.png',
-      '/src/assets/images/echoformation.png',
-      '/src/assets/images/realofpossibilities.png'
+      '/assets/images/sandwalkers.png',
+      '/assets/images/desert1.png',
+      '/assets/images/desert2.png',
+      '/assets/images/cycledayandnight.png',
+      '/assets/images/echoformation.png',
+      '/assets/images/realofpossibilities.png'
     ]
   },
   { 
     id: 'celestial', 
     title: 'Celestial Dunes', 
     description: 'Where the sky fractures into light and stars fall according to ancient glyphs.', 
-    coverImage: '/src/assets/images/starfall1.png',
+    coverImage: '/assets/images/starfall1.png',
     images: [
-      '/src/assets/images/starfall1.png',
-      '/src/assets/images/starfall2.png',
-      '/src/assets/images/emberglowthefirstlight.png',
-      '/src/assets/images/lightflow1.png',
-      '/src/assets/images/realofpossibilities.png',
-      '/src/assets/images/guardiancrest.png'
+      '/assets/images/starfall1.png',
+      '/assets/images/starfall2.png',
+      '/assets/images/emberglowthefirstlight.png',
+      '/assets/images/lightflow1.png',
+      '/assets/images/realofpossibilities.png',
+      '/assets/images/guardiancrest.png'
     ]
   },
   { 
     id: 'understar', 
     title: 'The Understar', 
     description: 'The world beneath the world, where memory threads and ancient trees hold the balance.', 
-    coverImage: '/src/assets/images/sandwalkers.png',
+    coverImage: '/assets/images/sandwalkers.png',
     images: [
-      '/src/assets/images/sandwalkers.png',
-      '/src/assets/images/emberglowkeeperofthebalance.png',
-      '/src/assets/images/hollowspark1.png',
-      '/src/assets/images/memorythread1.png',
-      '/src/assets/images/memorythread1.png',
-      '/src/assets/images/memorythread2.png',
-      '/src/assets/images/memorythread1.png',
-      '/src/assets/images/memorywraths.png'
+      '/assets/images/sandwalkers.png',
+      '/assets/images/emberglowkeeperofthebalance.png',
+      '/assets/images/hollowspark2.png',
+      '/assets/images/memorythread1.png',
+      '/assets/images/memorythread1.png',
+      '/assets/images/memorythread2.png',
+      '/assets/images/memorythread1.png',
+      '/assets/images/memorywraths.png'
     ]
   },
   { 
     id: 'characters', 
     title: 'Characters', 
     description: 'Studies of Emberglow, Fizzle, and the cosmic beings who guide them.', 
-    coverImage: '/src/assets/images/withwings.png',
+    coverImage: '/assets/images/withwings.png',
     images: [
-      '/src/assets/images/withwings.png',
-      '/src/assets/images/fizzle.png',
-      '/src/assets/images/embarion1.png',
-      '/src/assets/images/embarion2.png',
-      '/src/assets/images/embarion3.png',
-      '/src/assets/images/fizzleearly1.png',
-      '/src/assets/images/fizzleearly2.png',
-      '/src/assets/images/hollowspark1.png',
-      '/src/assets/images/hollowspark2.png',
-      '/src/assets/images/guardiancrest.png',
-      '/src/assets/images/wingevolution1.png',
-      '/src/assets/images/wingevolution1.png'
+      '/assets/images/withwings.png',
+      '/assets/images/fizzle.png',
+      '/assets/images/embarion1.png',
+      '/assets/images/embarion2.png',
+      '/assets/images/embarion3.png',
+      '/assets/images/fizzleearly1.png',
+      '/assets/images/fizzleearly2.png',
+      '/assets/images/hollowspark2.png',
+      '/assets/images/hollowspark2.png',
+      '/assets/images/guardiancrest.png',
+      '/assets/images/wingevolution1.png',
+      '/assets/images/wingevolution1.png'
     ]
   },
   { 
     id: 'creatures', 
     title: 'Creatures', 
     description: 'The spirits, guardians, and storms that inhabit the Emberglow Universe.', 
-    coverImage: '/src/assets/images/sandwalkers.png',
+    coverImage: '/assets/images/sandwalkers.png',
     images: [
-      '/src/assets/images/sandwalkers.png',
-      '/src/assets/images/emberstorm.png',
-      '/src/assets/images/emberstorm2.png',
-      '/src/assets/images/hollowspark1.png',
-      '/src/assets/images/hollowspark2.png',
-      '/src/assets/images/guardiancrest.png',
-      '/src/assets/images/guardianwing1.png',
-      '/src/assets/images/guardianwing1.png'
+      '/assets/images/sandwalkers.png',
+      '/assets/images/emberstorm.png',
+      '/assets/images/emberstorm2.png',
+      '/assets/images/hollowspark2.png',
+      '/assets/images/hollowspark2.png',
+      '/assets/images/guardiancrest.png',
+      '/assets/images/guardianwing1.png',
+      '/assets/images/guardianwing1.png'
     ]
   },
   { 
     id: 'moments', 
     title: 'Iconic Moments', 
     description: 'Key scenes that shift the future of the Desert of Echoes.', 
-    coverImage: '/src/assets/images/futureechoes.png',
+    coverImage: '/assets/images/futureechoes.png',
     images: [
-      '/src/assets/images/futureechoes.png',
-      '/src/assets/images/futuremapping.png',
-      '/src/assets/images/echoformation.png',
-      '/src/assets/images/emberglowawakensinthedesert.png',
-      '/src/assets/images/emberglowshadowoftomorrow.png'
+      '/assets/images/futureechoes.png',
+      '/assets/images/futuremapping.png',
+      '/assets/images/echoformation.png',
+      '/assets/images/emberglowawakensinthedesert.png',
+      '/assets/images/emberglowshadowoftomorrow.png'
     ]
   }
 ];

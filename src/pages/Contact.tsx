@@ -53,7 +53,9 @@ export default function Contact() {
 
               <div className="p-8 eg-glass rounded-2xl border-l-4 border-l-eg-amber">
                 <p className="text-eg-sand/60 leading-relaxed">
-                  For business or publishing inquiries, please include  
+                  Socials Coming soon...
+                  
+                  For business or publishing enquiries, please include  
                   <strong className="text-eg-sand"> “Business Inquiry” </strong> 
                   in your subject line.
                 </p>

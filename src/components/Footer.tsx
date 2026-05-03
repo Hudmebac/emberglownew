@@ -19,7 +19,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-3">
-          <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">Atelier</span>
+          <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">Info</span>
           <ul className="space-y-1 text-sm opacity-50 font-light">
             <li><Link to="/about" className="hover:text-eg-gold transition-colors">About</Link></li>
             <li><Link to="/contact" className="hover:text-eg-gold transition-colors">Contact</Link></li>
