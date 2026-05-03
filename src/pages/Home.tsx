@@ -18,17 +18,21 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 1 }}
             className="md:col-span-7"
           >
-            <h1 className="text-7xl md:text-9xl font-light leading-[0.9] mb-8 tracking-tighter">
-              Emberglow: <br/><span className="text-eg-gold font-normal">The Mythical Camel Universe</span>
-            </h1>
-            <div className="space-y-6 mb-12 max-w-2xl">
-              <p className="text-2xl text-eg-gold font-medium italic">
-                Epic, franchise‑ready, and signals a whole world.
-              </p>
-              <p className="text-xl text-eg-sand/60 leading-relaxed font-light">
-                Emberglow is a mythic storytelling universe centred on a radiant, winged camel born from desert starlight. Blending ancient wonder with modern cinematic energy, the series delivers sweeping adventures, elemental magic, and emotionally rich characters. Every tale is crafted with world‑class clarity, visual imagination, and the warm, timeless heart of a classic legend.
-              </p>
-            </div>
+            <h1 className="text-4xl md:text-5xl font-light leading-[0.9] mb-8 tracking-tighter">
+  Emberglow: <br/>
+  <span className="text-eg-gold font-normal">A Mythic Universe </span>
+</h1>
+
+<div className="space-y-6 mb-12 max-w-2xl">
+  <p className="text-2xl text-eg-gold font-medium italic">
+    Born from Light and Desert Fire,
+Cinematic, expansive, and built for a world‑spanning saga.
+  </p>
+
+  <p className="text-xl text-eg-sand/60 leading-relaxed font-light">
+    Emberglow is a sweeping cinematic fantasy universe about Ralph — an ordinary desert camel who transforms into a mythical guardian forged from starlight and destiny. Blending ancient myth with bold, modern storytelling, the saga spans deserts that remember, skies that fracture, and guardians shaped from elemental wonder. Every tale delivers emotional depth, visual imagination, and the timeless heart of a legend rediscovered.
+  </p>
+</div>
             <div className="flex items-center gap-10">
               <Link to={`/book/${mainBook.id}`} className="eg-btn eg-btn-primary">
                 Explore Collection
@@ -46,20 +50,22 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 1 }}
             className="md:col-span-5"
           >
-            <div className="relative bg-eg-sand/5 rounded-[2rem] p-1 border border-border-primary shadow-2xl overflow-hidden group">
-              <div className="aspect-[4/5] bg-gradient-to-b from-eg-charcoal to-eg-deep rounded-[1.8rem] flex items-center justify-center relative overflow-hidden">
-                 <div className="absolute w-64 h-64 bg-eg-gold/20 opacity-20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
-                 <img 
-                    src={mainBook.coverImage} 
-                    alt={mainBook.title}
-                    className="relative z-10 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
-                    referrerPolicy="no-referrer"
-                 />
-                 <div className="absolute bottom-8 left-8 right-8 flex justify-between items-end text-[10px] font-mono uppercase tracking-widest opacity-40">
-                    <div>SAGA // 01</div>
-                    <div className="text-right">DESERT // ECHOES</div>
-                 </div>
+            <div className="eg-book-presentation mx-auto max-w-[420px] group">
+              <div className="eg-book-cover aspect-[2/3] bg-eg-charcoal">
+                <img 
+                  src={mainBook.coverImage} 
+                  alt={mainBook.title}
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700 shadow-2xl"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="eg-book-spine-effect" />
+                
+                <div className="absolute bottom-8 left-8 right-8 z-30 flex justify-between items-end text-[10px] font-mono uppercase tracking-widest opacity-40">
+                  <div>SAGA // 01</div>
+                  <div className="text-right">DESERT // ECHOES</div>
+                </div>
               </div>
+              <div className="eg-book-edge" />
             </div>
           </motion.div>
         </div>
