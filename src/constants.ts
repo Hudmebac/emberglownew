@@ -93,7 +93,7 @@ export const SONGS: Song[] = [
     title: 'March of the Mirror Guardian',
     artist: 'Emberglow Ensemble',
     duration: '3:58',
-    thumbnail: '/assets/images/guardiancrest.png',
+    thumbnail: '/assets/images/mirrorguardian.png',
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
     description: 'A powerful, rhythmic theme for the noble protectors of the Oasis.',
     category: 'official'
