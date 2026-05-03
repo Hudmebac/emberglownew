@@ -5,12 +5,13 @@ export const BOOKS: Book[] = [
     id: 'the-fire-within',
     title: 'Emberglow: The Fire Within',
     subtitle: 'Book One of the Emberglow Saga',
-    description: 'A meteor storm ignites the spark of a timid desert camel, awakening a fire that will reshape the world.',
-    coverImage: '/assets/images/emberglowthefirewithin.png',
-    teaser: [
-      '“The sky was on fire, and for the first time, he felt like he was too.”',
-      '“Maybe the desert hadn’t been empty all this time. Maybe it had been waiting.”'
-    ],
+    description: 'A meteor storm shatters the night and ignites the spark within a timid desert camel, awakening a fire that will reshape the world. Lost between fear and wonder, Emberglow must learn to control the light now burning in his chest — a light the desert has been waiting for far longer than he ever imagined.',
+coverImage: '/assets/images/emberglowthefirewithin.png',
+teaser: [
+  '“The sky was on fire, and for the first time, he felt like he was too.”',
+  '“Maybe the desert hadn’t been empty all this time. Maybe it had been waiting.”',
+  '“Every spark begins as a question — and he was finally ready to ask it.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
@@ -19,12 +20,13 @@ export const BOOKS: Book[] = [
     id: 'guardian-of-the-sands',
     title: 'Emberglow: Guardian of the Sands',
     subtitle: 'Book Two of the Emberglow Saga',
-    description: 'The desert is changing. The Oasis of Echoes is fading. Ancient guardians stir beneath the dunes.',
-    coverImage: '/assets/images/emberglowguardianofthesands.png',
-    teaser: [
-      '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
-      '“The desert whispered his name, not as a spark… but as a guardian.”'
-    ],
+    description: 'The desert is shifting — and so is destiny. The Oasis of Echoes, once a shimmering heart of life, is fading. Tremors ripple beneath the dunes as forgotten guardians stir in their ancient sleep. Guided by visions he cannot outrun, Emberglow must journey into ruins swallowed by time, storms that remember the first dawn, and secrets the sands were never meant to reveal. Because the desert doesn’t just need a spark — it needs a guardian.',
+coverImage: '/assets/images/emberglowguardianofthesands.png',
+teaser: [
+  '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
+  '“The desert whispered his name, not as a spark… but as a guardian.”',
+  '“Beneath the dunes, something ancient opened its eyes — and it was waiting for him.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
@@ -33,12 +35,13 @@ export const BOOKS: Book[] = [
     id: 'the-first-light',
     title: 'Emberglow: The First Light',
     subtitle: 'Book Three of the Emberglow Saga',
-    description: 'The sky fractures. Stars fall. Emberglow is called beyond the desert to confront the being that birthed all light.',
-    coverImage: '/assets/images/emberglowthefirstlight.png',
-    teaser: [
-      '“The First Light stirred, and the sky cracked open like a memory breaking.”',
-      '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”'
-    ],
+    description: 'The sky fractures. Stars fall like burning memories. Called beyond the desert’s edge, Emberglow must face the ancient being that birthed all light — and all shadow. In the Celestial Reaches, where constellations breathe and creation remembers its wounds, he discovers that the First Light does not simply awaken… it hungers. To save the world he loves, Emberglow must confront the truth of what he is, what he was made from, and what he might become.',
+coverImage: '/assets/images/emberglowthefirstlight.png',
+teaser: [
+  '“The First Light stirred, and the sky cracked open like a memory breaking.”',
+  '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”',
+  '“When the stars fell, they didn’t burn the sand — they came looking for him.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
@@ -47,12 +50,13 @@ export const BOOKS: Book[] = [
     id: 'keeper-of-the-balance',
     title: 'Emberglow: Keeper of the Balance',
     subtitle: 'Book Four of the Emberglow Saga',
-    description: 'A storm that should not exist tears open the desert, pulling Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir and memory itself begins to unravel.',
-    coverImage: '/assets/images/emberglowkeeperofthebalance.png',
-    teaser: [
-      '“The storm wasn’t weather. It was memory — and it remembered him.”',
-      '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”'
-    ],
+    description: 'A storm that should not exist tears open the desert, dragging Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir, memories fracture, and the truth of creation begins to unravel. In a realm shaped by what the world remembers — and what it has chosen to forget — Emberglow must confront the shadows of every spark that came before him. To restore balance, he must face the one force even the First Light feared: the memory of what was lost.',
+coverImage: '/assets/images/emberglowkeeperofthebalance.png',
+teaser: [
+  '“The storm wasn’t weather. It was memory — and it remembered him.”',
+  '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”',
+  '“Balance is not kept. It is paid for — and someone must pay.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
@@ -61,12 +65,13 @@ export const BOOKS: Book[] = [
     id: 'shadow-of-tomorrow',
     title: 'Emberglow: Shadow of Tomorrow',
     subtitle: 'Book Five of the Emberglow Saga',
-    description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent.',
-    coverImage: '/assets/images/emberglowshadowoftomorrow.png',
-    teaser: [
-      '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
-      '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”'
-    ],
+    description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent. As timelines splinter and echoes of what-could-be bleed into the present, Emberglow is forced to confront a truth no guardian has ever faced: the future is not approaching… it is reaching back. And it has chosen him.',
+coverImage: '/assets/images/emberglowshadowoftomorrow.png',
+teaser: [
+  '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
+  '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”',
+  '“Some futures chase you. This one stood still and let him arrive.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
@@ -75,11 +80,11 @@ export const BOOKS: Book[] = [
     id: 'universe-guidebook',
     title: 'Emberglow Universe Guidebook',
     subtitle: 'The Definitive Companion',
-    description: 'Explore the complete lore, mythology, characters, worlds, creatures, and behind‑the‑scenes secrets of the Emberglow Universe.',
-    coverImage: '/assets/images/emberglowuniverseguidebook.png',
-    teaser: [
-      'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility.'
-    ],
+    description: 'Journey into the complete mythology of the Emberglow Universe — its origins, realms, guardians, creatures, cosmic laws, and the creative forces that shaped its story. From the Desert of Echoes to the Celestial Reaches, this guidebook unveils the hidden histories, visual lore, character arcs, and behind‑the‑scenes secrets that define the saga. A companion for readers, creators, and explorers who want to understand not just the world… but the light that built it.',
+coverImage: '/assets/images/emberglowuniverseguidebook.png',
+teaser: [
+  'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility — and the cosmic truths that bind them together.'
+],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GYFXSH2D' }
     ],
