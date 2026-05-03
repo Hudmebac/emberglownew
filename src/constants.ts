@@ -17,74 +17,72 @@ export const BOOKS: Book[] = [
   },
   {
     id: 'guardian-of-the-sands',
-    title: 'Emberglow: Guardian of the Sands',
-    subtitle: 'Book Two of the Emberglow Saga',
-    description: 'The desert is changing. The Oasis of Echoes is fading. Ancient guardians stir beneath the dunes.',
-    coverImage: '/assets/images/emberglowguardianofthesands.png',
-    teaser: [
-      '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
-      '“The desert whispered his name, not as a spark… but as a guardian.”'
-    ],
+title: 'Emberglow: Guardian of the Sands',
+subtitle: 'Book Two of the Emberglow Saga',
+description: 'The desert is shifting — and so is destiny. The Oasis of Echoes, once a shimmering heart of life, is fading. Tremors ripple beneath the dunes as forgotten guardians stir in their ancient sleep. Guided by visions he cannot outrun, Emberglow must journey into ruins swallowed by time, storms that remember the first dawn, and secrets the sands were never meant to reveal. Because the desert doesn’t just need a spark — it needs a guardian.',
+coverImage: '/assets/images/emberglowguardianofthesands.png',
+teaser: [
+  '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
+  '“The desert whispered his name, not as a spark… but as a guardian.”',
+  '“Beneath the dunes, something ancient opened its eyes — and it was waiting for him.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
   },
   {
     id: 'the-first-light',
-    title: 'Emberglow: The First Light',
-    subtitle: 'Book Three of the Emberglow Saga',
-    description: 'The sky fractures. Stars fall. Emberglow is called beyond the desert to confront the being that birthed all light.',
-    coverImage: '/assets/images/emberglowthefirstlight.png',
-    teaser: [
-      '“The First Light stirred, and the sky cracked open like a memory breaking.”',
-      '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”'
-    ],
+title: 'Emberglow: The First Light',
+subtitle: 'Book Three of the Emberglow Saga',
+description: 'The sky fractures. Stars fall like burning memories. Called beyond the desert’s edge, Emberglow must face the ancient being that birthed all light — and all shadow. In the Celestial Reaches, where constellations breathe and creation remembers its wounds, he discovers that the First Light does not simply awaken… it hungers. To save the world he loves, Emberglow must confront the truth of what he is, what he was made from, and what he might become.',
+coverImage: '/assets/images/emberglowthefirstlight.png',
+teaser: [
+  '“The First Light stirred, and the sky cracked open like a memory breaking.”',
+  '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”',
+  '“When the stars fell, they didn’t burn the sand — they came looking for him.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
   },
   {
     id: 'keeper-of-the-balance',
-    title: 'Emberglow: Keeper of the Balance',
-    subtitle: 'Book Four of the Emberglow Saga',
-    description: 'A storm that should not exist tears open the desert, pulling Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir and memory itself begins to unravel.',
-    coverImage: '/assets/images/emberglowkeeperofthebalance.png',
-    teaser: [
-      '“The storm wasn’t weather. It was memory — and it remembered him.”',
-      '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”'
-    ],
+title: 'Emberglow: Keeper of the Balance',
+subtitle: 'Book Four of the Emberglow Saga',
+description: 'A storm that should not exist tears open the desert, dragging Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir, memories fracture, and the balance of creation trembles. As the Understar awakens, Emberglow must confront the echoes of every spark that came before him and face a truth powerful enough to reshape the world: some memories are meant to guide… and some are meant to be buried.',
+coverImage: '/assets/images/emberglowkeeperofthebalance.png',
+teaser: [
+  '“The storm wasn’t weather. It was memory — and it remembered him.”',
+  '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”',
+  '“Balance is not kept by strength,” the First Memory murmured. “It is kept by what you choose to remember.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
   },
   {
     id: 'shadow-of-tomorrow',
-    title: 'Emberglow: Shadow of Tomorrow',
-    subtitle: 'Book Five of the Emberglow Saga',
-    description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent.',
-    coverImage: '/assets/images/emberglowshadowoftomorrow.png',
-    teaser: [
-      '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
-      '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”'
-    ],
+title: 'Emberglow: Shadow of Tomorrow',
+subtitle: 'Book Five of the Emberglow Saga',
+description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent. As timelines splinter and echoes of what-could-be bleed into the present, Emberglow is forced to confront a truth no guardian has ever faced: the future is not approaching… it is reaching back. And it has chosen him.',
+coverImage: '/assets/images/emberglowshadowoftomorrow.png',
+teaser: [
+  '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
+  '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”',
+  '“Some futures chase you. This one stood still and let him arrive.”'
+],
     buyLinks: [
       { platform: 'Amazon', url: '#' }
     ]
   },
   {
     id: 'universe-guidebook',
-    title: 'Emberglow Universe Guidebook',
-    subtitle: 'The Definitive Companion',
-    description: 'Explore the complete lore, mythology, characters, worlds, creatures, and behind‑the‑scenes secrets of the Emberglow Universe.',
-    coverImage: '/assets/images/emberglowuniverseguidebook.png',
-    teaser: [
-      'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility.'
-    ],
-    buyLinks: [
-      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GYFXSH2D' }
-    ],
-    isGuidebook: true
-  }
+title: 'Emberglow Universe Guidebook',
+subtitle: 'The Definitive Companion',
+description: 'Journey into the complete mythology of the Emberglow Universe — its origins, realms, guardians, creatures, cosmic laws, and the creative forces that shaped its story. From the Desert of Echoes to the Celestial Reaches, this guidebook unveils the hidden histories, visual lore, character arcs, and behind‑the‑scenes secrets that define the saga. A companion for readers, creators, and explorers who want to understand not just the world… but the light that built it.',
+coverImage: '/assets/images/emberglowuniverseguidebook.png',
+teaser: [
+  'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility — and the cosmic truths that bind them together.'
 ];
 
 export const SONGS: Song[] = [
@@ -107,6 +105,16 @@ export const SONGS: Song[] = [
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
     description: 'A playful, upbeat track following Ralph\'s favorite spirited companion.',
     category: 'official'
+  },
+  {
+    id: 'rock-theme',
+    title: "Rocking Hero",
+    artist: 'Emberglow Ensemble',
+    duration: '3:15',
+    thumbnail: '/assets/images/embarion3.png',
+    audioUrl: '/music/RockingHero.m4a',
+    description: 'A rocking theme, beat beat beat following Ralph\'s headbanger time.',
+    category: 'new'
   },
   {
     id: 'zac-ember',
@@ -264,7 +272,7 @@ Ralph, the Emberglow, we sing to you.`
   {
     id: 'ralph-kids',
     title: 'Ralph the Camel (Kids)',
-    artist: 'Wow- this is the best- Ralph you are my Hero',
+    artist: 'Wow - this is the best - Ralph you are my Hero',
     duration: '2:30',
     thumbnail: '/assets/images/emberglowthefirstlight.png',
     audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
@@ -333,7 +341,7 @@ export const CHARACTERS: Character[] = [
   {
     id: 'emberglow',
     name: 'Emberglow',
-    role: 'The spark who becomes a guardian.',
+    role: 'The Camel who becomes a guardian.',
     description: 'A timid desert camel whose soul was ignited by a celestial meteor storm. Once anxious and overlooked, he now carries the radiant "Fire Within"—a primordial spark that allows him to bridge the gap between the physical sands and the mythic realms of memory. He is the reluctant guardian destined to restore the balance of the First Light.',
     image: '/assets/images/earlyconcept2.png',
     category: 'main'
