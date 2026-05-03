@@ -375,7 +375,7 @@ export const CHARACTERS: Character[] = [
     name: 'The First Light',
     role: 'The cosmic spark that shaped the world.',
     description: 'The primordial source of all warmth, wisdom, and life. Born from a cosmic vibration, it was once a singular brilliance that shattered to create the realms of memory and sand. Now, its echoes reside in the hearts of true guardians, waiting for the one who can unify its scattered fragments.',
-    image: '/assets/images/lightflow1.png',
+    image: '/assets/images/lightflow2.png',
     category: 'cosmic'
   },
   {
@@ -383,7 +383,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Guardian Who Forgot',
     role: 'A broken protector of the Understar.',
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
-    image: '/assets/images/guardiancrest.png',
+    image: '/assets/images/mirroguardian.png',
     category: 'cosmic'
   },
   {
@@ -391,7 +391,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Shadow of Tomorrow',
     role: 'A fractured future desperate to exist.',
     description: 'A visually striking, translucent echo of a future that has not yet been permitted to exist. Desperate and flickering, it reaches back through the folds of the Celestial Dunes to plead for a path. It is the manifestation of "The Question"—a warning that the future is not a threat, but a choice yet to be made.',
-    image: '/assets/images/futureechoes.png',
+    image: '/assets/images/memorywraths.png',
     category: 'cosmic'
   }
 ];
@@ -547,11 +547,11 @@ export const GALLERIES: Gallery[] = [
       '/assets/images/embarion3.png',
       '/assets/images/fizzleearly1.png',
       '/assets/images/fizzleearly2.png',
-      '/assets/images/hollowspark2.png',
+      '/assets/images/hollowspark1.png',
       '/assets/images/hollowspark2.png',
       '/assets/images/guardiancrest.png',
       '/assets/images/wingevolution1.png',
-      '/assets/images/wingevolution1.png'
+      '/assets/images/wingevolution2.png'
     ]
   },
   { 
@@ -566,7 +566,6 @@ export const GALLERIES: Gallery[] = [
       '/assets/images/hollowspark2.png',
       '/assets/images/hollowspark2.png',
       '/assets/images/guardiancrest.png',
-      '/assets/images/guardianwing1.png',
       '/assets/images/guardianwing1.png'
     ]
   },
