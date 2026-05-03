@@ -383,7 +383,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Guardian Who Forgot',
     role: 'A broken protector of the Understar.',
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
-    image: '/assets/images/mirroguardian.png',
+    image: '/assets/images/mirrorguardian.png',
     category: 'cosmic'
   },
   {
