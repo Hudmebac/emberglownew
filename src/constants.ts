@@ -98,7 +98,7 @@ export const SONGS: Song[] = [
     title: 'March of the Mirror Guardian',
     artist: 'Emberglow Ensemble',
     duration: '3:58',
-    thumbnail: '/assets/images/guardiancrest.png',
+    thumbnail: '/assets/images/mirrorguardian.png',
     audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
     description: 'A powerful, rhythmic theme for the noble protectors of the Oasis.',
     category: 'official'
@@ -130,7 +130,7 @@ Emberglow when the time goes,
 Puff Puff, :) Emberglow this is just gibberish but funny,,,,, 
 bonnie bit of sand
 Give me a break
-I am only 8 and doing this on the fly
+I was only 8 when I recorded this and was doing this freestyle
 Love you Zac :)`
   },
   {
@@ -205,7 +205,7 @@ The mythical camel, a timeless adventure
     title: 'In the Desert',
     artist: 'Techno meets Sand',
     duration: '3:20',
-    thumbnail: '/assets/images/sandwalkers.png',
+    thumbnail: '/assets/images/desert2.png',
     audioUrl: '/music/In_the_Desert.m4a',
     description: 'Techno meets Sand',
     category: 'new'
@@ -215,7 +215,7 @@ The mythical camel, a timeless adventure
     title: 'Ralph the Camel (Easy)',
     artist: 'A Fun Children song, letting Ralph come alive',
     duration: '2:45',
-    thumbnail: '/assets/images/emberglowguardianofthesands.png',
+    thumbnail: '/assets/images/earlyconcept2.png',
     audioUrl: '/music/Ralph_the_Camel_Easy.m4a',
     description: 'A Fun Children song, letting Ralph come alive',
     category: 'new',
@@ -271,7 +271,7 @@ Ralph, the Emberglow, we sing to you.`
     title: 'Ralph the Camel (Kids)',
     artist: 'Wow- this is the best- Ralph you are my Hero',
     duration: '2:30',
-    thumbnail: '/assets/images/emberglowthefirstlight.png',
+    thumbnail: '/assets/images/earlyconcept2.png',
     audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
     description: 'Wow- this is the best- Ralph you are my Hero',
     category: 'new',
@@ -388,7 +388,7 @@ export const CHARACTERS: Character[] = [
     name: 'The Guardian Who Forgot',
     role: 'A broken protector of the Understar.',
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
-    image: '/assets/images/mirroguardian.png',
+    image: '/assets/images/mirrorguardian.png',
     category: 'cosmic'
   },
   {
