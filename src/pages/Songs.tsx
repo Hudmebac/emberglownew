@@ -176,7 +176,7 @@ export default function Songs() {
                layoutId="jukebox-container"
                initial={{ opacity: 0, scale: 0.9 }}
                animate={{ opacity: 1, scale: 1 }}
-               className={`relative aspect-square max-w-lg mx-auto w-full group transition-all duration-500 z-10 ${isFullScreen ? 'hidden' : 'block'}`}
+               className={`relative aspect-[10/12] max-w-lg mx-auto w-full group transition-all duration-500 z-10 ${isFullScreen ? 'hidden' : 'block'}`}
             >
               {/* Complex Energy Field Background */}
               <div className="absolute -inset-8 bg-eg-amber/5 blur-[100px] rounded-full animate-pulse" />
@@ -198,7 +198,7 @@ export default function Songs() {
                 </div>
 
                 {/* Inner Content Area */}
-                <div className="relative h-full w-full rounded-[2.8rem] flex flex-col items-center justify-between p-10 z-10">
+                <div className="relative h-full w-full rounded-[2.8rem] flex flex-col items-center justify-between p-8 z-10">
                   {/* Brand Logo/Header */}
                   <div className="absolute top-6 left-12 flex flex-col gap-0.5 opacity-40">
                      <span className="text-[10px] font-mono tracking-[0.4em] text-eg-amber uppercase font-black">EMB-CORE // V.02</span>
@@ -217,7 +217,7 @@ export default function Songs() {
                   )}
 
                   {/* Futuristic Echo Core Stage */}
-                  <div className="relative w-64 h-64 mt-8 flex items-center justify-center">
+                  <div className="relative w-52 h-52 mt-0 flex items-center justify-center">
                     {/* Spinning Energy Rings */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <motion.div 
@@ -258,16 +258,22 @@ export default function Songs() {
                       >
                         {/* The Harmonic Sphere */}
                         <motion.div 
-                          animate={{ 
-                            scale: isPlaying ? [1, 1.02, 1] : 1,
-                            boxShadow: isPlaying ? [
+                          animate={isPlaying ? { 
+                            scale: [1, 1.02, 1],
+                            boxShadow: [
                               '0 0 20px rgba(255,183,77,0.2)',
                               '0 0 40px rgba(255,183,77,0.4)',
                               '0 0 20px rgba(255,183,77,0.2)'
-                            ] : '0 0 20px rgba(255,183,77,0.1)'
+                            ]
+                          } : {
+                            scale: 1,
+                            boxShadow: '0 0 20px rgba(255,183,77,0.1)'
                           }}
-                          transition={{ repeat: Infinity, duration: 2 }}
-                          className="w-52 h-52 rounded-full relative overflow-hidden group-hover:border-eg-amber/50 transition-all duration-700 bg-eg-deep border-2 border-border-primary p-1"
+                          transition={{ 
+                            scale: { repeat: Infinity, duration: 2 },
+                            boxShadow: { repeat: Infinity, duration: 2 }
+                          }}
+                          className="w-44 h-44 rounded-full relative overflow-hidden group-hover:border-eg-amber/50 transition-all duration-700 bg-eg-deep border-2 border-border-primary p-1"
                         >
                            <img 
                             src={currentSong.thumbnail} 
@@ -317,26 +323,26 @@ export default function Songs() {
                     </AnimatePresence>
                   </div>
 
-                  <div className="text-center z-10 w-full mt-4">
+                  <div className="text-center z-10 w-full mt-1">
                     <motion.div 
                       key={currentSong.title}
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="space-y-1"
+                      className="space-y-0.5"
                     >
-                      <h2 className="text-2xl font-bold tracking-tight truncate px-4">{currentSong.title}</h2>
+                      <h2 className="text-xl font-bold tracking-tight truncate px-4">{currentSong.title}</h2>
                       <div className="flex items-center justify-center gap-3">
-                        <div className="h-px w-8 bg-eg-amber/20" />
-                        <p className="text-eg-amber text-[10px] font-mono uppercase tracking-[0.3em] font-bold">
+                        <div className="h-px w-6 bg-eg-amber/20" />
+                        <p className="text-eg-amber text-[9px] font-mono uppercase tracking-[0.3em] font-bold">
                           {currentSong.artist}
                         </p>
-                        <div className="h-px w-8 bg-eg-amber/20" />
+                        <div className="h-px w-6 bg-eg-amber/20" />
                       </div>
                     </motion.div>
                     
-                    <div className="h-10 flex flex-col items-center justify-center mt-6">
+                    <div className="h-6 flex flex-col items-center justify-center mt-2">
                        {isPlaying ? (
-                         <div className="flex items-end gap-1 h-6">
+                         <div className="flex items-end gap-1 h-4">
                             {[1, 2, 3, 4, 3, 2, 1, 2, 3].map((h, i) => (
                               <motion.div 
                                 key={i}
@@ -352,9 +358,9 @@ export default function Songs() {
                     </div>
                   </div>
 
-                  <div className="w-full space-y-6 pt-4 relative z-10">
+                  <div className="w-full space-y-3 pt-1 relative z-10">
                     {/* Progress Visual */}
-                    <div className="relative space-y-2">
+                    <div className="relative space-y-1.5">
                        <div 
                          className="relative h-1 bg-eg-sand/5 rounded-full w-full cursor-pointer group"
                          onClick={handleProgressClick}
@@ -364,7 +370,7 @@ export default function Songs() {
                             className="absolute h-full bg-eg-amber shadow-[0_0_15px_rgba(255,183,77,0.5)]"
                           />
                        </div>
-                       <div className="flex justify-between items-center text-[9px] font-mono text-eg-sand/20 tracking-[0.2em] font-bold">
+                       <div className="flex justify-between items-center text-[8px] font-mono text-eg-sand/20 tracking-[0.2em] font-bold">
                           <span>{formatTime(currentTime)}</span>
                           <span className="text-eg-amber/40">FREQ_RES_STABLE</span>
                           <span>{formatTime(duration || 0)}</span>
@@ -372,38 +378,40 @@ export default function Songs() {
                     </div>
 
                     {/* Futuristic Controls Grid */}
-                    <div className="flex items-center justify-center gap-4 px-2 pb-2">
+                    <div className="flex items-center justify-between gap-2 px-2 pb-1 w-full max-w-[280px] mx-auto">
                        <button 
                           onClick={prevSong}
-                          className="text-eg-sand/20 hover:text-eg-amber transition-all p-2 hover:bg-eg-sand/5 rounded-xl border border-transparent hover:border-eg-sand/5"
+                          className="text-eg-sand/30 hover:text-eg-amber transition-all p-2 hover:bg-eg-sand/5 rounded-xl border border-border-primary/20 hover:border-eg-amber/30"
                           title="Previous Track"
                         >
                           <SkipBack size={18} />
                         </button>
 
-                        <button 
-                          onClick={stopSong}
-                          className="text-eg-sand/20 hover:text-red-500 transition-all p-3 hover:bg-eg-sand/5 rounded-xl border border-transparent hover:border-eg-sand/5"
-                          title="Stop Frequency"
-                        >
-                          <Square size={18} fill="currentColor" />
-                        </button>
+                        <div className="flex items-center gap-4">
+                          <button 
+                            onClick={stopSong}
+                            className="text-eg-sand/30 hover:text-red-500 transition-all p-3 hover:bg-eg-sand/5 rounded-xl border border-border-primary/20 hover:border-red-500/30"
+                            title="Stop Frequency"
+                          >
+                            <Square size={20} fill="currentColor" />
+                          </button>
 
-                        <button 
-                          onClick={() => setIsPlaying(!isPlaying)}
-                          className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all relative overflow-hidden group/btn ${
-                            isPlaying 
-                              ? 'bg-neutral-900 border border-eg-amber/50 text-eg-amber' 
-                              : 'bg-eg-amber text-eg-deep shadow-[0_0_40px_rgba(255,183,77,0.3)]'
-                          }`}
-                        >
-                          <div className={`absolute inset-0 bg-eg-sand/5 opacity-0 group-hover/btn:opacity-100 transition-opacity`} />
-                          {isPlaying ? <Pause size={24} className="relative z-10" /> : <Play size={24} fill="currentColor" className="ml-1 relative z-10" />}
-                        </button>
+                          <button 
+                            onClick={() => setIsPlaying(!isPlaying)}
+                            className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all relative overflow-hidden group/btn ${
+                              isPlaying 
+                                ? 'bg-neutral-900 border-2 border-eg-amber shadow-[0_0_20px_rgba(255,183,77,0.2)] text-eg-amber' 
+                                : 'bg-eg-amber text-eg-deep shadow-[0_0_40px_rgba(255,183,77,0.4)]'
+                            }`}
+                          >
+                            <div className={`absolute inset-0 bg-eg-sand/5 opacity-0 group-hover/btn:opacity-100 transition-opacity`} />
+                            {isPlaying ? <Pause size={24} className="relative z-10" /> : <Play size={24} fill="currentColor" className="ml-1 relative z-10" />}
+                          </button>
+                        </div>
 
                         <button 
                           onClick={nextSong}
-                          className="text-eg-sand/20 hover:text-eg-amber transition-all p-2 hover:bg-eg-sand/5 rounded-xl border border-transparent hover:border-eg-sand/5"
+                          className="text-eg-sand/30 hover:text-eg-amber transition-all p-2 hover:bg-eg-sand/5 rounded-xl border border-border-primary/20 hover:border-eg-amber/30"
                           title="Next Track"
                         >
                           <SkipForward size={18} />
@@ -423,19 +431,21 @@ export default function Songs() {
                 </h3>
                 <div className="space-y-2 max-h-[400px] overflow-y-auto pr-4 custom-scrollbar">
                   {filteredSongs.map((song, index) => (
-                    <button
+                    <div
                       key={song.id}
-                      onClick={() => {
-                        setCurrentSongIndex(index);
-                        setIsPlaying(true);
-                      }}
-                      className={`w-full flex items-center gap-4 p-4 rounded-2xl transition-all group text-left ${
+                      className={`w-full flex items-center gap-4 p-4 rounded-2xl transition-all group ${
                         currentSongIndex === index 
                           ? 'bg-eg-amber/10 border border-eg-amber/30 shadow-lg shadow-eg-amber/5' 
                           : 'hover:bg-eg-sand/5 border border-transparent'
                       }`}
                     >
-                      <div className="relative w-12 h-12 flex-shrink-0">
+                      <button 
+                        onClick={() => {
+                          setCurrentSongIndex(index);
+                          setIsPlaying(true);
+                        }}
+                        className="relative w-12 h-12 flex-shrink-0 cursor-pointer"
+                      >
                         <img 
                           src={song.thumbnail} 
                           alt={song.title} 
@@ -451,15 +461,49 @@ export default function Songs() {
                             </div>
                           </div>
                         )}
-                      </div>
-                      <div className="flex-1 min-w-0">
+                      </button>
+                      <button 
+                        onClick={() => {
+                          setCurrentSongIndex(index);
+                          setIsPlaying(true);
+                        }}
+                        className="flex-1 min-w-0 text-left cursor-pointer"
+                      >
                         <h4 className={`font-bold truncate ${currentSongIndex === index ? 'text-eg-amber' : 'text-eg-sand'}`}>{song.title}</h4>
                         <p className="text-sm text-eg-sand/40">{song.artist}</p>
+                      </button>
+                      
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                          {currentSongIndex === index && isPlaying ? (
+                            <>
+                              <button 
+                                onClick={(e) => { e.stopPropagation(); setIsPlaying(false); }}
+                                className="p-2 hover:text-eg-amber text-eg-sand/40 transition-colors"
+                              >
+                                <Pause size={14} />
+                              </button>
+                              <button 
+                                onClick={(e) => { e.stopPropagation(); stopSong(); }}
+                                className="p-2 hover:text-red-500 text-eg-sand/40 transition-colors"
+                              >
+                                <Square size={14} fill="currentColor" />
+                              </button>
+                            </>
+                          ) : (
+                            <button 
+                              onClick={(e) => { e.stopPropagation(); setCurrentSongIndex(index); setIsPlaying(true); }}
+                              className="p-2 hover:text-eg-amber text-eg-sand/40 transition-colors"
+                            >
+                              <Play size={14} fill="currentColor" />
+                            </button>
+                          )}
+                        </div>
+                        <div className="text-xs font-mono opacity-20 group-hover:opacity-40 transition-opacity whitespace-nowrap">
+                          {song.duration}
+                        </div>
                       </div>
-                      <div className="text-xs font-mono opacity-20 group-hover:opacity-40 transition-opacity">
-                        {song.duration}
-                      </div>
-                    </button>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -558,10 +602,12 @@ export default function Songs() {
 
                       <motion.div 
                         animate={{ 
-                          rotate: isPlaying ? 360 : 0,
+                          scale: isPlaying ? [1, 1.05, 1] : 1,
                           boxShadow: isPlaying ? '0 0 100px rgba(255,183,77,0.2)' : '0 0 40px rgba(0,0,0,0.5)'
                         }}
-                        transition={{ repeat: isPlaying ? Infinity : 0, duration: 15, ease: "linear" }}
+                        transition={{ 
+                          scale: { repeat: Infinity, duration: 4 }
+                        }}
                         className="w-72 h-72 md:w-[450px] md:h-[450px] rounded-full bg-eg-charcoal/80 backdrop-blur-md relative p-1 overflow-hidden border border-border-primary/20"
                       >
                          {/* Scanning Effects */}
