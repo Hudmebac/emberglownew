@@ -44,7 +44,7 @@ export default function Home() {
     animate={{ y: ["0%", "-100%"] }}
     transition={{
       repeat: Infinity,
-      duration: 40, // adjust speed here (higher = slower)
+      duration: 200, // adjust speed here (higher = slower)
       ease: "linear"
     }}
     className="space-y-2 absolute top-0 left-0 w-full"
