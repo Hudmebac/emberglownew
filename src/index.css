@@ -47,6 +47,51 @@
   @apply bg-eg-sand/5 backdrop-blur-md border border-border-primary;
 }
 
+.eg-book-presentation {
+  @apply relative transition-transform duration-500 ease-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.eg-book-presentation:hover {
+  transform: rotateY(-15deg) translateX(10px);
+}
+
+.eg-book-cover {
+  @apply relative z-10 overflow-hidden rounded-r-md shadow-2xl;
+  box-shadow: 
+    5px 5px 25px rgba(0,0,0,0.6),
+    -2px 0 5px rgba(0,0,0,0.3);
+}
+
+.eg-book-cover::after {
+  content: "";
+  @apply absolute inset-0 pointer-events-none z-30;
+  background: linear-gradient(
+    105deg,
+    rgba(255,255,255,0.1) 0%,
+    rgba(255,255,255,0.05) 10%,
+    rgba(255,255,255,0) 20%,
+    rgba(255,255,255,0) 80%,
+    rgba(255,255,255,0.05) 90%,
+    rgba(255,255,255,0.1) 100%
+  );
+}
+
+.eg-book-spine-effect {
+  @apply absolute left-0 top-0 bottom-0 w-4 z-20 pointer-events-none;
+  background: linear-gradient(to right, 
+    rgba(0,0,0,0.4) 0%, 
+    rgba(0,0,0,0) 100%
+  );
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.eg-book-edge {
+  @apply absolute right-[-4px] top-1 bottom-1 w-[4px] bg-eg-sand/10 rounded-r-sm -z-10;
+  transform: translateZ(-1px);
+}
+
 .eg-gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-eg-gold to-eg-amber;
 }
