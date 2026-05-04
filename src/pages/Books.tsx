@@ -18,7 +18,7 @@ export default function Books() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-20">
             {BOOKS.map((book, index) => (
               <motion.div
                 key={book.id}
@@ -28,24 +28,37 @@ export default function Books() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="relative mb-8 overflow-hidden rounded-xl border border-border-primary flex aspect-[3/4]">
-                  <img 
-                    src={book.coverImage} 
-                    alt={book.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-eg-amber/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <Link 
-                    to={`/book/${book.id}`}
-                    className="absolute inset-0 z-10"
-                  />
+                {/* Book Presentation Layer */}
+                <div className="eg-book-presentation mx-auto max-w-[280px]">
+                  <div className="eg-book-cover aspect-[2/3] bg-eg-charcoal">
+                    <img 
+                      src={book.coverImage} 
+                      alt={book.title}
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    {/* Spine Shadow Effect */}
+                    <div className="eg-book-spine-effect" />
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-eg-amber/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    <Link 
+                      to={`/book/${book.id}`}
+                      className="absolute inset-0 z-30"
+                    />
+                  </div>
+                  {/* Visual thickness of pages */}
+                  <div className="eg-book-edge" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2 group-hover:text-eg-amber transition-colors">{book.title}</h3>
-                <p className="text-eg-sand/40 mb-6 font-medium italic">{book.subtitle}</p>
-                <Link to={`/book/${book.id}`} className="eg-btn eg-btn-ghost py-2 text-sm w-full block text-center">
-                  Read More
-                </Link>
+
+                <div className="mt-10">
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-eg-amber transition-colors">{book.title}</h3>
+                  <p className="text-eg-sand/40 mb-6 font-medium italic h-12 flex items-center justify-center">{book.subtitle}</p>
+                  <Link to={`/book/${book.id}`} className="eg-btn eg-btn-ghost py-2 text-sm w-full block text-center">
+                    Read More
+                  </Link>
+                </div>
               </motion.div>
             ))}
           </div>
