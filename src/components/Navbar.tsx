@@ -21,7 +21,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-eg-deep/80 backdrop-blur-md border-b border-border-primary">
       <div className="max-w-7xl mx-auto px-12 h-24 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 bg-gradient-to-tr from-eg-gold to-eg-amber rounded-md shadow-[0_0_15px_rgba(230,138,69,0.4)] group-hover:scale-110 transition-transform"></div>
+          <img 
+            src="/assets/images/earlyconcept2.png" 
+            alt="Emberglow" 
+            className="w-12 h-12 object-cover rounded-full shadow-[0_0_15px_rgba(230,138,69,0.3)] group-hover:scale-110 transition-transform"
+            referrerPolicy="no-referrer"
+          />
           <span className="text-xl font-bold tracking-tight uppercase group-hover:text-eg-gold transition-colors text-eg-sand">
             EMBERGLOW
           </span>
