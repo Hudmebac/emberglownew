@@ -2,6 +2,21 @@ import { Book, Character, LoreEntry, Gallery, Chapter, Song } from './types';
 
 export const BOOKS: Book[] = [
   {
+    id: 'complete-collection',
+    title: 'Emberglow: Complete Collection',
+    subtitle: 'Books 1-5 & The Universe Guidebook',
+    description: 'The Emberglow series follows Ralph — transformed by a meteor storm into Emberglow, a creature of fire and light. As he learns to control his newfound powers, Emberglow discovers courage, friendship, and the meaning of guardianship in a world that fears what it doesn’t understand.\n\nEach book in the series blends gentle fantasy, emotional growth, and child‑safe adventure, inviting readers aged 6–10 to explore themes of bravery, kindness, and self‑discovery. From glowing dunes to mysterious companions and ancient desert secrets, Emberglow is a journey through wonder — where every spark tells a story.',
+    coverImage: '/assets/images/emberglowbundle.png',
+    teaser: [
+      'The ultimate journey of a timid camel who became the light of a universe.',
+      'Includes Volumes 1-5 and the comprehensive Universe Guidebook.',
+      'A saga of bravery, kindness, and self-discovery across the Desert of Echoes.'
+    ],
+    buyLinks: [
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GXJMJJBP' }
+    ]
+  },
+  {
     id: 'the-fire-within',
     title: 'Emberglow: The Fire Within',
     subtitle: 'Book One of the Emberglow Saga',
