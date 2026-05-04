@@ -13,7 +13,7 @@ teaser: [
   '“Every spark begins as a question — and he was finally ready to ask it.”'
 ],
     buyLinks: [
-      { platform: 'Amazon', url: '#' }
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHJPV1Q' }
     ]
   },
   {
@@ -28,7 +28,7 @@ teaser: [
   '“Beneath the dunes, something ancient opened its eyes — and it was waiting for him.”'
 ],
     buyLinks: [
-      { platform: 'Amazon', url: '#' }
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHBQWQN' }
     ]
   },
   {
@@ -43,7 +43,7 @@ teaser: [
   '“When the stars fell, they didn’t burn the sand — they came looking for him.”'
 ],
     buyLinks: [
-      { platform: 'Amazon', url: '#' }
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZD6GLDB' }
     ]
   },
   {
@@ -58,7 +58,7 @@ teaser: [
   '“Balance is not kept. It is paid for — and someone must pay.”'
 ],
     buyLinks: [
-      { platform: 'Amazon', url: '#' }
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHNWBZ1' }
     ]
   },
   {
@@ -73,7 +73,7 @@ teaser: [
   '“Some futures chase you. This one stood still and let him arrive.”'
 ],
     buyLinks: [
-      { platform: 'Amazon', url: '#' }
+      { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHFX4MC' }
     ]
   },
   {
