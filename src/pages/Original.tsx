@@ -746,7 +746,7 @@ export default function Original() {
 
                 <div 
                   ref={contentRef}
-                  className={`space-y-8 text-eg-sand/80 leading-relaxed font-light first-letter:text-5xl first-letter:font-bold first-letter:text-eg-gold first-letter:mr-3 first-letter:float-left transition-all duration-300 ${
+                  className={`space-y-8 text-eg-sand/80 leading-relaxed font-light whitespace-pre-wrap first-letter:text-5xl first-letter:font-bold first-letter:text-eg-gold first-letter:mr-3 first-letter:float-left transition-all duration-300 ${
                     fontFamily === 'display' ? 'font-display tracking-tight' :
                     fontFamily === 'serif' ? 'font-serif' :
                     fontFamily === 'futuristic' ? 'font-mono' :
