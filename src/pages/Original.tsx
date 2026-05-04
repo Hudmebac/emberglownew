@@ -17,15 +17,18 @@ import {
   Settings, 
   Info,
   X,
-  Languages
+  Languages,
+  Maximize2,
+  Minimize2,
+  ListFilter
 } from 'lucide-react';
 
 export default function Original() {
   const [activeChapter, setActiveChapter] = useState(0);
   const [fontSize, setFontSize] = useState(20);
   const [fontFamily, setFontFamily] = useState<'sans' | 'display' | 'serif' | 'futuristic'>('sans');
-  
   const [viewMode, setViewMode] = useState<'reading' | 'audio'>('audio');
+  const [isFullscreen, setIsFullscreen] = useState(false);
   
   // Audio State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,6 +36,8 @@ export default function Original() {
   const [activeWordIndex, setActiveWordIndex] = useState(-1);
   const playStateRef = useRef({ playing: false, paused: false });
   const [speechRate, setSpeechRate] = useState(1);
+  const [speechPitch, setSpeechPitch] = useState(1);
+  const [speechVolume, setSpeechVolume] = useState(1);
   const [selectedVoiceId, setSelectedVoiceId] = useState<string>('narrator');
   const [showChapterPrompt, setShowChapterPrompt] = useState(false);
   const [showControls, setShowControls] = useState(true);
@@ -104,10 +109,17 @@ export default function Original() {
                    findVoiceByTerms(['female', 'en-gb', 'en-us', 'online'], ['male', 'david', 'guy']) || source[source.length - 1];
 
     return [
-      { id: 'narrator', voice: narrator, label: 'The Narrator' },
-      { id: 'male', voice: male, label: 'Male Voice' },
-      { id: 'female', voice: female, label: 'Female Voice' }
-    ].filter(v => v.voice);
+      { id: 'narrator', voice: narrator, label: 'Default: The Narrator' },
+      { id: 'male', voice: male, label: 'Preset: Male Voice' },
+      { id: 'female', voice: female, label: 'Preset: Female Voice' },
+      ...voices.filter(v => v.lang.startsWith('en')).map((v, i) => ({
+        id: `sys-${v.name}-${i}`,
+        voice: v,
+        label: `System: ${v.name} (${v.lang})`
+      }))
+    ].filter((v, index, self) => 
+      v.voice && self.findIndex(t => t.voice?.name === v.voice?.name) === index
+    );
   }, [voices]);
 
   const selectedVoice = useMemo(() => {
@@ -240,14 +252,16 @@ export default function Original() {
         return;
       }
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      if (selectedVoice) {
-        utterance.voice = selectedVoice;
-        utterance.lang = selectedVoice.lang;
-      }
-      utterance.rate = speechRate;
+        const utterance = new SpeechSynthesisUtterance(text);
+        if (selectedVoice) {
+          utterance.voice = selectedVoice;
+          utterance.lang = selectedVoice.lang;
+        }
+        utterance.rate = speechRate;
+        utterance.pitch = speechPitch;
+        utterance.volume = speechVolume;
 
-      utterance.onboundary = (event) => {
+        utterance.onboundary = (event) => {
         // Find position relative to the whole text
         const absolutePos = safeStart + event.charIndex;
         
@@ -334,20 +348,12 @@ export default function Original() {
   // Improved Auto-scroll: Only scroll if needed and more centered
   useEffect(() => {
     if (activeWordIndex !== -1 && contentRef.current && isPlaying && !isPaused) {
-      const activeWord = contentRef.current.querySelector('[data-active="true"]');
+      const activeWord = contentRef.current.querySelector('#active-reading-word');
       if (activeWord) {
-        const rect = activeWord.getBoundingClientRect();
-        const isInViewport = (
-          rect.top >= 200 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) - 200
-        );
-
-        if (!isInViewport) {
-          activeWord.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-          });
-        }
+        activeWord.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
       }
     }
   }, [activeWordIndex, isPlaying, isPaused]);
@@ -394,7 +400,7 @@ export default function Original() {
                     animate={{ opacity: 1, height: 'auto' }}
                     className="bg-eg-amber/5 border border-eg-amber/10 rounded-lg p-1.5 text-[8px] text-eg-sand/60 leading-tight italic"
                   >
-                    Auto-highlights & scrolls as the legend is spoken.
+                    Voice synchronization and high-fidelity highlighting active.
                   </motion.div>
                 )}
 
@@ -438,11 +444,18 @@ export default function Original() {
                   >
                     <RotateCcw size={10} />
                   </button>
+
+                  <button 
+                    onClick={() => setIsFullscreen(!isFullscreen)}
+                    className={`w-6 h-6 rounded flex items-center justify-center transition-all ${isFullscreen ? 'bg-eg-amber text-eg-deep' : 'bg-eg-sand/5 text-eg-sand/20 hover:text-eg-amber hover:bg-eg-amber/10'}`}
+                  >
+                    {isFullscreen ? <Minimize2 size={10} /> : <Maximize2 size={10} />}
+                  </button>
                 </div>
 
-                <div className="space-y-1.5 px-1">
+                <div className="space-y-1.5 px-1 overflow-hidden">
                     <div className="flex items-center justify-between text-[7px] font-mono text-eg-sand/30 uppercase font-black">
-                      <span>Voice Setting</span>
+                      <span>Neural Voice Suite</span>
                       <Volume2 size={8} className="text-eg-amber" />
                     </div>
                   <select 
@@ -459,6 +472,45 @@ export default function Original() {
                       </option>
                     ))}
                   </select>
+                </div>
+
+                <div className="space-y-2 px-1">
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between text-[7px] font-mono text-eg-sand/30 uppercase font-black">
+                      <span>Rate</span>
+                      <span className="text-eg-amber">{speechRate.toFixed(1)}x</span>
+                    </div>
+                    <input 
+                      type="range" min="0.5" max="2" step="0.1" 
+                      value={speechRate} 
+                      onChange={(e) => setSpeechRate(parseFloat(e.target.value))}
+                      className="w-full accent-eg-amber h-1 bg-eg-sand/10 rounded-lg appearance-none cursor-pointer"
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between text-[7px] font-mono text-eg-sand/30 uppercase font-black">
+                      <span>Pitch</span>
+                      <span className="text-eg-amber">{speechPitch.toFixed(1)}x</span>
+                    </div>
+                    <input 
+                      type="range" min="0.5" max="2" step="0.1" 
+                      value={speechPitch} 
+                      onChange={(e) => setSpeechPitch(parseFloat(e.target.value))}
+                      className="w-full accent-eg-amber h-1 bg-eg-sand/10 rounded-lg appearance-none cursor-pointer"
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between text-[7px] font-mono text-eg-sand/30 uppercase font-black">
+                      <span>Volume</span>
+                      <span className="text-eg-amber">{(speechVolume * 100).toFixed(0)}%</span>
+                    </div>
+                    <input 
+                      type="range" min="0" max="1" step="0.1" 
+                      value={speechVolume} 
+                      onChange={(e) => setSpeechVolume(parseFloat(e.target.value))}
+                      className="w-full accent-eg-amber h-1 bg-eg-sand/10 rounded-lg appearance-none cursor-pointer"
+                    />
+                  </div>
                 </div>
 
                 <AnimatePresence>
@@ -539,42 +591,23 @@ export default function Original() {
           </button>
         )}
 
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-16"
-          >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight">The Spark of <span className="text-eg-gold">Creation</span></h1>
-            <p className="text-2xl text-eg-sand/50 font-light max-w-3xl mx-auto">
-              The legendary records of the timid desert camel who was destined to carry the primordial fire.
-            </p>
-          </motion.div>
+        <div className={`mx-auto px-6 transition-all duration-500 ${isFullscreen ? 'max-w-none pt-24 pb-48 fixed inset-0 z-[100] bg-eg-charcoal overflow-y-auto' : 'max-w-6xl'}`}>
+          {!isFullscreen && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-center mb-16"
+            >
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight">The Spark of <span className="text-eg-gold">Creation</span></h1>
+              <p className="text-2xl text-eg-sand/50 font-light max-w-3xl mx-auto">
+                The legendary records of the timid desert camel who was destined to carry the primordial fire.
+              </p>
+            </motion.div>
+          )}
 
           {/* Table of Contents for Mobile */}
-          <div className="lg:hidden mb-12 overflow-x-auto pb-4 flex gap-4 no-scrollbar">
-            {CHAPTERS.map((chapter, index) => (
-              <button
-                key={chapter.id}
-                onClick={() => {
-                  stopSpeech();
-                  setActiveChapter(index);
-                }}
-                className={`flex-shrink-0 px-4 py-2 rounded-full border text-sm transition-all ${
-                  activeChapter === index 
-                    ? 'bg-eg-amber border-eg-amber text-eg-deep font-bold' 
-                    : 'border-border-primary hover:border-eg-amber/50 text-eg-sand/60'
-                }`}
-              >
-                Ch {chapter.id}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-12">
-            {/* Desktop Side Navigation */}
-            <aside className="hidden lg:block w-64 space-y-2 sticky top-32 h-fit">
-              <h2 className="text-eg-amber font-mono text-xs uppercase tracking-widest mb-4 px-4 font-bold">Chapters</h2>
+          {!isFullscreen && (
+            <div className="lg:hidden mb-12 overflow-x-auto pb-4 flex gap-4 no-scrollbar">
               {CHAPTERS.map((chapter, index) => (
                 <button
                   key={chapter.id}
@@ -582,17 +615,42 @@ export default function Original() {
                     stopSpeech();
                     setActiveChapter(index);
                   }}
-                  className={`w-full text-left px-4 py-2 rounded-xl transition-all group flex items-center gap-3 ${
+                  className={`flex-shrink-0 px-4 py-2 rounded-full border text-sm transition-all ${
                     activeChapter === index 
-                      ? 'bg-eg-sand/5 text-eg-amber' 
-                      : 'text-eg-sand/40 hover:text-eg-sand hover:bg-eg-sand/5'
+                      ? 'bg-eg-amber border-eg-amber text-eg-deep font-bold' 
+                      : 'border-border-primary hover:border-eg-amber/50 text-eg-sand/60'
                   }`}
                 >
-                  <BookOpen size={16} className={activeChapter === index ? 'opacity-100' : 'opacity-40 group-hover:opacity-100'} />
-                  <span className="text-sm truncate font-medium">{chapter.title.split(': ')[1]}</span>
+                  Ch {chapter.id}
                 </button>
               ))}
-            </aside>
+            </div>
+          )}
+
+          <div className={`flex flex-col lg:flex-row gap-12 ${isFullscreen ? 'max-w-4xl mx-auto' : ''}`}>
+            {/* Desktop Side Navigation */}
+            {!isFullscreen && (
+              <aside className="hidden lg:block w-64 space-y-2 sticky top-32 h-fit">
+                <h2 className="text-eg-amber font-mono text-xs uppercase tracking-widest mb-4 px-4 font-bold">Chapters</h2>
+                {CHAPTERS.map((chapter, index) => (
+                  <button
+                    key={chapter.id}
+                    onClick={() => {
+                      stopSpeech();
+                      setActiveChapter(index);
+                    }}
+                    className={`w-full text-left px-4 py-2 rounded-xl transition-all group flex items-center gap-3 ${
+                      activeChapter === index 
+                        ? 'bg-eg-sand/5 text-eg-amber' 
+                        : 'text-eg-sand/40 hover:text-eg-sand hover:bg-eg-sand/5'
+                    }`}
+                  >
+                    <BookOpen size={16} className={activeChapter === index ? 'opacity-100' : 'opacity-40 group-hover:opacity-100'} />
+                    <span className="text-sm truncate font-medium">{chapter.title.split(': ')[1]}</span>
+                  </button>
+                ))}
+              </aside>
+            )}
 
             {/* Main Content Area */}
             <main className="flex-1">
@@ -612,10 +670,27 @@ export default function Original() {
                       DATA_FRAGMENT // CH_{CHAPTERS[activeChapter].id.toString().padStart(2, '0')}
                     </span>
                     <div className="h-px flex-1 bg-border-primary" />
+                    {isFullscreen && (
+                      <button 
+                        onClick={() => setIsFullscreen(false)}
+                        className="p-2 bg-eg-sand/5 hover:bg-eg-sand/10 rounded-full transition-all text-eg-sand/40 hover:text-white"
+                      >
+                        <Minimize2 size={20} />
+                      </button>
+                    )}
                   </div>
                   
                   {/* Mode & Scale HUD */}
                   <div className="flex items-center gap-3">
+                    {!isFullscreen && (
+                      <button 
+                        onClick={() => setIsFullscreen(true)}
+                        className="p-2 bg-eg-sand/5 hover:bg-eg-sand/10 rounded-xl border border-border-primary text-eg-sand/40 hover:text-eg-amber transition-all"
+                        title="Enter Fullscreen"
+                      >
+                        <Maximize2 size={16} />
+                      </button>
+                    )}
                     {/* View mode toggle */}
                     <div className="flex bg-eg-sand/5 rounded-lg p-0.5 border border-border-primary">
                       <button 
@@ -695,9 +770,10 @@ export default function Original() {
                         <span 
                           key={idx} 
                           data-active={isSpeaking}
-                          className={`transition-all duration-100 rounded-sm px-0.5 relative inline-block ${
+                          id={isSpeaking ? 'active-reading-word' : undefined}
+                          className={`transition-all duration-100 rounded px-0.5 relative inline-block ${
                           isSpeaking 
-                            ? 'bg-eg-amber/90 text-eg-charcoal font-bold scale-105 shadow-xl z-10' 
+                            ? 'bg-eg-amber text-eg-deep font-bold scale-110 shadow-[0_0_15px_rgba(255,183,77,0.4)] z-10' 
                             : 'text-eg-sand/80'
                         }`}
                         >
