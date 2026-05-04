@@ -6,6 +6,7 @@ import { useTheme } from '../context/ThemeContext';
 const NAV_LINKS = [
   { name: 'Books', path: '/books' },
   { name: 'Characters', path: '/characters' },
+  { name: 'Elements', path: '/elements' },
   { name: 'Lore', path: '/lore' },
   { name: 'Galleries', path: '/galleries' },
   { name: 'Original', path: '/original' },
