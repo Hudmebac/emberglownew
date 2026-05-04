@@ -13,6 +13,7 @@ import Books from './pages/Books';
 import BookDetail from './pages/BookDetail';
 import Characters from './pages/Characters';
 import Lore from './pages/Lore';
+import Elements from './pages/Elements';
 import Galleries from './pages/Galleries';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -36,6 +37,7 @@ export default function App() {
                 <Route path="/book/:id" element={<BookDetail />} />
                 <Route path="/characters" element={<Characters />} />
                 <Route path="/lore" element={<Lore />} />
+                <Route path="/elements" element={<Elements />} />
                 <Route path="/galleries" element={<Galleries />} />
                 <Route path="/galleries/:id" element={<GalleryDetail />} />
                 <Route path="/original" element={<Original />} />
