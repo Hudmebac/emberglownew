@@ -44,6 +44,7 @@ emberglow/
 │
 └── README.md                 # You are here
 
+
 ## 🔥 Key Features
 
 - **Cinematic Worldbuilding** — High‑detail lore, mythologies, histories, and character arcs.  
@@ -57,6 +58,7 @@ emberglow/
 ### Clone the Repository
 git clone https://github.com/<your-username>/emberglow.git
 cd emberglow
+
 
 ### Run the Website Locally
 Open `website/index.html` in your browser or serve it with any static server.
