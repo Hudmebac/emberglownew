@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">The Saga</span>
           <p className="text-sm opacity-50 font-light leading-relaxed">
-            Five volumes of cinematic prose merged with epic celestial worldbuilding.
+            Five big books full of awesome adventures and magical worlds.
           </p>
         </div>
         <div className="flex flex-col gap-3">
@@ -27,13 +27,15 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-right">
-          <span className="text-3xl font-light tracking-tighter">EST. 2026</span>
-          <span className="text-[10px] opacity-40 uppercase tracking-[0.1em]">Bespoke Fantasy Storytelling</span>
+          <span className="text-3xl font-light tracking-tighter">EST. 2025</span>
+          <span className="text-[10px] opacity-40 uppercase tracking-[0.1em]">
+            Super Cool Stories Made With Imagination
+          </span>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border-primary opacity-20 text-[10px] flex justify-between uppercase tracking-widest">
         <span>© {new Date().getFullYear()} Emberglow Universe.</span>
-        <span>Created by Zac Heggie</span>
+        <span>Made by Zac Heggie</span>
       </div>
     </footer>
   );
