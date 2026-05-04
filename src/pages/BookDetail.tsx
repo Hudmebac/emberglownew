@@ -161,8 +161,8 @@ export default function BookDetail() {
       <section className="py-24 border-t border-border-primary bg-eg-deep/20 text-center">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 italic">More from the Universe</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {BOOKS.filter(b => b.id !== id).slice(0, 4).map((suggested) => (
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${id === 'complete-collection' ? 'lg:grid-cols-3' : 'lg:grid-cols-4'} gap-8`}>
+            {BOOKS.filter(b => b.id !== id).slice(0, id === 'complete-collection' ? 6 : 4).map((suggested) => (
               <Link 
                 key={suggested.id} 
                 to={`/book/${suggested.id}`} 
