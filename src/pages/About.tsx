@@ -8,7 +8,11 @@ export default function About() {
       <div className="relative min-h-screen bg-eg-deep overflow-hidden selection:bg-eg-amber/30">
         {/* Background Atmospheric Layers */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[80%] h-[60%] bg-eg-gold opacity-[0.03] rounded-full blur-[180px] animate-pulse" />
+          <motion.div 
+            animate={{ opacity: [0.01, 0.02, 0.01] }}
+            transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}
+            className="absolute top-0 right-0 w-[80%] h-[60%] bg-eg-gold rounded-full blur-[180px]" 
+          />
           <div className="absolute bottom-[-10%] left-[-5%] w-[60%] h-[60%] bg-eg-amber opacity-[0.02] rounded-full blur-[150px]" />
           <div className="absolute top-[30%] left-[20%] w-[1px] h-[60%] bg-gradient-to-b from-transparent via-eg-sand/10 to-transparent" />
         </div>
@@ -127,20 +131,25 @@ export default function About() {
             </div>
 
             {/* The Architect Section */}
-            <div className="relative p-12 lg:p-24 bg-gradient-to-br from-eg-deep/40 to-eg-deep rounded-[4rem] border border-border-primary overflow-hidden">
+            <div className="relative p-12 lg:p-24 bg-gradient-to-br from-eg-deep/40 to-eg-deep rounded-[4rem] border border-border-primary overflow-hidden mb-12">
               <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5" />
               
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div>
                   <div className="text-eg-gold text-[10px] font-mono uppercase tracking-[0.5em] mb-6 font-bold">The Creative Nexus</div>
                   <h2 className="text-6xl font-bold mb-10 italic tracking-tighter text-eg-sand">The <span className="text-eg-gold">Architect</span></h2>
+                  
                   <div className="space-y-8 text-2xl text-eg-sand/50 leading-relaxed font-light italic">
                     <p>
-                    Zac Heggie is the visionary architect behind the Emberglow Universe. A storyteller dedicated to world-class visual imagination and deep emotional resonance.
+                      Hi, I’m Zac Heggie, and Emberglow started because my teacher told us to make a mythical animal for homework. Everyone else picked dragons and giant monsters, but I chose a camel because I thought it would be funny if something totally normal suddenly became super magical.
+                      <br/><br/>
+                      At first it was just a camel with a tiny glowing spot. Then I thought, “What if the glow is actually fire?” And then, “What if the fire can think?” And then everything went crazy in my head. The camel got wings, and powers, and a whole world that sort of popped up around him like it was waiting for me to notice it.
+                      <br/><br/>
+                      I wasn’t trying to make a whole universe. I was literally just trying to finish my homework. But every time I drew something, I got another idea, and then another one, like Emberglow was whispering secrets to me. Soon the camel wasn’t just a camel anymore — he became Emberglow, and he had friends, and enemies, and deserts that remember things, and skies that break like glass when magic gets too strong.
+                      <br/><br/>
+                      My teacher said I “went a bit overboard,” but I think Emberglow was already real in my brain. I just finally started drawing fast enough to keep up.
                     </p>
-                    <p>
-                    His work blends celestial fantasy with the raw, beating heart of character-driven drama—creating universes that don't just tell a story, but invite you to inhabit them.
-                    </p>
+
                     <div className="flex items-center gap-6 pt-6">
                       <div className="h-0.5 w-20 bg-eg-amber" />
                       <p className="text-xl text-eg-amber font-bold uppercase tracking-widest not-italic">“Every spark matters”</p>
@@ -150,28 +159,31 @@ export default function About() {
 
                 <div className="space-y-12">
                   <div className="eg-glass p-12 rounded-[2.5rem] border border-border-primary">
-                    <h3 className="text-3xl font-bold mb-8 italic tracking-tight underline underline-offset-8 decoration-eg-gold/30 text-eg-sand">The Alchemy of Creation</h3>
+                    <h3 className="text-3xl font-bold mb-8 italic tracking-tight underline underline-offset-8 decoration-eg-gold/30 text-eg-sand">
+                      The Alchemy of Creation
+                    </h3>
+                    
                     <div className="space-y-6 text-lg text-eg-sand/50 font-light">
                       <p>
-                        We employ "Layered Worldbuilding"—a process that begins with emotional resonance and expands into complex mythology, geography, and cosmic physics.
+                        When I make worlds, I start with a feeling first — like excitement, or mystery, or that warm glow you get when you’re holding a torch in the dark. Then I build everything around that feeling, like stacking blocks until it becomes a whole place you can walk around in.
                       </p>
                       <p>
-                        Every character, from the timid Emberglow to the ancient Emberion, is designed to be a living key to a specific quadrant of the universe, ensuring that the saga feels vast yet intimately connected.
+                        Every character I make is like a key that opens a new part of the world. Emberglow opens the deserts. Emberion opens the ancient stuff. Lumis opens the sky places. It’s like each one unlocks a secret level, and when you put them all together, the whole universe lights up.
                       </p>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="p-8 bg-eg-sand/5 rounded-3xl border border-border-primary">
-                      <div className="text-4xl font-bold text-eg-gold mb-2">5+</div>
-                      <div className="text-xs uppercase tracking-widest text-eg-sand/30">Volumes Planned</div>
-                    </div>
-                    <div className="p-8 bg-eg-sand/5 rounded-3xl border border-border-primary">
-                      <div className="text-4xl font-bold text-eg-gold mb-2">Infinite</div>
-                      <div className="text-xs uppercase tracking-widest text-eg-sand/30">Possibilities</div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="p-8 bg-eg-sand/5 rounded-3xl border border-border-primary">
+                <div className="text-4xl font-bold text-eg-gold mb-2">5+</div>
+                <div className="text-xs uppercase tracking-widest text-eg-sand/30">Volumes Planned</div>
+              </div>
+              <div className="p-8 bg-eg-sand/5 rounded-3xl border border-border-primary">
+                <div className="text-4xl font-bold text-eg-gold mb-2">Infinite</div>
+                <div className="text-xs uppercase tracking-widest text-eg-sand/30">Possibilities</div>
               </div>
             </div>
           </div>
