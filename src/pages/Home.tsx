@@ -48,52 +48,18 @@ Cinematic, expansive, and built for a world‑spanning saga.
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
-            className="md:col-span-5"
+            className="md:col-span-5 relative"
           >
-            <div className="eg-book-presentation mx-auto max-w-[420px] group">
-              <div className="eg-book-cover aspect-[2/3] bg-eg-charcoal">
-                <img 
-                  src={mainBook.coverImage} 
-                  alt={mainBook.title}
-                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700 shadow-2xl"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="eg-book-spine-effect" />
-                
-                <div className="absolute bottom-8 left-8 right-8 z-30 flex justify-between items-end text-[10px] font-mono uppercase tracking-widest opacity-40">
-                  <div>SAGA // 01</div>
-                  <div className="text-right">DESERT // ECHOES</div>
-                </div>
-              </div>
-              <div className="eg-book-edge" />
+            <div className="relative group">
+              <div className="absolute inset-0 bg-eg-gold opacity-10 blur-[100px] group-hover:opacity-20 transition-opacity" />
+              <img 
+                src="/assets/images/emberglow.png" 
+                alt="Emberglow"
+                className="w-full h-auto relative z-10 drop-shadow-[0_0_50px_rgba(230,138,69,0.3)] group-hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Pillars Section */}
-      <section className="py-32 px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-            <div className="flex flex-col gap-4">
-              <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">The Saga</span>
-              <p className="text-lg opacity-50 font-light leading-relaxed">
-                Five volumes of cinematic prose merged with epic celestial worldbuilding.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">The Archive</span>
-              <p className="text-lg opacity-50 font-light leading-relaxed">
-                Definitive guidebooks detailing the mythology and origins of every spark.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <span className="text-eg-gold text-xs font-bold uppercase tracking-[0.2em]">The Atlas</span>
-              <p className="text-lg opacity-50 font-light leading-relaxed">
-                A geography of memory, mapping the desert's shifting dunes and celestial reaches.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </PageTransition>
