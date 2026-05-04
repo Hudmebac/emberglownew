@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
+import MeteorShower from '../components/MeteorShower';
 import { BOOKS } from '../constants';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <PageTransition>
+      <MeteorShower />
 
       {/* Ambient Background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -92,7 +94,45 @@ export default function Home() {
 
     {/* DUPLICATE LIST FOR LOOP */}
     <div className="space-y-2">
-      {/* paste the exact same list again */}
+      <p className="text-2xl text-eg-gold font-medium italic">Magic begins with a spark.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Every desert hides a secret.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Heroes can come from anywhere.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Starlight chooses the brave.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Even camels can be heroes.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The desert never forgets.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">A spark can change everything.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Every grain holds a memory.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Light finds those who seek it.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The stars are watching.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Ralph was never ordinary.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Adventure begins with courage.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The dunes are alive.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Hope glows in every shadow.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Dreams shape the universe.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Wonders hide in plain sight.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Night skies whisper truth.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Big heart. Bigger destiny.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The sand remembers everything.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Light always finds a way.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Every legend starts small.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The stars guide the brave.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Courage glows brighter than fire.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Even shadows hold secrets.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Adventure waits beyond the dunes.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Destiny whispers to those who listen.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Heroes rise from unexpected places.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The desert sky never sleeps.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Magic hides in every footprint.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The wind carries ancient stories.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Great journeys start with one step.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Starlight never forgets its chosen.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Every hero begins as a dreamer.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The night glows with hidden wonders.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Bravery shines brighter than fear.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Legends are written in the sand.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">The universe is full of surprises.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">A spark can start a legend.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Stories live forever.</p>
     </div>
   </motion.div>
 </motion.div>
@@ -129,6 +169,18 @@ export default function Home() {
             className="md:col-span-5 relative"
           >
             <div className="relative group">
+              {/* Overlay Text */}
+              <motion.div 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 1 }}
+                className="absolute -top-12 left-0 right-0 text-center z-20 pointer-events-none"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-eg-gold via-white to-eg-amber drop-shadow-sm">
+                  Ralph - The Mythical Camel
+                </h2>
+              </motion.div>
+
               <div className="absolute inset-0 bg-eg-gold opacity-10 blur-[100px] group-hover:opacity-20 transition-opacity" />
               <img 
                 src="/assets/images/emberglow.png" 
