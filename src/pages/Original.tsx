@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useRef, useEffect, useMemo } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import { CHAPTERS } from '../constants';
 import { 
@@ -20,7 +21,8 @@ import {
   Languages,
   Maximize2,
   Minimize2,
-  ListFilter
+  ListFilter,
+  Layout
 } from 'lucide-react';
 
 export default function Original() {
@@ -29,6 +31,7 @@ export default function Original() {
   const [fontFamily, setFontFamily] = useState<'sans' | 'display' | 'serif' | 'futuristic'>('sans');
   const [viewMode, setViewMode] = useState<'reading' | 'audio'>('audio');
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const navigate = useNavigate();
   
   // Audio State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -719,6 +722,16 @@ export default function Original() {
                         <Volume2 size={10} /> Audio
                       </button>
                     </div>
+
+                    {CHAPTERS[activeChapter].cartoonPanels && (
+                      <Link 
+                        to="/cartoon"
+                        state={{ chapterId: CHAPTERS[activeChapter].id }}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-eg-amber/10 border border-eg-amber/30 text-eg-amber text-[9px] font-black uppercase hover:bg-eg-amber hover:text-eg-deep transition-all shadow-lg shadow-eg-amber/10"
+                      >
+                        <Layout size={10} /> Concept Cartoon
+                      </Link>
+                    )}
 
                     <div className="flex items-center gap-1 bg-eg-sand/5 rounded-lg px-3 py-1 border border-border-primary">
                       <button 
