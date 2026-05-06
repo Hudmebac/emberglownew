@@ -42,6 +42,7 @@ export interface Chapter {
   id: number;
   title: string;
   content: string;
+  cartoonPanels?: CartoonPanel[];
 }
 
 export interface Song {
@@ -54,4 +55,11 @@ export interface Song {
   description: string;
   lyrics?: string;
   category?: 'official' | 'new';
+}
+
+export interface CartoonPanel {
+  id: number;
+  image: string;
+  caption: string;
+  alt: string;
 }
