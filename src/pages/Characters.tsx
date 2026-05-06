@@ -1,6 +1,85 @@
-import { motion } from 'motion/react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import ReactMarkdown from 'react-markdown';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 import { CHARACTERS } from '../constants';
+import { Character } from '../types';
+
+function CharacterCard({ char, index }: { char: Character; index: number }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1, duration: 0.7 }}
+      viewport={{ once: true }}
+      className={`group flex flex-col gap-8 p-10 eg-glass rounded-[2.5rem] hover:bg-eg-sand/5 transition-all duration-700 border border-border-primary hover:border-eg-amber/20 overflow-hidden ${
+        isExpanded ? 'ring-2 ring-eg-amber/30' : ''
+      }`}
+    >
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="lg:w-1/2 aspect-square rounded-[1.8rem] overflow-hidden border border-border-primary/20 relative">
+          <img 
+            src={char.image} 
+            alt={char.name}
+            className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-110"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        </div>
+        
+        <div className="lg:w-1/2 flex flex-col justify-center">
+          <div className="text-eg-gold/30 text-[10px] font-mono tracking-[0.4em] mb-4 uppercase">Entity_Record: {char.id}</div>
+          <h3 className="text-4xl font-bold mb-4 italic group-hover:text-eg-gold transition-colors">{char.name}</h3>
+          <div className="inline-block px-3 py-1 bg-eg-amber/10 border border-eg-amber/20 rounded-full text-eg-amber text-xs font-bold uppercase tracking-widest mb-6 w-fit">
+            {char.role}
+          </div>
+          <p className="text-lg text-eg-sand/50 leading-relaxed font-light group-hover:text-eg-sand/70 transition-colors mb-6">
+            {char.description}
+          </p>
+
+          {char.expandedDetails && (
+            <button 
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="flex items-center gap-2 text-eg-amber hover:text-eg-gold transition-colors text-sm font-bold uppercase tracking-widest mt-auto group/btn"
+            >
+              {isExpanded ? (
+                <>
+                  <ChevronUp size={16} />
+                  Collapse Details
+                </>
+              ) : (
+                <>
+                  <ChevronDown size={16} />
+                  Expanded Details
+                </>
+              )}
+              <div className="h-px flex-grow bg-eg-amber/20 group-hover/btn:bg-eg-gold/40 transition-colors ml-2" />
+            </button>
+          )}
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {isExpanded && char.expandedDetails && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className="mt-8 pt-8 border-t border-border-primary/20"
+          >
+            <div className="markdown-body max-w-none">
+              <ReactMarkdown>{char.expandedDetails}</ReactMarkdown>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
 
 export default function Characters() {
   const categories = [
@@ -49,37 +128,9 @@ export default function Characters() {
                     <div className="h-0.5 flex-grow bg-border-primary/5" />
                   </motion.div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-16">
+                  <div className="grid grid-cols-1 gap-12 lg:gap-16">
                     {CHARACTERS.filter(char => char.category === cat.id).map((char, index) => (
-                      <motion.div
-                        key={char.id}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1, duration: 0.7 }}
-                        viewport={{ once: true }}
-                        className="group flex flex-col lg:flex-row gap-8 p-10 eg-glass rounded-[2.5rem] hover:bg-eg-sand/5 transition-all duration-700 border border-border-primary hover:border-eg-amber/20"
-                      >
-                        <div className="lg:w-1/2 aspect-square rounded-[1.8rem] overflow-hidden border border-border-primary/20 relative">
-                          <img 
-                            src={char.image} 
-                            alt={char.name}
-                            className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-110"
-                            referrerPolicy="no-referrer"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        </div>
-                        
-                        <div className="lg:w-1/2 flex flex-col justify-center">
-                          <div className="text-eg-gold/30 text-[10px] font-mono tracking-[0.4em] mb-4 uppercase">Entity_Record: {char.id}</div>
-                          <h3 className="text-4xl font-bold mb-4 italic group-hover:text-eg-gold transition-colors">{char.name}</h3>
-                          <div className="inline-block px-3 py-1 bg-eg-amber/10 border border-eg-amber/20 rounded-full text-eg-amber text-xs font-bold uppercase tracking-widest mb-6 w-fit">
-                            {char.role}
-                          </div>
-                          <p className="text-lg text-eg-sand/50 leading-relaxed font-light group-hover:text-eg-sand/70 transition-colors">
-                            {char.description}
-                          </p>
-                        </div>
-                      </motion.div>
+                      <CharacterCard key={char.id} char={char} index={index} />
                     ))}
                   </div>
                 </div>
