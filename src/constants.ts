@@ -459,7 +459,7 @@ To touch the Shadow is to see a thousand versions of yourself—some heroes, som
     name: 'Malakar',
     role: 'The Shadowless One',
     description: 'A Former Luminari once destined to guard the Eternal Flames, now corrupted and unanchored from the light. After a failed attempt to claim the raw essence of the Flame, his shadow was torn from him, leaving him as a Shadowless wanderer wrapped in an aura of flickering ember‑dark. He resides neither fully in life nor in the void, a tragic figure of fallen ambition.',
-    image: '/assets/images/malakar.png',
+    image: '/assets/images/malakar2.png',
     category: 'cosmic',
     expandedDetails: `**Origin:** Former Luminari, once destined to draw power from the Eternal Flames.
 **Status:** Shadowless; corrupted by failed communion with the light.
