@@ -14,7 +14,8 @@ import {
   Scroll, 
   Music, 
   Info,
-  Mail
+  Mail,
+  BookOpen
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -25,6 +26,7 @@ const NAV_LINKS = [
   { name: 'Lore', path: '/lore', icon: History },
   { name: 'Galleries', path: '/galleries', icon: ImageIcon },
   { name: 'Original', path: '/original', icon: Scroll },
+  { name: 'Cartoon', path: '/cartoon', icon: BookOpen },
   { name: 'Songs', path: '/songs', icon: Music },
   { name: 'About', path: '/about', icon: Info },
 ];
