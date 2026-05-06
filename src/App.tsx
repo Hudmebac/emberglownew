@@ -22,6 +22,7 @@ import ThankYou from './pages/ThankYou';
 import GalleryDetail from './pages/GalleryDetail';
 import Original from './pages/Original';
 import Songs from './pages/Songs';
+import CartoonReader from './pages/CartoonReader';
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
                 <Route path="/galleries" element={<Galleries />} />
                 <Route path="/galleries/:id" element={<GalleryDetail />} />
                 <Route path="/original" element={<Original />} />
+                <Route path="/cartoon" element={<CartoonReader />} />
                 <Route path="/songs" element={<Songs />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
