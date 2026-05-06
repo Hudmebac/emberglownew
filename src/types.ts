@@ -19,6 +19,7 @@ export interface Character {
   description: string;
   image: string;
   category: 'main' | 'cosmic' | 'supporting';
+  expandedDetails?: string;
 }
 
 export interface LoreEntry {
