@@ -356,7 +356,12 @@ export const CHARACTERS: Character[] = [
     role: 'The spark who becomes a guardian.',
     description: 'A timid desert camel whose soul was ignited by a celestial meteor storm. Once anxious and overlooked, he now carries the radiant "Fire Within"—a primordial spark that allows him to bridge the gap between the physical sands and the mythic realms of memory. He is the reluctant guardian destined to restore the balance of the First Light.',
     image: '/assets/images/earlyconcept2.png',
-    category: 'main'
+    category: 'main',
+    expandedDetails: `Ralph was once a simple caravan camel, defined by the weight of the packs on his back and the safety of the line. Timid and prone to anxiety, he often sought comfort in the long shadows of the dunes rather than the open heat of the day. But during the Great Meteor Storm, he was chosen by a rogue fragment of the First Light.
+
+The transformation was not just physical; it was a soul-level ignition. He became Emberglow, the first of his kind—a bridge between the physical sands and the mythic realms. His "Fire Within" is not a weapon, but a compass that points toward the restoration of balance.
+
+As he journeys through the Desert of Echoes, he is learning that true courage is not the absence of fear, but the ability to shine even when the shadows are longest.`
   },
   {
     id: 'fizzle',
@@ -364,7 +369,12 @@ export const CHARACTERS: Character[] = [
     role: 'Joyful, loyal, and brighter than he knows.',
     description: 'A spirited, meerkat-like creature who serves as the heart of the journey. Brimming with infectious joy and a penchant for elemental mischief, Fizzle is more than just a loyal companion—he is an "Elemental Guardian" in his own right, whose unwavering optimism provides the warmth needed to navigate the coldest corners of the Understar.',
     image: '/assets/images/fizzle.png',
-    category: 'main'
+    category: 'main',
+    expandedDetails: `To the untrained eye, Fizzle is a mere mischief-maker, a blur of fur and laughter in the desert heat. However, his true nature is far more ancient. He is the last of the "Joy-Kindled," a subset of Elemental Guardians who translate the high vibrations of the starlight into the warmth of companionship.
+
+He doesn't just travel with Emberglow; he stabilizes him. Where Ralph's fire is intense and cosmic, Fizzle's is hearth-like and grounding. He carries the "First Spark of Joy," a fragment of the universe's original smile.
+
+Without Fizzle, the weight of the Guardianship would have likely extinguished Emberglow's light long ago.`
   },
   {
     id: 'emberion',
@@ -372,7 +382,12 @@ export const CHARACTERS: Character[] = [
     role: 'The ancient guardian of the Celestial Dunes.',
     description: 'An ancient, towering entity of pure starlight who keeps vigil over the Celestial Dunes. As a Master of the Echoes, Emberion serves as the cosmic mentor to Emberglow, guiding him through the fractures of time and space. He possesses the wisdom of the First Memory and the burden of knowing the cost of every choice.',
     image: '/assets/images/embarion1.png',
-    category: 'main'
+    category: 'main',
+    expandedDetails: `Emberion predates the stars themselves. Composed of living constellations, his body is a celestial map that changes based on the potential of the multiverse. He is the Arch-Sentinel of the High Heavens and the master of the Celestial Echoes.
+
+He carries the "Burden of the First Memory"—the knowledge of everything that was meant to be. This wisdom makes him a stern but necessary mentor. He sees Ralph not as a camel who was lucky, but as a crucial variable in the equation of existence that has been failing for eons.
+
+His guardianship is not just of physical space, but of the integrity of the First Light itself.`
   },
   {
     id: 'new',
@@ -380,7 +395,12 @@ export const CHARACTERS: Character[] = [
     role: 'The smallest spark with the biggest dream.',
     description: 'The smallest fragment of hope ever to escape the Echoing Deep. Though tiny in stature, New possesses the "Dream of the Unseen"—a power that can rewrite the very fabric of reality. He is the silent catalyst for change, reminding even the greatest guardians that the smallest spark can ignite a universe.',
     image: '/assets/images/hollowspark2.png',
-    category: 'main'
+    category: 'main',
+    expandedDetails: `"New" is the paradox of Emberglow. A tiny, hollow spark that escaped the Echoing Deep, he represents the "Dream of the Unseen." He has no past, no memory, and therefore no limits. He is the embodiment of pure potential.
+
+While Ralph guards what is, New births what could be. He is the silent catalyst, often invisible but always the deciding factor when the balance tilts too far toward the shadow.
+
+In the lore of the Elders, it is said that "New" is the first word spoken by the universe after every Great Fracture.`
   },
   {
     id: 'lost-light',
@@ -388,7 +408,12 @@ export const CHARACTERS: Character[] = [
     role: 'A fractured remnant of the First Light.',
     description: 'A shimmering, fractured remnant of the original First Light, wandering the boundaries of the Understar. Burdened by the weight of forgotten epochs, this being is the living key to the ancient vaults of creation. Its presence is a haunting reminder of what the universe was before the Great Fracture.',
     image: '/assets/images/lightflow1.png',
-    category: 'cosmic'
+    category: 'cosmic',
+    expandedDetails: `Once part of the singular brilliance that shattered during the Great Fracture, the Lost Light is a yearning given form. It wanders the boundaries of the Understar, forever searching for its missing pieces.
+
+It is neither sentient nor mindless; it is an instinct for wholeness. To encounter the Lost Light is to feel a profound sense of "Missingness"—a reminder that the world we live in is only a fraction of its original beauty.
+
+It acts as a literal key; only those who carry a piece of the First Light (like Emberglow) can interact with it without being consumed by its hunger for completion.`
   },
   {
     id: 'first-light',
@@ -396,7 +421,12 @@ export const CHARACTERS: Character[] = [
     role: 'The cosmic spark that shaped the world.',
     description: 'The primordial source of all warmth, wisdom, and life. Born from a cosmic vibration, it was once a singular brilliance that shattered to create the realms of memory and sand. Now, its echoes reside in the hearts of true guardians, waiting for the one who can unify its scattered fragments.',
     image: '/assets/images/lightflow2.png',
-    category: 'cosmic'
+    category: 'cosmic',
+    expandedDetails: `The First Light (or the *Sih-Rai*) was the consciousness that preceded everything. It was the vibration that sang the first suns into being. When it shattered, it didn't die; it distributed itself among all living things.
+
+It is the source of all "Spark," the energy that Ralph and the other guardians tap into. To understand the First Light is to understand that everyone is connected by the same thread of ancient, golden fire.
+
+Its shards are hidden in plain sight—in the laughter of a friend, the warmth of the sun, and the courage of the timid.`
   },
   {
     id: 'guardian-who-forgot',
@@ -404,7 +434,12 @@ export const CHARACTERS: Character[] = [
     role: 'A broken protector of the Understar.',
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
     image: '/assets/images/mirrorguardian.png',
-    category: 'cosmic'
+    category: 'cosmic',
+    expandedDetails: `Once known as Solenis the Radiant, this noble protector took the "Vow of the Void" to save the Understar. He traded his identity and his entire timeline for the power to hold back the obsidian tide during the Siege of the Shadows.
+
+He now stands as a monolithic sentinel, guarding a secret he can no longer name. He is the tragic proof that the greatest light often requires the greatest sacrifice. 
+
+He doesn't remember Ralph, but he recognizes the frequency of his spark. He is the anchor that prevents the Understar from drifting entirely into the Echoing Deep.`
   },
   {
     id: 'shadow-of-tomorrow',
@@ -412,7 +447,46 @@ export const CHARACTERS: Character[] = [
     role: 'A fractured future desperate to exist.',
     description: 'A visually striking, translucent echo of a future that has not yet been permitted to exist. Desperate and flickering, it reaches back through the folds of the Celestial Dunes to plead for a path. It is the manifestation of "The Question"—a warning that the future is not a threat, but a choice yet to be made.',
     image: '/assets/images/memorywraths.png',
-    category: 'cosmic'
+    category: 'cosmic',
+    expandedDetails: `The Shadow of Tomorrow is a "Question" manifesting as a silhouette. It is a translucent echo from a timeline that has been pruned from the tree of existence but refuses to fade.
+
+It reaches back through the Celestial Dunes to warn Ralph that the future is not set. It represents the collective anxiety of a universe that hasn't decided what it wants to become.
+
+To touch the Shadow is to see a thousand versions of yourself—some heroes, some failures—reminding the traveler that choice is the only true magic.`
+  },
+  {
+    id: 'malakar',
+    name: 'Malakar',
+    role: 'The Shadowless One',
+    description: 'A Former Luminari once destined to guard the Eternal Flames, now corrupted and unanchored from the light. After a failed attempt to claim the raw essence of the Flame, his shadow was torn from him, leaving him as a Shadowless wanderer wrapped in an aura of flickering ember‑dark. He resides neither fully in life nor in the void, a tragic figure of fallen ambition.',
+    image: '/assets/images/malakar.png',
+    category: 'cosmic',
+    expandedDetails: `**Origin:** Former Luminari, once destined to draw power from the Eternal Flames.
+**Status:** Shadowless; corrupted by failed communion with the light.
+**Alignment:** Fallen / Umbral‑touched
+**Aura:** Flickering ember‑dark, like light trying — and failing — to escape.
+**Threat Level:** High — especially near flame‑based magic.
+
+### Malakar — The Shadowless One
+Malakar was not born in darkness; he was forged by it.
+
+Once, he belonged to the Luminari — a people whose very souls were tethered to living shadows, each one a reflection of their inner truth. Malakar’s shadow was said to be unusually bright, threaded with ember‑gold, marking him as someone destined to draw strength from the Eternal Flames of Emberglow. His path should have led him to become a guardian of light.
+
+But destiny bends easily under the weight of fear.
+
+Malakar’s downfall began when he sought to command the Flames rather than serve them. In a moment of desperation — or ambition, depending on who tells the tale — he attempted the forbidden: to extinguish a fragment of the Eternal Fire and claim its raw essence for himself. The Flames resisted. They recoiled. And in the violent backlash, his shadow was torn from him, ripped away like a living scream.
+
+A Luminari without a shadow is a being unanchored. Unmoored. Lost.
+
+From that moment, Malakar wandered in a half‑existence, unable to feel warmth, unable to see his own reflection, unable to return to the light he once cherished. The absence of his shadow left a hollow in him — a void that the world around him began to fill with whispers, resentment, and the cold pull of the Umbral Veil.
+
+He was not always evil. But every step he took trying to reclaim what he had lost only led him deeper into the dark. The light he once sought to master now recoils from him, and the flames that should have guided him instead cast him in a twisted silhouette that isn’t his own.
+
+Now, Malakar is known as the Shadowless One, a being wrapped in an aura of corrupted emberlight — a reminder of what he tried to steal, and what was stolen from him in return. Some say his true shadow still exists somewhere, wandering the Veil, searching for its lost master. Others whisper that if Malakar ever finds it again, the balance of Emberglow itself will tremble.
+
+But Malakar no longer seeks redemption.
+
+He seeks power — or perhaps, simply a way to feel whole again.`
   }
 ];
 
