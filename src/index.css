@@ -142,18 +142,26 @@
   @apply space-y-6 leading-relaxed text-eg-sand/70 font-light;
 }
 
-.markdown-body h2 {
-  @apply text-4xl font-light text-eg-sand mt-12 mb-6 tracking-tighter;
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  @apply font-display tracking-tight text-eg-sand mt-8 mb-4;
+}
+
+.markdown-body h3 {
+  @apply text-2xl font-normal text-eg-gold;
 }
 
 .markdown-body p {
-  @apply mb-6 text-lg;
+  @apply mb-4 text-lg;
 }
 
 .markdown-body strong {
-  @apply text-eg-gold font-normal;
+  @apply text-eg-amber font-medium;
 }
 
 .markdown-body ul {
-  @apply list-disc list-inside space-y-3;
+  @apply list-disc list-inside space-y-3 my-4;
+}
+
+.markdown-body blockquote {
+  @apply border-l-4 border-eg-amber/30 pl-6 my-8 italic text-eg-sand/40;
 }
