@@ -5,7 +5,7 @@ export const BOOKS: Book[] = [
     id: 'complete-collection',
     title: 'Emberglow: Complete Collection',
     subtitle: 'Books 1-5 & The Universe Guidebook',
-    description: 'The Emberglow series follows Ralph — transformed by a meteor storm into Emberglow, a creature of fire and light. As he learns to control his newfound powers, Emberglow discovers courage, friendship, and the meaning of guardianship in a world that fears what it doesn’t understand.\n\nEach book in the series blends gentle fantasy, emotional growth, and child‑safe adventure, inviting readers aged 6–10 to explore themes of bravery, kindness, and self‑discovery. From glowing dunes to mysterious companions and ancient desert secrets, Emberglow is a journey through wonder — where every spark tells a story.',
+    description: 'The Emberglow series follows Ralph - transformed by a meteor storm into Emberglow, a creature of fire and light. As he learns to control his newfound powers, Emberglow discovers courage, friendship, and the meaning of guardianship in a world that fears what it doesn’t understand.\n\nEach book in the series blends gentle fantasy, emotional growth, and child‑safe adventure, inviting readers aged 6–10 to explore themes of bravery, kindness, and self‑discovery. From glowing dunes to mysterious companions and ancient desert secrets, Emberglow is a journey through wonder - where every spark tells a story.',
     coverImage: '/assets/images/emberglowbundle.png',
     teaser: [
       'The ultimate journey of a timid camel who became the light of a universe.',
@@ -20,12 +20,12 @@ export const BOOKS: Book[] = [
     id: 'the-fire-within',
     title: 'Emberglow: The Fire Within',
     subtitle: 'Book One of the Emberglow Saga',
-    description: 'A meteor storm shatters the night and ignites the spark within a timid desert camel, awakening a fire that will reshape the world. Lost between fear and wonder, Emberglow must learn to control the light now burning in his chest — a light the desert has been waiting for far longer than he ever imagined.',
+    description: 'A meteor storm shatters the night and ignites the spark within a timid desert camel, awakening a fire that will reshape the world. Lost between fear and wonder, Emberglow must learn to control the light now burning in his chest - a light the desert has been waiting for far longer than he ever imagined.',
 coverImage: '/assets/images/emberglowthefirewithin.png',
 teaser: [
   '“The sky was on fire, and for the first time, he felt like he was too.”',
   '“Maybe the desert hadn’t been empty all this time. Maybe it had been waiting.”',
-  '“Every spark begins as a question — and he was finally ready to ask it.”'
+  '“Every spark begins as a question - and he was finally ready to ask it.”'
 ],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHJPV1Q' }
@@ -35,12 +35,12 @@ teaser: [
     id: 'guardian-of-the-sands',
     title: 'Emberglow: Guardian of the Sands',
     subtitle: 'Book Two of the Emberglow Saga',
-    description: 'The desert is shifting — and so is destiny. The Oasis of Echoes, once a shimmering heart of life, is fading. Tremors ripple beneath the dunes as forgotten guardians stir in their ancient sleep. Guided by visions he cannot outrun, Emberglow must journey into ruins swallowed by time, storms that remember the first dawn, and secrets the sands were never meant to reveal. Because the desert doesn’t just need a spark — it needs a guardian.',
+    description: 'The desert is shifting - and so is destiny. The Oasis of Echoes, once a shimmering heart of life, is fading. Tremors ripple beneath the dunes as forgotten guardians stir in their ancient sleep. Guided by visions he cannot outrun, Emberglow must journey into ruins swallowed by time, storms that remember the first dawn, and secrets the sands were never meant to reveal. Because the desert doesn’t just need a spark - it needs a guardian.',
 coverImage: '/assets/images/emberglowguardianofthesands.png',
 teaser: [
-  '“The oasis didn’t reflect his face. It reflected his future — and it was fading.”',
+  '“The oasis didn’t reflect his face. It reflected his future - and it was fading.”',
   '“The desert whispered his name, not as a spark… but as a guardian.”',
-  '“Beneath the dunes, something ancient opened its eyes — and it was waiting for him.”'
+  '“Beneath the dunes, something ancient opened its eyes - and it was waiting for him.”'
 ],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHBQWQN' }
@@ -50,12 +50,12 @@ teaser: [
     id: 'the-first-light',
     title: 'Emberglow: The First Light',
     subtitle: 'Book Three of the Emberglow Saga',
-    description: 'The sky fractures. Stars fall like burning memories. Called beyond the desert’s edge, Emberglow must face the ancient being that birthed all light — and all shadow. In the Celestial Reaches, where constellations breathe and creation remembers its wounds, he discovers that the First Light does not simply awaken… it hungers. To save the world he loves, Emberglow must confront the truth of what he is, what he was made from, and what he might become.',
+    description: 'The sky fractures. Stars fall like burning memories. Called beyond the desert’s edge, Emberglow must face the ancient being that birthed all light - and all shadow. In the Celestial Reaches, where constellations breathe and creation remembers its wounds, he discovers that the First Light does not simply awaken… it hungers. To save the world he loves, Emberglow must confront the truth of what he is, what he was made from, and what he might become.',
 coverImage: '/assets/images/emberglowthefirstlight.png',
 teaser: [
   '“The First Light stirred, and the sky cracked open like a memory breaking.”',
   '“You were made from its hope,” Emberion whispered. “But hope can be dangerous.”',
-  '“When the stars fell, they didn’t burn the sand — they came looking for him.”'
+  '“When the stars fell, they didn’t burn the sand - they came looking for him.”'
 ],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZD6GLDB' }
@@ -65,12 +65,12 @@ teaser: [
     id: 'keeper-of-the-balance',
     title: 'Emberglow: Keeper of the Balance',
     subtitle: 'Book Four of the Emberglow Saga',
-    description: 'A storm that should not exist tears open the desert, dragging Emberglow into the Understar — the ancient heart of the world where forgotten guardians stir, memories fracture, and the truth of creation begins to unravel. In a realm shaped by what the world remembers — and what it has chosen to forget — Emberglow must confront the shadows of every spark that came before him. To restore balance, he must face the one force even the First Light feared: the memory of what was lost.',
+    description: 'A storm that should not exist tears open the desert, dragging Emberglow into the Understar - the ancient heart of the world where forgotten guardians stir, memories fracture, and the truth of creation begins to unravel. In a realm shaped by what the world remembers - and what it has chosen to forget - Emberglow must confront the shadows of every spark that came before him. To restore balance, he must face the one force even the First Light feared: the memory of what was lost.',
 coverImage: '/assets/images/emberglowkeeperofthebalance.png',
 teaser: [
-  '“The storm wasn’t weather. It was memory — and it remembered him.”',
+  '“The storm wasn’t weather. It was memory - and it remembered him.”',
   '“The Understar knows your light,” the forgotten guardian whispered. “And it has been waiting.”',
-  '“Balance is not kept. It is paid for — and someone must pay.”'
+  '“Balance is not kept. It is paid for - and someone must pay.”'
 ],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GZHNWBZ1' }
@@ -80,10 +80,10 @@ teaser: [
     id: 'shadow-of-tomorrow',
     title: 'Emberglow: Shadow of Tomorrow',
     subtitle: 'Book Five of the Emberglow Saga',
-    description: 'Tomorrow breaks. A silent figure appears on the dunes — a fractured future watching Emberglow with impossible intent. As timelines splinter and echoes of what-could-be bleed into the present, Emberglow is forced to confront a truth no guardian has ever faced: the future is not approaching… it is reaching back. And it has chosen him.',
+    description: 'Tomorrow breaks. A silent figure appears on the dunes - a fractured future watching Emberglow with impossible intent. As timelines splinter and echoes of what-could-be bleed into the present, Emberglow is forced to confront a truth no guardian has ever faced: the future is not approaching… it is reaching back. And it has chosen him.',
 coverImage: '/assets/images/emberglowshadowoftomorrow.png',
 teaser: [
-  '“The shadow didn’t move. It didn’t breathe. It simply waited — as if it already knew him.”',
+  '“The shadow didn’t move. It didn’t breathe. It simply waited - as if it already knew him.”',
   '“Tomorrow isn’t a threat,” the whisper said. “It’s a question.”',
   '“Some futures chase you. This one stood still and let him arrive.”'
 ],
@@ -95,10 +95,10 @@ teaser: [
     id: 'universe-guidebook',
     title: 'Emberglow Universe Guidebook',
     subtitle: 'The Definitive Companion',
-    description: 'Journey into the complete mythology of the Emberglow Universe — its origins, realms, guardians, creatures, cosmic laws, and the creative forces that shaped its story. From the Desert of Echoes to the Celestial Reaches, this guidebook unveils the hidden histories, visual lore, character arcs, and behind‑the‑scenes secrets that define the saga. A companion for readers, creators, and explorers who want to understand not just the world… but the light that built it.',
+    description: 'Journey into the complete mythology of the Emberglow Universe - its origins, realms, guardians, creatures, cosmic laws, and the creative forces that shaped its story. From the Desert of Echoes to the Celestial Reaches, this guidebook unveils the hidden histories, visual lore, character arcs, and behind‑the‑scenes secrets that define the saga. A companion for readers, creators, and explorers who want to understand not just the world… but the light that built it.',
 coverImage: '/assets/images/emberglowuniverseguidebook.png',
 teaser: [
-  'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility — and the cosmic truths that bind them together.'
+  'Discover the Desert of Echoes, Celestial Dunes, Oasis of Echoes, Understar, and the Realm of Possibility - and the cosmic truths that bind them together.'
 ],
     buyLinks: [
       { platform: 'Amazon', url: 'https://www.amazon.co.uk/dp/B0GYFXSH2D' }
@@ -354,27 +354,43 @@ export const CHARACTERS: Character[] = [
     id: 'emberglow',
     name: 'Emberglow',
     role: 'The spark who becomes a guardian.',
-    description: 'A timid desert camel whose soul was ignited by a celestial meteor storm. Once anxious and overlooked, he now carries the radiant "Fire Within"—a primordial spark that allows him to bridge the gap between the physical sands and the mythic realms of memory. He is the reluctant guardian destined to restore the balance of the First Light.',
+    description: 'A timid desert camel whose soul was ignited by a celestial meteor storm. Once anxious and overlooked, he now carries the radiant "Fire Within"-a primordial spark that allows him to bridge the gap between the physical sands and the mythic realms of memory. He is the reluctant guardian destined to restore the balance of the First Light.',
     image: '/assets/images/earlyconcept2.png',
     category: 'main',
-    expandedDetails: `Ralph was once a simple caravan camel, defined by the weight of the packs on his back and the safety of the line. Timid and prone to anxiety, he often sought comfort in the long shadows of the dunes rather than the open heat of the day. But during the Great Meteor Storm, he was chosen by a rogue fragment of the First Light.
+    expandedDetails: `**Origin:** The Caravan of the Silver Line / Desert of Echoes
+**Status:** Ascended Guardian; Bearer of the First Spark
+**Alignment:** Lawful Good / Protector
+**Aura:** Radiant amber-gold, pulsing with the rhythm of the First Light.
+**Threat Level:** Low (Protector) / Potentially Infinite (Source-linked)
 
-The transformation was not just physical; it was a soul-level ignition. He became Emberglow, the first of his kind—a bridge between the physical sands and the mythic realms. His "Fire Within" is not a weapon, but a compass that points toward the restoration of balance.
+### The Journey of Ralph
+Ralph was never meant to be a hero. In the long history of the Silver Line caravan, he was known as the camel who looked at his feet more than the horizon. Prone to startling at the rustle of a dry shrub and happiest when tucked safely in the middle of the pack line, his life was defined by the comforting weight of spice bags and the rhythmic clop of hooves on packed sand.
 
-As he journeys through the Desert of Echoes, he is learning that true courage is not the absence of fear, but the ability to shine even when the shadows are longest.`
+Everything changed during the night of the **Great Meteor Storm**.
+
+While the rest of the caravan huddled in fear, a single, rogue fragment of the **First Light**-a piece of the universe's original song-did not strike the sand near Ralph. It struck *him*. The transition was agonizing and beautiful; his timid soul was hollowed out and filled with a primordial fire that the desert had not seen for ten thousand years. He didn't just change; he was ignited.
+
+Now as **Emberglow**, Ralph carries a burden heavier than any spice pack. He is a "Reluctant Bridge"-the only being capable of standing in the physical heat of the dunes while perceiving the fractured echoes of the mythic realms. His fire is a compass, a weapon of last resort, and a promise of warmth. He is learning that bravery isn't the absence of his old anxieties, but the choice to walk into the storm anyway, because he is the only one who can carry the light through it.`
   },
   {
     id: 'fizzle',
     name: 'Fizzle',
     role: 'Joyful, loyal, and brighter than he knows.',
-    description: 'A spirited, meerkat-like creature who serves as the heart of the journey. Brimming with infectious joy and a penchant for elemental mischief, Fizzle is more than just a loyal companion—he is an "Elemental Guardian" in his own right, whose unwavering optimism provides the warmth needed to navigate the coldest corners of the Understar.',
+    description: 'A spirited, meerkat-like creature who serves as the heart of the journey. Brimming with infectious joy and a penchant for elemental mischief, Fizzle is more than just a loyal companion-he is an "Elemental Guardian" in his own right, whose unwavering optimism provides the warmth needed to navigate the coldest corners of the Understar.',
     image: '/assets/images/fizzle.png',
     category: 'main',
-    expandedDetails: `To the untrained eye, Fizzle is a mere mischief-maker, a blur of fur and laughter in the desert heat. However, his true nature is far more ancient. He is the last of the "Joy-Kindled," a subset of Elemental Guardians who translate the high vibrations of the starlight into the warmth of companionship.
+    expandedDetails: `**Origin:** The Joy-Kindled Thickets of the Understar
+**Status:** Elemental Guardian (Joy-Kindled)
+**Alignment:** Chaotic Good / Loyal Companion
+**Aura:** Sparking violet and silver, like static electricity mixed with laughter.
+**Threat Level:** Moderate (Mischievous but fiercely protective)
 
-He doesn't just travel with Emberglow; he stabilizes him. Where Ralph's fire is intense and cosmic, Fizzle's is hearth-like and grounding. He carries the "First Spark of Joy," a fragment of the universe's original smile.
+### The Heart of the Spark
+To the casual observer, Fizzle is a blur of purple fur and chaotic energy, more interested in chasing glowing beetles than saving the universe. However, Fizzle belongs to an ancient race of spirits known as the **Joy-Kindled**-entities born from the very first smile the universe ever made.
 
-Without Fizzle, the weight of the Guardianship would have likely extinguished Emberglow's light long ago.`
+While Emberglow provides the raw power of the stars, Fizzle provides the **frequency of hope**. He is a stabilizer. When the weight of the First Light threatens to overwhelm Ralph's camel soul, Fizzle’s antics and unwavering optimism act as a grounding wire, bleeding off the excess cosmic tension. He doesn't just travel with Ralph; he keeps him whole.
+
+He carries the **First Spark of Joy**, allowing him to manifest small elemental tricks-teleporting short distances, creating distractions of light, and sensing the emotional truth of any creature they encounter. He is the proof that even in the face of ancient shadows, joy is a formidable element.`
   },
   {
     id: 'emberion',
@@ -383,24 +399,38 @@ Without Fizzle, the weight of the Guardianship would have likely extinguished Em
     description: 'An ancient, towering entity of pure starlight who keeps vigil over the Celestial Dunes. As a Master of the Echoes, Emberion serves as the cosmic mentor to Emberglow, guiding him through the fractures of time and space. He possesses the wisdom of the First Memory and the burden of knowing the cost of every choice.',
     image: '/assets/images/embarion1.png',
     category: 'main',
-    expandedDetails: `Emberion predates the stars themselves. Composed of living constellations, his body is a celestial map that changes based on the potential of the multiverse. He is the Arch-Sentinel of the High Heavens and the master of the Celestial Echoes.
+    expandedDetails: `**Origin:** The Void Before Time / Celestial Reaches
+**Status:** Arch-Sentinel of the High Heavens
+**Alignment:** Neutral Good / Cosmic Mentor
+**Aura:** Blinding stellar white, shifting through the twelve true constellations.
+**Threat Level:** Extreme (Architectural Class)
 
-He carries the "Burden of the First Memory"—the knowledge of everything that was meant to be. This wisdom makes him a stern but necessary mentor. He sees Ralph not as a camel who was lucky, but as a crucial variable in the equation of existence that has been failing for eons.
+### The Arch-Sentinel
+Emberion is not a biological creature; he is a living constellation given a semi-physical form. He predates the creation of the Desert of Echoes and remembers when the First Light was a single, unbroken sun. As the Master of the Echoes, his duty is to watch the lines of time and ensure the universe doesn't unravel at its seams.
 
-His guardianship is not just of physical space, but of the integrity of the First Light itself.`
+He has watched a thousand "potential" guardians fail before Ralph arrived. His stern demeanor comes from a place of deep cosmic sorrow-he knows exactly what happens when the balance fails. He views himself not as a teacher, but as a sculptor, trying to shape Ralph into the anchor the universe needs.
+
+His body is a celestial map. It is whispered that if Emberion ever blinks, a star somewhere in the galaxy goes out. He carries the **Burden of the First Memory**, the absolute knowledge of everything that was meant to be, which makes him the loneliest being in the Celestial Reaches.`
   },
   {
     id: 'new',
     name: 'New',
     role: 'The smallest spark with the biggest dream.',
-    description: 'The smallest fragment of hope ever to escape the Echoing Deep. Though tiny in stature, New possesses the "Dream of the Unseen"—a power that can rewrite the very fabric of reality. He is the silent catalyst for change, reminding even the greatest guardians that the smallest spark can ignite a universe.',
+    description: 'The smallest fragment of hope ever to escape the Echoing Deep. Though tiny in stature, New possesses the "Dream of the Unseen"-a power that can rewrite the very fabric of reality. He is the silent catalyst for change, reminding even the greatest guardians that the smallest spark can ignite a universe.',
     image: '/assets/images/hollowspark2.png',
     category: 'main',
-    expandedDetails: `"New" is the paradox of Emberglow. A tiny, hollow spark that escaped the Echoing Deep, he represents the "Dream of the Unseen." He has no past, no memory, and therefore no limits. He is the embodiment of pure potential.
+    expandedDetails: `**Origin:** The Echoing Deep (Manifested Thought)
+**Status:** Paradoxical Seed; Catalyst of Change
+**Alignment:** True Neutral / Pure Potential
+**Aura:** Hollow white light that draws in surrounding colors.
+**Threat Level:** Low (Currently) / Reality-Altering (Potential)
 
-While Ralph guards what is, New births what could be. He is the silent catalyst, often invisible but always the deciding factor when the balance tilts too far toward the shadow.
+### The Unwritten Page
+"New" is a creature that shouldn't exist. He was born from a single, hopeful thought that escaped the **Echoing Deep**-the ocean of forgotten futures. Unlike everything else in the Emberglow universe, New has no history, no precedents, and no predetermined path. He is a manifest variable.
 
-In the lore of the Elders, it is said that "New" is the first word spoken by the universe after every Great Fracture.`
+Because he has no past to tether him, New is capable of "Small Miracles"-minor rewrites of reality based on simple, pure desires. He is the silent catalyst of the group. Often appearing as a tiny, floating spark, he represents the "Dream of the Unseen."
+
+In the grand tapestry of Emberion's maps, New is a blank spot that keeps moving. He reminds the other guardians that while the past is written in stone and the present is etched in sand, the future is still a choice.`
   },
   {
     id: 'lost-light',
@@ -409,11 +439,18 @@ In the lore of the Elders, it is said that "New" is the first word spoken by the
     description: 'A shimmering, fractured remnant of the original First Light, wandering the boundaries of the Understar. Burdened by the weight of forgotten epochs, this being is the living key to the ancient vaults of creation. Its presence is a haunting reminder of what the universe was before the Great Fracture.',
     image: '/assets/images/lightflow1.png',
     category: 'cosmic',
-    expandedDetails: `Once part of the singular brilliance that shattered during the Great Fracture, the Lost Light is a yearning given form. It wanders the boundaries of the Understar, forever searching for its missing pieces.
+    expandedDetails: `**Origin:** The Great Fracture (Cosmic Remnant)
+**Status:** Wandering Anomaly; Relational Key
+**Alignment:** Unaligned / Instinctual
+**Aura:** Shimmering, translucent gold that distorts local gravity.
+**Threat Level:** High (Environmental hazard)
 
-It is neither sentient nor mindless; it is an instinct for wholeness. To encounter the Lost Light is to feel a profound sense of "Missingness"—a reminder that the world we live in is only a fraction of its original beauty.
+### The Searching Splinter
+The Lost Light is a sentient yearning. When the First Light shattered during the Great Fracture, most of its essence was absorbed into living souls or stars. However, some fragments were too large to be absorbed and too small to remain whole. This being is one of those fragments.
 
-It acts as a literal key; only those who carry a piece of the First Light (like Emberglow) can interact with it without being consumed by its hunger for completion.`
+It wanders the boundaries of the **Understar**, acting as a sort of cosmic ghost. It doesn't have an ego or a name, only a drive to return to the source. It is incredibly dangerous to touch; its hunger for completion can inadvertently drain the life from anyone who isn't already anchored to the First Spark.
+
+For Emberglow, the Lost Light is more than a hazard; it is a key. It responds to the fire in Ralph’s chest, acting as a living compass towards the most ancient, locked vaults of creation where the secrets of the balance are hidden.`
   },
   {
     id: 'first-light',
@@ -422,11 +459,18 @@ It acts as a literal key; only those who carry a piece of the First Light (like 
     description: 'The primordial source of all warmth, wisdom, and life. Born from a cosmic vibration, it was once a singular brilliance that shattered to create the realms of memory and sand. Now, its echoes reside in the hearts of true guardians, waiting for the one who can unify its scattered fragments.',
     image: '/assets/images/lightflow2.png',
     category: 'cosmic',
-    expandedDetails: `The First Light (or the *Sih-Rai*) was the consciousness that preceded everything. It was the vibration that sang the first suns into being. When it shattered, it didn't die; it distributed itself among all living things.
+    expandedDetails: `**Origin:** Primeval Singularity
+**Status:** The Universal Source (Fragmented)
+**Alignment:** Pure Light / Creative Force
+**Aura:** Absolute Golden Radiance.
+**Threat Level:** N/A (The Foundation of Existence)
 
-It is the source of all "Spark," the energy that Ralph and the other guardians tap into. To understand the First Light is to understand that everyone is connected by the same thread of ancient, golden fire.
+### The Mother of Suns
+The First Light, also known in the Elder Glyphs as the **Sih-Rai**, is the consciousness that sang the first suns into being. It was once a singular brilliance of infinite volume and warmth. The lore tells us that the First Light did not break by accident-it shattered by choice, sacrificing its unity so that the universe could have diversity, choice, and life.
 
-Its shards are hidden in plain sight—in the laughter of a friend, the warmth of the sun, and the courage of the timid.`
+It is the source of all "Spark" in the Emberglow universe. Every act of kindness, every moment of bravery, and every creative thought is a minor activation of a shard of the First Light. It is not an entity you can talk to, but a frequency you can align with.
+
+Ralph’s transformation into Emberglow was essentially a "Re-tuning" of his camel soul to the high-frequency vibration of this original light. To understand the First Light is to realize that no soul is truly alone, as all are connected by the same golden thread of ancient fire.`
   },
   {
     id: 'guardian-who-forgot',
@@ -435,24 +479,38 @@ Its shards are hidden in plain sight—in the laughter of a friend, the warmth o
     description: 'A once-noble protector of the Understar whose identity was eroded by the creeping shadows of time. He stands as a silent, monolithic sentinel at the gates of memory, guarding a treasure he can no longer remember. His sorrow is the anchor that keeps the forgotten depths from drifting into total oblivion.',
     image: '/assets/images/mirrorguardian.png',
     category: 'cosmic',
-    expandedDetails: `Once known as Solenis the Radiant, this noble protector took the "Vow of the Void" to save the Understar. He traded his identity and his entire timeline for the power to hold back the obsidian tide during the Siege of the Shadows.
+    expandedDetails: `**Origin:** The Oasis of Echoes (Pre-Fracture)
+**Status:** Nameless Sentinel; The Living Anchor
+**Alignment:** Lawful Neutral / Tragic Guardian
+**Aura:** Faded, stonelike grey with flickers of dying starlight.
+**Threat Level:** High (Defensive only)
 
-He now stands as a monolithic sentinel, guarding a secret he can no longer name. He is the tragic proof that the greatest light often requires the greatest sacrifice. 
+### The Vow of the Void
+Once, he was **Solenis the Radiant**, the most beloved protector of the Understar. During the **Siege of the Shadows**, when the obsidian tide threatened to swallow the world's heart, the defenses were failing. Solenis realized that to seal the breach, a guardian had to offer up their own history as a binding agent.
 
-He doesn't remember Ralph, but he recognizes the frequency of his spark. He is the anchor that prevents the Understar from drifting entirely into the Echoing Deep.`
+He took the **Vow of the Void**. He traded his name, his family, his memories, and his entire place in time for the power to become a monolithic anchor. He succeeded, but the cost was absolute.
+
+He now stands at the gates of memory, guarding a treasure he can no longer name. He doesn't remember why he is there, only that he *must* be. He represents the ultimate sacrifice of the Guardianship-the loss of the self to preserve the all. When Emberglow encounters him, the Guardian doesn't recognize him, but he stands aside, sensing a frequency of light that he once, in a life he cannot recall, loved more than anything.`
   },
   {
     id: 'shadow-of-tomorrow',
     name: 'The Shadow of Tomorrow',
     role: 'A fractured future desperate to exist.',
-    description: 'A visually striking, translucent echo of a future that has not yet been permitted to exist. Desperate and flickering, it reaches back through the folds of the Celestial Dunes to plead for a path. It is the manifestation of "The Question"—a warning that the future is not a threat, but a choice yet to be made.',
+    description: 'A visually striking, translucent echo of a future that has not yet been permitted to exist. Desperate and flickering, it reaches back through the folds of the Celestial Dunes to plead for a path. It is the manifestation of "The Question"-a warning that the future is not a threat, but a choice yet to be made.',
     image: '/assets/images/memorywraths.png',
     category: 'cosmic',
-    expandedDetails: `The Shadow of Tomorrow is a "Question" manifesting as a silhouette. It is a translucent echo from a timeline that has been pruned from the tree of existence but refuses to fade.
+    expandedDetails: `**Origin:** Future Fracture PD-707 (Potential Timeline)
+**Status:** Temporal Mirage; Manifested Warning
+**Alignment:** Unaligned / Cautionary
+**Aura:** Translucent violet-black, flickering like a dying film reel.
+**Threat Level:** Moderate (Psychological impact)
 
-It reaches back through the Celestial Dunes to warn Ralph that the future is not set. It represents the collective anxiety of a universe that hasn't decided what it wants to become.
+### The Question Manifest
+The Shadow of Tomorrow is not a creature of darkness, but a creature of **Anxiety**. It is a translucent echo from a timeline where Ralph failed to master the fire-a version of the future that has been pruned from reality but refuses to stop existing. It is the physical manifestation of "The Question."
 
-To touch the Shadow is to see a thousand versions of yourself—some heroes, some failures—reminding the traveler that choice is the only true magic.`
+It constanty reaches back through the folds of the Celestial Dunes, trying to touch the present. It doesn't want to kill Emberglow; it wants to be *corrected*. It acts as a silent warning that the future is not a destination you arrive at, but a path you pave with every choice.
+
+To stand within the Shadow's aura is to see a thousand versions of your own life-some where you are a king, some where you are a coward. It reminds the traveler that destiny is not a threat, but a choice yet to be made. It disappears the moment a firm, hopeful decision is made in the present.`
   },
   {
     id: 'malakar',
@@ -463,30 +521,30 @@ To touch the Shadow is to see a thousand versions of yourself—some heroes, som
     category: 'cosmic',
     expandedDetails: `**Origin:** Former Luminari, once destined to draw power from the Eternal Flames.
 **Status:** Shadowless; corrupted by failed communion with the light.
-**Alignment:** Fallen / Umbral‑touched
-**Aura:** Flickering ember‑dark, like light trying — and failing — to escape.
-**Threat Level:** High — especially near flame‑based magic.
+**Alignment:** Fallen / Umbral-touched
+**Aura:** Flickering ember-dark, like light trying - and failing - to escape.
+**Threat Level:** High - especially near flame-based magic.
 
-### Malakar — The Shadowless One
+### Malakar - The Shadowless One
 Malakar was not born in darkness; he was forged by it.
 
-Once, he belonged to the Luminari — a people whose very souls were tethered to living shadows, each one a reflection of their inner truth. Malakar’s shadow was said to be unusually bright, threaded with ember‑gold, marking him as someone destined to draw strength from the Eternal Flames of Emberglow. His path should have led him to become a guardian of light.
+Once, he belonged to the Luminari - a people whose very souls were tethered to living shadows, each one a reflection of their inner truth. Malakar’s shadow was said to be unusually bright, threaded with ember‑gold, marking him as someone destined to draw strength from the Eternal Flames of Emberglow. His path should have led him to become a guardian of light.
 
 But destiny bends easily under the weight of fear.
 
-Malakar’s downfall began when he sought to command the Flames rather than serve them. In a moment of desperation — or ambition, depending on who tells the tale — he attempted the forbidden: to extinguish a fragment of the Eternal Fire and claim its raw essence for himself. The Flames resisted. They recoiled. And in the violent backlash, his shadow was torn from him, ripped away like a living scream.
+Malakar’s downfall began when he sought to command the Flames rather than serve them. In a moment of desperation - or ambition, depending on who tells the tale - he attempted the forbidden: to extinguish a fragment of the Eternal Fire and claim its raw essence for himself. The Flames resisted. They recoiled. And in the violent backlash, his shadow was torn from him, ripped away like a living scream.
 
 A Luminari without a shadow is a being unanchored. Unmoored. Lost.
 
-From that moment, Malakar wandered in a half‑existence, unable to feel warmth, unable to see his own reflection, unable to return to the light he once cherished. The absence of his shadow left a hollow in him — a void that the world around him began to fill with whispers, resentment, and the cold pull of the Umbral Veil.
+From that moment, Malakar wandered in a half‑existence, unable to feel warmth, unable to see his own reflection, unable to return to the light he once cherished. The absence of his shadow left a hollow in him - a void that the world around him began to fill with whispers, resentment, and the cold pull of the Umbral Veil.
 
 He was not always evil. But every step he took trying to reclaim what he had lost only led him deeper into the dark. The light he once sought to master now recoils from him, and the flames that should have guided him instead cast him in a twisted silhouette that isn’t his own.
 
-Now, Malakar is known as the Shadowless One, a being wrapped in an aura of corrupted emberlight — a reminder of what he tried to steal, and what was stolen from him in return. Some say his true shadow still exists somewhere, wandering the Veil, searching for its lost master. Others whisper that if Malakar ever finds it again, the balance of Emberglow itself will tremble.
+Now, Malakar is known as the Shadowless One, a being wrapped in an aura of corrupted emberlight - a reminder of what he tried to steal, and what was stolen from him in return. Some say his true shadow still exists somewhere, wandering the Veil, searching for its lost master. Others whisper that if Malakar ever finds it again, the balance of Emberglow itself will tremble.
 
 But Malakar no longer seeks redemption.
 
-He seeks power — or perhaps, simply a way to feel whole again.`
+He seeks power - or perhaps, simply a way to feel whole again.`
   }
 ];
 
@@ -495,14 +553,14 @@ export const LORE: LoreEntry[] = [
     id: 'first-light', 
     title: 'The First Light', 
     description: 'The primordial spark of pure possibility. Before time was measured in breaths, the First Light was the singular brilliance that shattered, scattering the fragments of creation across the void. Every sun, every soul, and every grain of sand is a shard of this original fire.', 
-    expandedDescription: 'In the era before the Great Fracture, there was only the First Light—a consciousness of absolute warmth and infinite volume. It didn\'t just exist; it sang the universe into potential. When the vibration reached its zenith, the Light underwent a voluntary cellular division, creating the billion-fold sparks that now inhabit our reality. This event, often called the "Sih-Rai" or The Breath of Stars, ensures that every living being carries a microscopic anchor to the source of all things.',
+    expandedDescription: 'In the era before the Great Fracture, there was only the First Light-a consciousness of absolute warmth and infinite volume. It didn\'t just exist; it sang the universe into potential. When the vibration reached its zenith, the Light underwent a voluntary cellular division, creating the billion-fold sparks that now inhabit our reality. This event, often called the "Sih-Rai" or The Breath of Stars, ensures that every living being carries a microscopic anchor to the source of all things.',
     category: 'origins' 
   },
   { 
     id: 'first-memory', 
     title: 'The First Memory', 
-    description: 'A haunting, cosmic vibration left in the wake of the Great Fracture. It is the repository of all that was meant to be—a blueprint of a perfect universe that now exists only in the dreams of guardians and the whispers of the wind.', 
-    expandedDescription: 'The First Memory is not a thought, but a physical frequency that resonates within the core of every planet in the Emberglow Universe. It holds the "Lost Blueprint"—the original intended harmony of the galaxies before the shadow of the Echoing Deep began to pull at the edges of existence. Those who can tune their souls to this frequency are granted visions of the world as it was truly meant to be, a clarity that often leads to both great wisdom and deep sorrow.',
+    description: 'A haunting, cosmic vibration left in the wake of the Great Fracture. It is the repository of all that was meant to be-a blueprint of a perfect universe that now exists only in the dreams of guardians and the whispers of the wind.', 
+    expandedDescription: 'The First Memory is not a thought, but a physical frequency that resonates within the core of every planet in the Emberglow Universe. It holds the "Lost Blueprint"-the original intended harmony of the galaxies before the shadow of the Echoing Deep began to pull at the edges of existence. Those who can tune their souls to this frequency are granted visions of the world as it was truly meant to be, a clarity that often leads to both great wisdom and deep sorrow.',
     category: 'origins' 
   },
   { 
@@ -522,7 +580,7 @@ export const LORE: LoreEntry[] = [
   { 
     id: 'guardian-forgot-lore', 
     title: 'The Guardian Who Forgot', 
-    description: 'A monolithic, broken protector who stands at the gates of the Understar. Having traded his memories for the power to hold back the obsidian tide, he guards a secret he can no longer name—a tragic figure of infinite loyalty and lost identity.', 
+    description: 'A monolithic, broken protector who stands at the gates of the Understar. Having traded his memories for the power to hold back the obsidian tide, he guards a secret he can no longer name-a tragic figure of infinite loyalty and lost identity.', 
     expandedDescription: 'Once known as Solenis the Radiant, this guardian chose the "Vow of the Void" during the Siege of the Shadows. To gain the strength to seal the breach between the worlds, he had to offer up his own timeline as fuel. Now, he is a nameless sentinel of stone and starlight. He recognizes the melody of the First Light but can no longer remember why it makes him weep. He is the ultimate symbol of the sacrifice required to protect the universe.',
     category: 'guardians' 
   },
@@ -557,7 +615,7 @@ export const LORE: LoreEntry[] = [
   { 
     id: 'understar', 
     title: 'The Understar', 
-    description: 'The inverse of the heavens—a subterranean galaxy of obsidian stars and light-locked trees. It is the heart of the world, where the gravity of memory is strongest and where the origins of the spark are kept in perpetual silence.', 
+    description: 'The inverse of the heavens-a subterranean galaxy of obsidian stars and light-locked trees. It is the heart of the world, where the gravity of memory is strongest and where the origins of the spark are kept in perpetual silence.', 
     expandedDescription: 'The Understar is not a cave, but a vast interior space that exists "inside" the gravity of the First Memory. Its stars do not emit light; they absorb despair. The trees of this realm, known as Shadow-Oaks, grow roots into the Echoing Deep and branches into the physical world, acting as filters for the cosmic soul. Navigating the Understar requires a light that comes from within, as external torches are instantly snuffed by the density of the silence.',
     category: 'realms' 
   },
@@ -636,9 +694,15 @@ export const GALLERIES: Gallery[] = [
     images: [
       '/assets/images/withwings.png',
       '/assets/images/fizzle.png',
+      '/assets/images/malakar1.png',
+      '/assets/images/malakar2.png',
       '/assets/images/embarion1.png',
       '/assets/images/embarion2.png',
       '/assets/images/embarion3.png',
+      '/assets/images/emberglow.png',
+      '/assets/images/mirrorguardian.png',
+      '/assets/images/oasiskeepers.png',
+      '/assets/images/earlyconcept2.png',
       '/assets/images/fizzleearly1.png',
       '/assets/images/fizzleearly2.png',
       '/assets/images/hollowspark1.png',
@@ -657,7 +721,7 @@ export const GALLERIES: Gallery[] = [
       '/assets/images/sandwalkers.png',
       '/assets/images/emberstorm.png',
       '/assets/images/emberstorm2.png',
-      '/assets/images/hollowspark2.png',
+      '/assets/images/hollowspark1.png',
       '/assets/images/hollowspark2.png',
       '/assets/images/guardiancrest.png',
       '/assets/images/guardianwing1.png'
@@ -673,7 +737,13 @@ export const GALLERIES: Gallery[] = [
       '/assets/images/futuremapping.png',
       '/assets/images/echoformation.png',
       '/assets/images/emberglowawakensinthedesert.png',
-      '/assets/images/emberglowshadowoftomorrow.png'
+      '/assets/images/emberglowshadowoftomorrow.png',
+      '/assets/images/memorydecay.png',
+      '/assets/images/memorythread.png',
+      '/assets/images/memorythread1.png',
+      '/assets/images/memorythread2.png',
+      '/assets/images/memorytree.png',
+      '/assets/images/realofpossibilities.png'
     ]
   }
 ];
@@ -692,7 +762,7 @@ export const CHAPTERS: Chapter[] = [
   {
     id: 3,
     title: "Chapter 3: The Rise of Emberglow",
-    content: "In the beginning, Emberglow felt like a stranger in his own body. He would accidentally ignite the ground beneath him when he was excited or frightened. The other creatures of the desert watched in awe and fear, unsure of what to make of this new, fiery being. Emberglow felt lonely and misunderstood, but he was determined to master his new abilities. He longed for the companionship of his fellow camels and the sense of belonging he had once taken for granted. The isolation weighed heavily on him, and he often reminisced about the laughter and camaraderie of the caravan.\n\nDetermined to master his abilities, Emberglow embarked on a journey of trial and error. He practiced day and night, learning to focus his energy and channel the flames. There were moments of failure—times when he singed his own fur or accidentally set a bush ablaze. But with each setback, he grew more resilient. Emberglow discovered that by taking deep breaths and concentrating, he could control the intensity of the flames, transforming his fear into a powerful tool for good. The desert became his training ground, and he pushed himself to the limits, determined to harness the fire within.\n\nThrough perseverance, Emberglow began to understand the rhythm of his powers. He learned to summon small flames at will, creating beautiful patterns in the air. With time, he discovered that he could use his fire not just for show, but to protect those he cared about. The once timid camel transformed into a guardian of the desert, using his powers to ward off threats and help those in need. Emberglow's confidence grew, and he began to embrace his new identity, realizing that he was destined for greatness. The desert creatures began to notice his bravery, and whispers of the fiery guardian spread across the sands.\n\nAs Emberglow mastered his skills, he became a legend among the desert creatures. They spoke of the mythical creature who could control fire, illuminating the night with his glowing presence. Emberglow had not only embraced his new identity but had also become a symbol of hope and strength in the vast desert. The creatures of the desert began to look up to Emberglow, knowing that he would protect them from harm, and they shared tales of his bravery around their campfires. Emberglow felt a sense of purpose, knowing that he was making a difference in the lives of those around him.\n\nEmberglow's journey was not without its challenges. He encountered various threats, from sandstorms to predators, and each time he used his powers to protect himself and others. He learned to create fire barriers to shield against the wind and to use his flames to scare off dangerous animals. With each victory, Emberglow's reputation as a guardian of the desert grew stronger, and he felt a deep sense of responsibility for the creatures who relied on him. The desert was no longer just a vast expanse of sand; it was a home filled with friends and allies who looked to him for protection.\n\nOne day, while exploring a hidden valley, Emberglow came across a group of desert creatures in distress. A pack of jackals had cornered a family of fennec foxes, and the situation looked dire. Without hesitation, Emberglow charged into the fray, using his fire powers to create a protective barrier around the foxes. The jackals, startled by the sudden appearance of flames, retreated into the shadows, and Emberglow felt a surge of pride for having saved the day. The fennec foxes, grateful for his bravery, invited him to join their community, and Emberglow realized that he had found a new family among the desert creatures."
+    content: "In the beginning, Emberglow felt like a stranger in his own body. He would accidentally ignite the ground beneath him when he was excited or frightened. The other creatures of the desert watched in awe and fear, unsure of what to make of this new, fiery being. Emberglow felt lonely and misunderstood, but he was determined to master his new abilities. He longed for the companionship of his fellow camels and the sense of belonging he had once taken for granted. The isolation weighed heavily on him, and he often reminisced about the laughter and camaraderie of the caravan.\n\nDetermined to master his abilities, Emberglow embarked on a journey of trial and error. He practiced day and night, learning to focus his energy and channel the flames. There were moments of failure-times when he singed his own fur or accidentally set a bush ablaze. But with each setback, he grew more resilient. Emberglow discovered that by taking deep breaths and concentrating, he could control the intensity of the flames, transforming his fear into a powerful tool for good. The desert became his training ground, and he pushed himself to the limits, determined to harness the fire within.\n\nThrough perseverance, Emberglow began to understand the rhythm of his powers. He learned to summon small flames at will, creating beautiful patterns in the air. With time, he discovered that he could use his fire not just for show, but to protect those he cared about. The once timid camel transformed into a guardian of the desert, using his powers to ward off threats and help those in need. Emberglow's confidence grew, and he began to embrace his new identity, realizing that he was destined for greatness. The desert creatures began to notice his bravery, and whispers of the fiery guardian spread across the sands.\n\nAs Emberglow mastered his skills, he became a legend among the desert creatures. They spoke of the mythical creature who could control fire, illuminating the night with his glowing presence. Emberglow had not only embraced his new identity but had also become a symbol of hope and strength in the vast desert. The creatures of the desert began to look up to Emberglow, knowing that he would protect them from harm, and they shared tales of his bravery around their campfires. Emberglow felt a sense of purpose, knowing that he was making a difference in the lives of those around him.\n\nEmberglow's journey was not without its challenges. He encountered various threats, from sandstorms to predators, and each time he used his powers to protect himself and others. He learned to create fire barriers to shield against the wind and to use his flames to scare off dangerous animals. With each victory, Emberglow's reputation as a guardian of the desert grew stronger, and he felt a deep sense of responsibility for the creatures who relied on him. The desert was no longer just a vast expanse of sand; it was a home filled with friends and allies who looked to him for protection.\n\nOne day, while exploring a hidden valley, Emberglow came across a group of desert creatures in distress. A pack of jackals had cornered a family of fennec foxes, and the situation looked dire. Without hesitation, Emberglow charged into the fray, using his fire powers to create a protective barrier around the foxes. The jackals, startled by the sudden appearance of flames, retreated into the shadows, and Emberglow felt a surge of pride for having saved the day. The fennec foxes, grateful for his bravery, invited him to join their community, and Emberglow realized that he had found a new family among the desert creatures."
   },
   {
     id: 4,
