@@ -553,36 +553,18 @@ He seeks power - or perhaps, simply a way to feel whole again.`
     name: 'Lumina',
     role: 'The Radiant Phoenix',
     description: 'A radiant phoenix whose feathers glow with a brilliant light that can mend both body and spirit. Lumina is the guardian of the Celestial Springs, where the first drops of liquid starlight touch the world.',
-    image: '/assets/images/starfall1.png',
+    image: '/assets/images/lumina.png',
     category: 'cosmic',
     expandedDetails: `**Origin:** The Celestial Springs / High Reaches
 **Status:** High Priestess of the Radiant Dawn
 **Alignment:** Neutral Good / Healer
-**Aura:** Brilliant pearlescent white with pulses of soft rose.
+**Aura:** Brilliant pearlescent white and purple with pulses of soft rose.
 **Threat Level:** Low (Healer)
 
 ### Lumina - The Radiant Phoenix
 Lumina is the physical manifestation of the universe's mercy. While Emberion watches the timeline and Emberglow guards the physical sands, Lumina ensures that the souls caught between them do not flicker out.
 
 She resides in the **Celestial Springs**, a hidden oasis in the upper atmosphere where the atmosphere is pure light. Her song is said to be the only thing that can calm a rampaging Emberstorm. She joined the quest when she saw the fracture in the First Light beginning to grow, realizing that even the most radiant healing cannot fix a world that has lost its center. She represents the "Warmth" of the fire, the aspect that nurtures rather than consumes.`
-  },
-  {
-    id: 'stoneclaw',
-    name: 'Stoneclaw',
-    role: 'Sentinel of the Iron Peaks',
-    description: 'A mighty griffin of stone and sky, charged with guarding the physical boundaries of the Desert of Echoes. His strength is as unyielding as the mountains he calls home.',
-    image: '/assets/images/sandwalkers.png',
-    category: 'supporting',
-    expandedDetails: `**Origin:** The Iron Peaks / Outer Rim
-**Status:** Captain of the Perimeter Guard
-**Alignment:** Neutral / Warrior
-**Aura:** Solid slate grey with sparks of flint-fire.
-**Threat Level:** High (Combat specialist)
-
-### Stoneclaw - The Unyielding Sentinel
-Stoneclaw is the oldest of the physical guardians. Born from a mountain peak that was struck by the very first meteor storm, he is half-stone and half-spirit. He has no interest in cosmic maps or spiritual frequencies; his duty is simple: if it threatens the caravan, he ends it.
-
-He views Emberglow with a mix of respect and skepticism, wondering if a camel-soul can truly carry the weight of a sun. However, his loyalty once pledged is absolute. Stoneclaw provides the raw physical power the group needs when the threats become too solid for magic alone to handle.`
   }
 ];
 
