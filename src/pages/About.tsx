@@ -34,7 +34,7 @@ export default function About() {
                 The Mythic <span className="text-eg-gold">Tapestry</span>
               </h1>
               <p className="text-2xl md:text-3xl text-eg-sand/40 max-w-4xl mx-auto font-light leading-relaxed text-balance">
-                The Emberglow Universe is not just a story—it is a cosmic vibration. A cinematic saga where every spark carries the weight of a thousand worlds, and every memory shapes the fabric of reality.
+                The Emberglow Universe is not just a story-it is a cosmic vibration. A cinematic saga where every spark carries the weight of a thousand worlds, and every memory shapes the fabric of reality.
               </p>
             </motion.div>
 
@@ -145,7 +145,7 @@ export default function About() {
                       <br/><br/>
                       At first it was just a camel with a tiny glowing spot. Then I thought, “What if the glow is actually fire?” And then, “What if the fire can think?” And then everything went crazy in my head. The camel got wings, and powers, and a whole world that sort of popped up around him like it was waiting for me to notice it.
                       <br/><br/>
-                      I wasn’t trying to make a whole universe. I was literally just trying to finish my homework. But every time I drew something, I got another idea, and then another one, like Emberglow was whispering secrets to me. Soon the camel wasn’t just a camel anymore — he became Emberglow, and he had friends, and enemies, and deserts that remember things, and skies that break like glass when magic gets too strong.
+                      I wasn’t trying to make a whole universe. I was literally just trying to finish my homework. But every time I drew something, I got another idea, and then another one, like Emberglow was whispering secrets to me. Soon the camel wasn’t just a camel anymore - he became Emberglow, and he had friends, and enemies, and deserts that remember things, and skies that break like glass when magic gets too strong.
                       <br/><br/>
                       My teacher said I “went a bit overboard,” but I think Emberglow was already real in my brain. I just finally started drawing fast enough to keep up.
                     </p>
@@ -165,7 +165,7 @@ export default function About() {
                     
                     <div className="space-y-6 text-lg text-eg-sand/50 font-light">
                       <p>
-                        When I make worlds, I start with a feeling first — like excitement, or mystery, or that warm glow you get when you’re holding a torch in the dark. Then I build everything around that feeling, like stacking blocks until it becomes a whole place you can walk around in.
+                        When I make worlds, I start with a feeling first - like excitement, or mystery, or that warm glow you get when you’re holding a torch in the dark. Then I build everything around that feeling, like stacking blocks until it becomes a whole place you can walk around in.
                       </p>
                       <p>
                         Every character I make is like a key that opens a new part of the world. Emberglow opens the deserts. Emberion opens the ancient stuff. Lumis opens the sky places. It’s like each one unlocks a secret level, and when you put them all together, the whole universe lights up.

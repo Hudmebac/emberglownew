@@ -137,7 +137,7 @@ export default function Home() {
   </motion.div>
 </motion.div>
             <p className="text-xl text-eg-sand/60 leading-relaxed font-light max-w-2xl mb-12">
-              Emberglow is a huge, exciting fantasy world where Ralph — a normal camel —
+              Emberglow is a huge, exciting fantasy world where Ralph - a normal camel -
               discovers he’s meant for something incredible. He’s chosen by starlight,
               shaped by ancient magic, and thrown into adventures across glowing deserts,
               stormy skies, and places full of mystery.
@@ -213,7 +213,7 @@ export default function Home() {
           </h2>
           <p className="text-lg text-eg-sand/60 leading-relaxed max-w-3xl mx-auto">
             Ralph isn’t your usual camel. He’s curious, brave, and always getting into trouble.
-            One night, something strange happens — a burst of starlight chooses him,
+            One night, something strange happens - a burst of starlight chooses him,
             changing his life forever.
             <br/><br/>
             Now he’s on a journey across magical deserts, ancient ruins, and glowing skies,

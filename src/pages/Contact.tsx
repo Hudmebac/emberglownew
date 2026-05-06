@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="text-center mb-24">
             <h1 className="text-6xl md:text-8xl font-bold mb-8">Get in Touch</h1>
             <p className="text-xl text-eg-sand/60 max-w-3xl mx-auto leading-relaxed">
-              Whether you’re a reader, collaborator, artist, or explorer of the Emberglow Universe — 
+              Whether you’re a reader, collaborator, artist, or explorer of the Emberglow Universe - 
               your spark is welcome here.
             </p>
           </div>
@@ -20,7 +20,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-3xl font-bold mb-6 italic">Contact Information</h2>
                 <p className="text-lg text-eg-sand/50 mb-8">
-                  Reach out anytime — we’d love to hear from you.
+                  Reach out anytime - we’d love to hear from you.
                 </p>
                 <a 
                   href="mailto:emberglowfire@gmail.com" 

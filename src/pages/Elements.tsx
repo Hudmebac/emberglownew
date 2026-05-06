@@ -21,7 +21,7 @@ const ELEMENTS: Record<ElementType, ElementInfo> = {
     title: 'Fire: The Heart\'s Spark',
     icon: <Flame size={40} />,
     color: 'text-eg-amber',
-    lore: 'Fire is the primordial source of the Emberglow—a fundamental principle of change and transformation. In the ancient desert myths, it was Heraclitus who whispered that all things are an interchange for fire. In our world, fire is not merely destruction; it is the "Fire Within" that ignites a timid soul, turning a camel into a legend.',
+    lore: 'Fire is the primordial source of the Emberglow-a fundamental principle of change and transformation. In the ancient desert myths, it was Heraclitus who whispered that all things are an interchange for fire. In our world, fire is not merely destruction; it is the "Fire Within" that ignites a timid soul, turning a camel into a legend.',
     description: [
       'Characterized by heat, ambition, and the radiant energy of the First Light.',
       'Symbolizes the transformative power of a hero\'s journey.',
@@ -116,7 +116,7 @@ export default function Elements() {
               The <span className="text-eg-gold font-normal">Celestial</span> Balance
             </h1>
             <p className="text-xl text-eg-sand/60 max-w-2xl mx-auto font-light leading-relaxed">
-              Explore the four fundamental forces that shape the Emberglow universe—where ancient alchemical truths meet the magic of the desert.
+              Explore the four fundamental forces that shape the Emberglow universe-where ancient alchemical truths meet the magic of the desert.
             </p>
           </motion.div>
 
