@@ -184,6 +184,30 @@ export default function CartoonReader() {
                     </div>
                   </motion.div>
                 ))}
+
+                {/* Next Chapter Card */}
+                {activeChapterIndex < CARTOON_CHAPTERS.length - 1 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="group"
+                  >
+                    <button 
+                      onClick={nextChapter}
+                      className="w-full h-full min-h-[400px] bg-eg-amber/10 border-4 border-black border-dashed rounded-3xl flex flex-col items-center justify-center gap-6 group-hover:bg-eg-amber/20 transition-colors"
+                    >
+                      <div className="w-20 h-20 rounded-full bg-eg-amber border-4 border-black flex items-center justify-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
+                        <ChevronRight className="w-12 h-12 text-black" />
+                      </div>
+                      <div className="text-center px-6">
+                        <span className="block text-eg-amber font-black uppercase text-sm mb-2">Continue the Journey</span>
+                        <h3 className="text-white font-black text-2xl uppercase italic leading-none tracking-tighter">
+                          {CARTOON_CHAPTERS[activeChapterIndex + 1].title}
+                        </h3>
+                      </div>
+                    </button>
+                  </motion.div>
+                )}
               </div>
 
               {/* Chapter Content Hint */}
