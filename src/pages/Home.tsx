@@ -24,6 +24,23 @@ export default function Home() {
           }}
           className="absolute inset-0 bg-[url('/assets/images/starfall2.png')] bg-cover bg-center" 
         />
+        
+        {/* Flame Atmosphere Overlay */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-eg-amber/10 to-transparent pointer-events-none z-0" />
+        <motion.div
+          animate={{
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute inset-0 z-0"
+          style={{
+            background: 'radial-gradient(circle at 71% 50%, rgba(230, 138, 69, 0.15) 0%, transparent 60%)'
+          }}
+        />
       </div>
 
       {/* Hero Section */}
@@ -94,7 +111,7 @@ export default function Home() {
       <p className="text-2xl text-eg-gold font-medium italic">Starlight never forgets its chosen.</p>
       <p className="text-2xl text-eg-gold font-medium italic">Every hero begins as a dreamer.</p>
       <p className="text-2xl text-eg-gold font-medium italic">The night glows with hidden wonders.</p>
-      <p className="text-2xl text-eg-gold font-medium italic">Bravery shines brighter than fear.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Bravery shines brighter than fire.</p>
       <p className="text-2xl text-eg-gold font-medium italic">Legends are written in the sand.</p>
       <p className="text-2xl text-eg-gold font-medium italic">The universe is full of surprises.</p>
       <p className="text-2xl text-eg-gold font-medium italic">A spark can start a legend.</p>
@@ -137,7 +154,7 @@ export default function Home() {
       <p className="text-2xl text-eg-gold font-medium italic">Starlight never forgets its chosen.</p>
       <p className="text-2xl text-eg-gold font-medium italic">Every hero begins as a dreamer.</p>
       <p className="text-2xl text-eg-gold font-medium italic">The night glows with hidden wonders.</p>
-      <p className="text-2xl text-eg-gold font-medium italic">Bravery shines brighter than fear.</p>
+      <p className="text-2xl text-eg-gold font-medium italic">Bravery shines brighter than fire.</p>
       <p className="text-2xl text-eg-gold font-medium italic">Legends are written in the sand.</p>
       <p className="text-2xl text-eg-gold font-medium italic">The universe is full of surprises.</p>
       <p className="text-2xl text-eg-gold font-medium italic">A spark can start a legend.</p>
@@ -177,29 +194,65 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 1 }}
             className="md:col-span-5 relative"
           >
-            <div className="relative group">
+            <div className="relative group min-h-[400px] flex items-center justify-center">
               {/* Overlay Text */}
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="absolute -top-12 left-0 right-0 text-center z-20 pointer-events-none"
-              >
-                <h2 className="text-2xl md:text-3xl font-bold italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-eg-gold via-white to-eg-amber drop-shadow-sm">
+              <div className="absolute -top-12 left-0 right-0 text-center z-20 pointer-events-none h-16">
+                <motion.h2 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  className="text-2xl md:text-3xl font-bold italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-eg-gold via-white to-eg-amber drop-shadow-[0_2px_10px_rgba(230,138,69,0.3)] px-4"
+                >
                   Emberglow - The Mythical Camel
-                </h2>
-              </motion.div>
+                </motion.h2>
+              </div>
 
               <div className="absolute inset-0 bg-eg-gold opacity-10 blur-[100px] group-hover:opacity-20 transition-opacity" />
-              <img 
-                src="/assets/images/emberglow.png" 
-                alt="Emberglow"
-                className="w-full h-auto relative z-10 drop-shadow-[0_0_50px_rgba(230,138,69,0.3)] group-hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
+              
+              {/* Hero Image with Flame Effect */}
+              <div className="relative w-full h-full flex items-center justify-center pt-8">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.4, duration: 1.2, ease: "easeOut" }}
+                  className="relative z-10 w-full"
+                >
+                  {/* Flame Highlight */}
+                  <div className="absolute inset-0 bg-radial-[at_50%_50%] from-eg-amber/20 via-transparent to-transparent animate-pulse pointer-events-none" />
+                  
+                  <img 
+                    src="/assets/images/emberglow.png" 
+                    alt="Emberglow"
+                    className="w-full h-auto drop-shadow-[0_0_50px_rgba(230,138,69,0.4)] group-hover:scale-105 transition-transform duration-1000"
+                    referrerPolicy="no-referrer"
+                  />
+                </motion.div>
+
+                {/* Constant Flame Particles Layer */}
+                <div className="absolute inset-0 pointer-events-none overflow-hidden mix-blend-screen">
+                  {[...Array(6)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ 
+                        opacity: [0, 0.4, 0],
+                        scale: [1, 2, 1],
+                        y: [-20, -150],
+                        x: [0, (i - 3) * 20]
+                      }}
+                      transition={{
+                        duration: 3 + Math.random() * 2,
+                        repeat: Infinity,
+                        delay: i * 0.5,
+                        ease: "easeOut"
+                      }}
+                      className="absolute bottom-1/4 left-1/2 w-4 h-4 bg-eg-amber blur-xl rounded-full"
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
-
         </div>
 
         {/* Scroll Indicator */}
