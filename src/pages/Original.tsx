@@ -29,7 +29,7 @@ export default function Original() {
   const [activeChapter, setActiveChapter] = useState(0);
   const [fontSize, setFontSize] = useState(20);
   const [fontFamily, setFontFamily] = useState<'sans' | 'display' | 'serif' | 'futuristic'>('sans');
-  const [viewMode, setViewMode] = useState<'reading' | 'audio'>('audio');
+  const [viewMode, setViewMode] = useState<'reading' | 'audio'>('reading');
   const [isFullscreen, setIsFullscreen] = useState(false);
   const navigate = useNavigate();
   
