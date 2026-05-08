@@ -14,7 +14,16 @@ export default function Home() {
 
       {/* Ambient Background */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/assets/images/desert-sparkle.gif')] bg-cover bg-center opacity-[0.08] animate-pulse" />
+        <motion.div 
+          initial={{ opacity: 0.03 }}
+          animate={{ opacity: [0.03, 0.05, 0.03] }}
+          transition={{ 
+            duration: 8, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
+          className="absolute inset-0 bg-[url('/assets/images/starfall2.png')] bg-cover bg-center" 
+        />
       </div>
 
       {/* Hero Section */}
@@ -177,7 +186,7 @@ export default function Home() {
                 className="absolute -top-12 left-0 right-0 text-center z-20 pointer-events-none"
               >
                 <h2 className="text-2xl md:text-3xl font-bold italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-eg-gold via-white to-eg-amber drop-shadow-sm">
-                  Ralph - The Mythical Camel
+                  Emberglow - The Mythical Camel
                 </h2>
               </motion.div>
 

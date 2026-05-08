@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
-import { CHAPTERS } from '../constants';
+import { ORIGINAL_CHAPTERS } from '../constants';
 import { 
   BookOpen, 
   ChevronRight, 
@@ -146,7 +146,7 @@ export default function Original() {
   };
 
   const nextChapter = () => {
-    if (activeChapter < CHAPTERS.length - 1) {
+    if (activeChapter < ORIGINAL_CHAPTERS.length - 1) {
       const wasPlaying = isPlaying;
       const nextIdx = activeChapter + 1;
       stopSpeech();
@@ -166,7 +166,7 @@ export default function Original() {
     }
   };
 
-  const chapterContent = useMemo(() => CHAPTERS[activeChapter].content.replace(/\r\n/g, '\n'), [activeChapter]);
+  const chapterContent = useMemo(() => ORIGINAL_CHAPTERS[activeChapter].content.replace(/\r\n/g, '\n'), [activeChapter]);
 
   // Initialize voices
   useEffect(() => {
@@ -206,7 +206,7 @@ export default function Original() {
     window.speechSynthesis.cancel();
     
     const targetIdx = forceIndex !== undefined ? forceIndex : activeChapter;
-    const content = forceIndex !== undefined ? CHAPTERS[forceIndex].content.replace(/\r\n/g, '\n') : chapterContent;
+    const content = forceIndex !== undefined ? ORIGINAL_CHAPTERS[forceIndex].content.replace(/\r\n/g, '\n') : chapterContent;
     
     // UI Reset/State
     setIsPlaying(true);
@@ -239,7 +239,7 @@ export default function Original() {
         if (currentChunkIdx >= chunks.length) {
           setIsPlaying(false);
           setActiveWordIndex(-1);
-          if (targetIdx < CHAPTERS.length - 1) setShowChapterPrompt(true);
+          if (targetIdx < ORIGINAL_CHAPTERS.length - 1) setShowChapterPrompt(true);
         }
         return;
       }
@@ -611,7 +611,7 @@ export default function Original() {
           {/* Table of Contents for Mobile */}
           {!isFullscreen && (
             <div className="lg:hidden mb-12 overflow-x-auto pb-4 flex gap-4 no-scrollbar">
-              {CHAPTERS.map((chapter, index) => (
+              {ORIGINAL_CHAPTERS.map((chapter, index) => (
                 <button
                   key={chapter.id}
                   onClick={() => {
@@ -635,7 +635,7 @@ export default function Original() {
             {!isFullscreen && (
               <aside className="hidden lg:block w-64 space-y-2 sticky top-32 h-fit">
                 <h2 className="text-eg-amber font-mono text-xs uppercase tracking-widest mb-4 px-4 font-bold">Chapters</h2>
-                {CHAPTERS.map((chapter, index) => (
+                {ORIGINAL_CHAPTERS.map((chapter, index) => (
                   <button
                     key={chapter.id}
                     onClick={() => {
@@ -670,7 +670,7 @@ export default function Original() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
                   <div className="flex items-center gap-4 flex-1">
                     <span className="text-eg-amber font-mono text-[10px] uppercase tracking-[0.3em] font-black">
-                      DATA_FRAGMENT // CH_{CHAPTERS[activeChapter].id.toString().padStart(2, '0')}
+                      DATA_FRAGMENT // CH_{ORIGINAL_CHAPTERS[activeChapter].id.toString().padStart(2, '0')}
                     </span>
                     <div className="h-px flex-1 bg-border-primary" />
                     {isFullscreen && (
@@ -723,16 +723,6 @@ export default function Original() {
                       </button>
                     </div>
 
-                    {CHAPTERS[activeChapter].cartoonPanels && (
-                      <Link 
-                        to="/cartoon"
-                        state={{ chapterId: CHAPTERS[activeChapter].id }}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-eg-amber/10 border border-eg-amber/30 text-eg-amber text-[9px] font-black uppercase hover:bg-eg-amber hover:text-eg-deep transition-all shadow-lg shadow-eg-amber/10"
-                      >
-                        <Layout size={10} /> Concept Cartoon
-                      </Link>
-                    )}
-
                     <div className="flex items-center gap-1 bg-eg-sand/5 rounded-lg px-3 py-1 border border-border-primary">
                       <button 
                         onClick={() => setFontSize(prev => Math.max(14, prev - 2))}
@@ -754,7 +744,7 @@ export default function Original() {
                 </div>
 
                 <h2 className="text-4xl md:text-6xl font-black mb-12 leading-[0.9] tracking-tighter text-eg-sand italic uppercase">
-                  {CHAPTERS[activeChapter].title.split(': ')[1]}
+                  {ORIGINAL_CHAPTERS[activeChapter].title.split(': ')[1]}
                 </h2>
 
                 <div 
@@ -811,9 +801,9 @@ export default function Original() {
                   </button>
                   <button
                     onClick={nextChapter}
-                    disabled={activeChapter === CHAPTERS.length - 1}
+                    disabled={activeChapter === ORIGINAL_CHAPTERS.length - 1}
                     className={`flex items-center gap-3 px-8 py-4 rounded-2xl transition-all font-mono text-xs uppercase tracking-widest ${
-                      activeChapter === CHAPTERS.length - 1 
+                      activeChapter === ORIGINAL_CHAPTERS.length - 1 
                         ? 'opacity-0 pointer-events-none' 
                         : 'bg-eg-amber hover:bg-eg-gold text-eg-deep font-black shadow-xl shadow-eg-amber/20'
                     }`}

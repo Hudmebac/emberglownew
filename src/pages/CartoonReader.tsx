@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLocation } from 'react-router-dom';
-import { CHAPTERS } from '../constants';
+import { CARTOON_CHAPTERS } from '../constants';
 import { Chapter } from '../types';
 import { ChevronLeft, ChevronRight, BookOpen, LayoutGrid, Maximize2, X } from 'lucide-react';
 
@@ -14,20 +14,20 @@ export default function CartoonReader() {
   // Handle initial chapter from navigation state
   useEffect(() => {
     if (location.state?.chapterId) {
-      const index = CHAPTERS.findIndex(ch => ch.id === location.state.chapterId);
+      const index = CARTOON_CHAPTERS.findIndex(ch => ch.id === location.state.chapterId);
       if (index !== -1) {
         setActiveChapterIndex(index);
       }
     }
   }, [location.state]);
 
-  const activeChapter = CHAPTERS[activeChapterIndex];
-  const allPanels = CHAPTERS.flatMap(ch => 
+  const activeChapter = CARTOON_CHAPTERS[activeChapterIndex];
+  const allPanels = CARTOON_CHAPTERS.flatMap(ch => 
     (ch.cartoonPanels || []).map(p => ({ ...p, chapterTitle: ch.title, chapterId: ch.id }))
   );
 
   const nextChapter = () => {
-    if (activeChapterIndex < CHAPTERS.length - 1) {
+    if (activeChapterIndex < CARTOON_CHAPTERS.length - 1) {
       setActiveChapterIndex(prev => prev + 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -107,7 +107,7 @@ export default function CartoonReader() {
                 <div className="hidden sm:block text-left">
                   <span className="block text-[10px] uppercase font-black opacity-50">Previous</span>
                   <span className="block font-bold text-sm line-clamp-1">
-                    {activeChapterIndex > 0 ? CHAPTERS[activeChapterIndex - 1].title : 'Start'}
+                    {activeChapterIndex > 0 ? CARTOON_CHAPTERS[activeChapterIndex - 1].title : 'Start'}
                   </span>
                 </div>
               </button>
@@ -123,7 +123,7 @@ export default function CartoonReader() {
 
               <button
                 onClick={nextChapter}
-                disabled={activeChapterIndex === CHAPTERS.length - 1}
+                disabled={activeChapterIndex === CARTOON_CHAPTERS.length - 1}
                 className="group flex items-center flex-row-reverse gap-3 text-eg-sand disabled:opacity-30 disabled:cursor-not-allowed"
               >
                 <div className="w-10 h-10 rounded-full border-2 border-eg-sand/20 flex items-center justify-center group-hover:border-eg-amber group-hover:text-eg-amber transition-all">
@@ -132,7 +132,7 @@ export default function CartoonReader() {
                 <div className="hidden sm:block text-right">
                   <span className="block text-[10px] uppercase font-black opacity-50">Next</span>
                   <span className="block font-bold text-sm line-clamp-1">
-                    {activeChapterIndex < CHAPTERS.length - 1 ? CHAPTERS[activeChapterIndex + 1].title : 'End'}
+                    {activeChapterIndex < CARTOON_CHAPTERS.length - 1 ? CARTOON_CHAPTERS[activeChapterIndex + 1].title : 'End'}
                   </span>
                 </div>
               </button>
@@ -209,7 +209,7 @@ export default function CartoonReader() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: idx * 0.05 }}
                 onClick={() => {
-                  const chIndex = CHAPTERS.findIndex(c => c.id === panel.chapterId);
+                  const chIndex = CARTOON_CHAPTERS.findIndex(c => c.id === panel.chapterId);
                   setActiveChapterIndex(chIndex);
                   setViewMode('reader');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
