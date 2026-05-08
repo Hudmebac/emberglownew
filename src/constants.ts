@@ -353,6 +353,26 @@ Ralph, the Emberglow, we sing to you.`
 
 export const CHARACTERS: Character[] = [
   {
+    id: 'ralph',
+    name: 'Ralph',
+    role: "The Caravan's Gentle Soul",
+    description: "A humble and wide-eyed desert camel with a heart of gold. Ralph spent his days navigating the shifting sands of the Desert of Echoes, unaware that his destiny was written in the stars. He is the quiet foundation upon which a legend was built.",
+    image: '/assets/images/ralph.png',
+    category: 'main',
+    expandedDetails: `**Origin:** The Caravan of the Silver Line / Desert of Echoes
+**Status:** Humble Traveler; Potential Unawakened
+**Alignment:** Neutral Good / Kind Soul
+**Aura:** Soft, earthy sand-brown with a hidden core of unmapped light.
+**Threat Level:** None (Gentle)
+
+### Ralph the Camel
+Before he was the fire-breathing guardian of the heavens, he was simply Ralph. For years, Ralph was a fixture of the Silver Line caravan, carrying spice, silk, and memories across the vastness of the Desert of Echoes. He was known for his steady pace, his surprising fondness for prickly desert flowers, and a peculiar habit of staring at the night sky as if he were waiting for a question he hadn't yet learned to ask.
+
+Ralph's life was one of quiet routine and deep connections with his fellow travelers. He didn't seek the spotlight or long for adventure; he found meaning in the weight of his packs and the rhythmic clop of his hooves alongside his friends. Yet, even then, there was something different about him—a kindness in his eyes and a patience that suggested he was anchored to something deeper than just the sand.
+
+He represents the magic that lives in the ordinary. Ralph is the reminder that before the explosion of light and the weight of cosmic duty, there is the simple, honest heart. He is the "Soul of the Caravan," the humble beginning of a journey that would eventually set the sky on fire.`
+  },
+  {
     id: 'emberglow',
     name: 'Emberglow',
     role: 'The Spark of Destiny',
@@ -707,9 +727,10 @@ export const GALLERIES: Gallery[] = [
   { 
     id: 'characters', 
     title: 'Characters', 
-    description: 'Studies of Emberglow, Fizzle, and the cosmic beings who guide them.', 
-    coverImage: '/assets/images/withwings.png',
+    description: 'Studies of Ralph, Emberglow, Fizzle, and the cosmic beings who guide them.', 
+    coverImage: '/assets/images/ralph.png',
     images: [
+      '/assets/images/ralph.png',
       '/assets/images/withwings.png',
       '/assets/images/fizzle.png',
       '/assets/images/malakar1.png',
