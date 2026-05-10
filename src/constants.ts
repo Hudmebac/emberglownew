@@ -151,6 +151,316 @@ I was only 8 when I recorded this and I was doing this freestyle
 Love you, Zac :)`
   },
   {
+    id: 'ember-rising',
+    title: 'Emberglow Rising',
+    artist: 'Ralph Running Accross the Desert becoming...)',
+    duration: '3:31',
+    thumbnail: '/assets/images/ralph.png',
+    audioUrl: '/music/Emberglow_Rising.m4a',
+    description: 'Ralph becoming Emberglow',
+    category: 'new',
+    lyrics: `Verse 1  
+Ralph walked the desert with a quiet stride,
+Soft heart shining though he tried to hide.
+Never thought the world would call his name,
+Never knew the spark inside would turn to flame.
+
+Pre‑Chorus  
+But every sunrise whispered, “You’re meant for more,”
+And every step he took shook the desert floor.
+
+Chorus  
+This is Ralph becoming Emberglow,
+Rising up where the warm winds blow.
+From a humble wanderer to a light that grows,
+He’s burning brighter than he’ll ever know.
+Yeah, this is Ralph—becoming Emberglow.
+
+Verse 2  
+He used to think he blended with the shifting sand,
+Just another traveler in a quiet land.
+But destiny was humming in the stars above,
+Calling him forward with a fearless love.
+
+Pre‑Chorus  
+He didn’t chase glory, didn’t seek the crown,
+But the world lit up when he didn’t back down.
+
+Chorus  
+This is Ralph becoming Emberglow,
+Rising up where the warm winds blow.
+From a humble wanderer to a light that grows,
+He’s burning brighter than he’ll ever know.
+Yeah, this is Ralph—becoming Emberglow.
+
+Bridge  
+He’s glowing like the embers in the midnight air,
+Finding strength he never knew was there.
+A legend built on steady feet,
+A gentle soul with a steady beat.
+
+Final Chorus  
+This is Ralph becoming Emberglow,
+Letting go of the doubts he used to know.
+From a wide‑eyed camel to a heart that shows,
+He’s the spark that makes the whole world glow.
+Yeah, this is Ralph—becoming Emberglow.`
+  },
+{
+    id: 'mythical-camel',
+    title: 'Emberglow - Mythical Camel',
+    artist: 'Female Easy listening',
+    duration: '3:59',
+    thumbnail: '/assets/images/embarion2.png',
+    audioUrl: '/music/Emberglow_the_Mythical_Camel.m4a',
+    description: 'Female Easy listening',
+    category: 'new',
+    lyrics: `[Verse]
+Out in the sands where the wild winds blow
+There's a camel called Emberglow
+With fiery eyes and a magical stride
+She guards the land with power inside
+
+[Chorus]
+Oh Emberglow you light the night
+With golden hooves and a soul so bright
+The desert sings your tale untold
+A hero strong a heart of gold
+
+[Verse 2]
+She battles storms with a thunderous sound
+Evil crumbles when she’s around
+Her shadow dances in the moon's soft gleam
+A desert warrior a dreamer's dream
+
+[Chorus]
+Oh Emberglow you light the night
+With golden hooves and a soul so bright
+The desert sings your tale untold
+A hero strong a heart of gold
+
+[Bridge]
+Every step leaves stars behind
+A trail of hope for hearts to find
+When darkness falls she’ll rise again
+Fighting shadows until the end
+
+[Chorus]
+Oh Emberglow you light the night
+With golden hooves and a soul so bright
+The desert sings your tale untold
+A hero strong a heart of gold`
+  },
+  {
+    id: 'Emberglow-Hero',
+    title: 'Emberglow the Hero',
+    artist: 'Rockstyle',
+    duration: '3:19',
+    thumbnail: '/assets/images/embarion1.png',
+    audioUrl: '/music/Emberglow_the_Hero.m4a',
+    description: 'The Desert Meets Rock',
+    category: 'new',
+    lyrics: `[Verse]
+Emberglow strides with a burning mane
+Heroes arise when the night turns insane
+Fire dances in his knowing eyes
+Truth and courage in every sunrise
+
+[Verse]
+Desert winds whisper tales untold
+Camel of legend with a heart of gold
+Flames ignite where his hoofprints lay
+Darkness flees in the light of day
+
+[Chorus]
+Emberglow stands against the night
+Blazing trails with pure fire's light
+Elemental strength in every fight
+Hero of goodness burning so bright
+
+[Bridge]
+In the heat of dawn he roars aloud
+Casting shadows from the darkest cloud
+Evil trembles in his fiery wake
+For goodness stands
+No ground to shake
+
+[Verse]
+Prophecies whispered of his rise
+Guardian flame that never dies
+Bringer of peace with a scorching might
+Elemental warrior in the dead of night
+
+[Chorus]
+Emberglow stands against the night
+Blazing trails with pure fire's light
+Elemental strength in every fight
+Hero of goodness burning so bright`
+  },
+  {
+    id: 'Emberglow-Quest',
+    title: 'Emberlos Quest',
+    artist: 'Mythical Adventure',
+    duration: '3:47',
+    thumbnail: '/assets/images/oasisofechoes.png',
+    audioUrl: '/music/Emberglow_Quest.m4a',
+    description: 'Mystical Desert Winds Making Noise',
+    category: 'new',
+    lyrics: `[Verse]
+Emberglow the camel rambles on
+Through deserts wide from dusk to dawn
+Seeking legends old and new
+Elements in a grand debut
+
+[Verse 2]
+First he found the river's edge
+Water creatures made their pledge
+With waves and currents swirling tight
+Splashed and clashed in the moonlight
+
+[Chorus]
+Emberglow on a quest so deep
+In the night while others sleep
+Elements in battle's heat
+Which one next will he meet
+
+[Verse 3]
+Earth was next with mountain peaks
+Creatures rose with strength unique
+Quakes and rocks they build and break
+Shaking worlds for nature's sake
+
+[Verse 4]
+Air was fierce with roaring wind
+Spirits soared and clouds did spin
+Gales and gusts in battles grand
+Whistling through the dunes of sand
+
+[Chorus]
+Emberglow on a quest so deep
+In the night while others sleep
+Elements in battle's heat
+Which one next will he meet`
+  },
+  {
+    id: 'Desert-Constellations',
+    title: 'Desert Constellations',
+    artist: 'Story and Banging ',
+    duration: '3:57',
+    thumbnail: '/assets/images/lightflow1.png',
+    audioUrl: '/music/Desert_Constellations.m4a',
+    description: 'Zac giving it a blast :)',
+    category: 'new',
+    lyrics: `Verse 1  
+Ralph walked slow through the Desert of Echoes,
+Soft steps sinking where the warm winds blow.
+Didn’t know his name was carved in constellations,
+Didn’t know the quiet ones can shake foundations.
+
+Pre‑Chorus  
+He carried stories in the dust on his back,
+Heart of gold shining through the shades of sand.
+
+Chorus  
+Ralph, you rise where the brave hearts go,
+Wide‑eyed wanderer in the undertow.
+You don’t see it yet, but the stars all know—
+You’re the quiet spark that sets the desert aglow.
+
+Bridge  
+Every legend starts with someone small,
+Someone steady when the world feels tall.
+Ralph just walked, never asked to lead—
+But the desert blooms where he plants his feet.`
+  },
+  {
+    id: 'Constellated-Dust',
+    title: 'Constellated Dust - Ralph',
+    artist: 'Country and Rising',
+    duration: '4:12',
+    thumbnail: '/assets/images/malakar2.png',
+    audioUrl: '/music/Constellated_Dust.m4a',
+    description: 'Big Drums, Country with the Story of Ralph',
+    category: 'new',
+    lyrics: `Verse 1  
+Ralph walked slow through the Desert of Echoes,
+Soft steps sinking where the warm winds blow.
+Didn’t know his name was carved in constellations,
+Didn’t know the quiet ones can shake foundations.
+
+Pre‑Chorus  
+He carried stories in the dust on his back,
+Heart of gold shining through the shades of sand.
+
+Chorus  
+Ralph, you rise where the brave hearts go,
+Wide‑eyed wanderer in the undertow.
+You don’t see it yet, but the stars all know—
+You’re the quiet spark that sets the desert aglow.
+
+Bridge  
+Every legend starts with someone small,
+Someone steady when the world feels tall.
+Ralph just walked, never asked to lead—
+But the desert blooms where he plants his feet.`
+  },
+  {
+    id: 'Emberglow-plan',
+    title: 'Emberglow Plan',
+    artist: 'Uplifting Ralph Sand tunes',
+    duration: '3:29',
+    thumbnail: '/assets/images/lumina.png',
+    audioUrl: '/music/Emberglow_Plan.m4a',
+    description: 'Zac giving it a blast :)',
+    category: 'new',
+    lyrics: `Verse 1  
+Ralph walked slow through the dunes at dawn,
+Just a quiet heart trying to carry on.
+Didn’t know the fire sleeping deep inside,
+Didn’t know the stars were waiting for him to rise.
+
+Pre‑Chorus  
+Every step he took shook a little more sand,
+Every whisper of the wind said, “You’re part of the plan.”
+
+Chorus  
+This is Ralph becoming Emberglow,
+Burning brighter than he ever thought he’d go.
+From a humble wanderer to a blazing soul,
+He’s lighting up the desert, taking back control.
+Yeah, this is Ralph—becoming Emberglow.
+
+Verse 2  
+He used to think he blended with the shifting gold,
+Just another story that would never be told.
+But the constellations drew his name in light,
+Calling him forward through the endless night.
+
+Pre‑Chorus  
+He didn’t chase glory, didn’t ask for fame,
+But destiny kept singing out his name.
+
+Chorus  
+This is Ralph becoming Emberglow,
+Burning brighter than he ever thought he’d go.
+From a humble wanderer to a blazing soul,
+He’s lighting up the desert, taking back control.
+Yeah, this is Ralph—becoming Emberglow.
+
+Bridge  
+He’s rising like a spark in the midnight sky,
+All the doubts he carried finally drifting by.
+A legend built on steady feet,
+A quiet heart that never missed a beat.
+
+Final Chorus  
+This is Ralph becoming Emberglow,
+No more hiding in the sands, he’s starting to show.
+From a wide‑eyed camel to a name they’ll know,
+He’s the hero that the desert watched grow.
+Yeah, this is Ralph—becoming Emberglow.`
+  },
+  {
     id: 'desert-legend',
     title: 'Desert Legend',
     artist: 'A beat in the Desert Landscape',
