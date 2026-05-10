@@ -141,7 +141,7 @@ export default function Songs() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">Ember Instrumentals & Ember Voices </h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">Caravan Music & Camel Chants </h1>
             <div className="flex justify-center gap-4 mb-8">
               <button
                 onClick={() => setActiveTab('official')}
