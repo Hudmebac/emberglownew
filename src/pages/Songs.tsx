@@ -141,7 +141,7 @@ export default function Songs() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">The Jukebox</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">Ember Instrumentals & Ember Voices </h1>
             <div className="flex justify-center gap-4 mb-8">
               <button
                 onClick={() => setActiveTab('official')}
@@ -151,7 +151,7 @@ export default function Songs() {
                     : 'bg-eg-sand/5 text-eg-sand/50 border-border-primary hover:bg-eg-sand/10'
                 }`}
               >
-                Official
+                Caravan Echoes
               </button>
               <button
                 onClick={() => setActiveTab('new')}
@@ -161,7 +161,7 @@ export default function Songs() {
                     : 'bg-eg-sand/5 text-eg-sand/50 border-border-primary hover:bg-eg-sand/10'
                 }`}
               >
-                New Echoes
+                Camel Chants
               </button>
             </div>
             <p className="text-xl text-eg-sand/40 font-light h-8">
