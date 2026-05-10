@@ -147,8 +147,8 @@ Emberglow when the time goes,
 Puff Puff, :) Emberglow this is just gibberish but funny,,,,, 
 bonnie bit of sand
 Give me a break
-I was only 8 when I recorded this and was doing this freestyle
-Love you Zac :)`
+I was only 8 when I recorded this and I was doing this freestyle
+Love you, Zac :)`
   },
   {
     id: 'desert-legend',
