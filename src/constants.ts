@@ -156,7 +156,7 @@ Love you, Zac :)`
     artist: 'Ralph Running Accross the Desert becoming...)',
     duration: '3:31',
     thumbnail: '/assets/images/ralph.png',
-    audioUrl: '/music/Emberglow_Rising.m4a',
+    audioUrl: '/music/Emberglow_Rising.mp3',
     description: 'Ralph becoming Emberglow',
     category: 'new',
     lyrics: `Verse 1  
@@ -212,7 +212,7 @@ Yeah, this is Ralph—becoming Emberglow.`
     artist: 'Female Easy listening',
     duration: '3:59',
     thumbnail: '/assets/images/embarion2.png',
-    audioUrl: '/music/Emberglow_the_Mythical_Camel.m4a',
+    audioUrl: '/music/Emberglow_the_Mythical_Camel.mp3',
     description: 'Female Easy listening',
     category: 'new',
     lyrics: `[Verse]
@@ -257,7 +257,7 @@ A hero strong a heart of gold`
     artist: 'Rockstyle',
     duration: '3:19',
     thumbnail: '/assets/images/embarion1.png',
-    audioUrl: '/music/Emberglow_the_Hero.m4a',
+    audioUrl: '/music/Emberglow_the_Hero.mp3',
     description: 'The Desert Meets Rock',
     category: 'new',
     lyrics: `[Verse]
@@ -303,7 +303,7 @@ Hero of goodness burning so bright`
     artist: 'Mythical Adventure',
     duration: '3:47',
     thumbnail: '/assets/images/oasisofechoes.png',
-    audioUrl: '/music/Emberglow_Quest.m4a',
+    audioUrl: '/music/Emberglow_Quest.mp3',
     description: 'Mystical Desert Winds Making Noise',
     category: 'new',
     lyrics: `[Verse]
@@ -348,7 +348,7 @@ Which one next will he meet`
     artist: 'Story and Banging ',
     duration: '3:57',
     thumbnail: '/assets/images/lightflow1.png',
-    audioUrl: '/music/Desert_Constellations.m4a',
+    audioUrl: '/music/Desert_Constellations.mp3',
     description: 'Zac giving it a blast :)',
     category: 'new',
     lyrics: `Verse 1  
@@ -379,7 +379,7 @@ But the desert blooms where he plants his feet.`
     artist: 'Country and Rising',
     duration: '4:12',
     thumbnail: '/assets/images/malakar2.png',
-    audioUrl: '/music/Constellated_Dust.m4a',
+    audioUrl: '/music/Constellated_Dust.mp3',
     description: 'Big Drums, Country with the Story of Ralph',
     category: 'new',
     lyrics: `Verse 1  
@@ -410,7 +410,7 @@ But the desert blooms where he plants his feet.`
     artist: 'Uplifting Ralph Sand tunes',
     duration: '3:29',
     thumbnail: '/assets/images/lumina.png',
-    audioUrl: '/music/Emberglow_Plan.m4a',
+    audioUrl: '/music/Emberglow_Plan.mp3',
     description: 'Zac giving it a blast :)',
     category: 'new',
     lyrics: `Verse 1  
