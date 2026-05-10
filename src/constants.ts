@@ -153,7 +153,7 @@ Love you, Zac :)`
   {
     id: 'ember-rising',
     title: 'Emberglow Rising',
-    artist: 'Ralph Running Accross the Desert becoming...)',
+    artist: 'Ralph Running Accross the Desert Becoming...)',
     duration: '3:31',
     thumbnail: '/assets/images/ralph.png',
     audioUrl: '/music/Emberglow_Rising.mp3',
@@ -299,7 +299,7 @@ Hero of goodness burning so bright`
   },
   {
     id: 'Emberglow-Quest',
-    title: 'Emberlos Quest',
+    title: 'Emberglows Quest',
     artist: 'Mythical Adventure',
     duration: '3:47',
     thumbnail: '/assets/images/oasisofechoes.png',
@@ -349,7 +349,7 @@ Which one next will he meet`
     duration: '3:57',
     thumbnail: '/assets/images/lightflow1.png',
     audioUrl: '/music/Desert_Constellations.mp3',
-    description: 'Zac giving it a blast :)',
+    description: 'Deep and Stinking into the Sand',
     category: 'new',
     lyrics: `Verse 1  
 Ralph walked slow through the Desert of Echoes,
@@ -407,11 +407,11 @@ But the desert blooms where he plants his feet.`
   {
     id: 'Emberglow-plan',
     title: 'Emberglow Plan',
-    artist: 'Uplifting Ralph Sand tunes',
+    artist: 'Uplifting Ralph Sand Tunes',
     duration: '3:29',
     thumbnail: '/assets/images/lumina.png',
     audioUrl: '/music/Emberglow_Plan.mp3',
-    description: 'Zac giving it a blast :)',
+    description: 'Uplifting Ralph Sand Tunes',
     category: 'new',
     lyrics: `Verse 1  
 Ralph walked slow through the dunes at dawn,
@@ -596,11 +596,11 @@ Ralph, the Emberglow, we sing to you.`
   {
     id: 'ralph-kids',
     title: 'Ralph the Camel (Kids)',
-    artist: 'Wow- this is the best- Ralph you are my Hero',
+    artist: 'My Favourite- Ralph you are my Hero',
     duration: '2:30',
     thumbnail: '/assets/images/earlyconcept2.png',
     audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
-    description: 'Wow- this is the best- Ralph you are my Hero',
+    description: 'My Favourite- Ralph you are my Hero',
     category: 'new',
     lyrics: `[Intro]
 Oh, oh, oh, Ralph the Camel, yeah, he's got that glow,
