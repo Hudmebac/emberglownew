@@ -131,6 +131,62 @@ export const SONGS: Song[] = [
     category: 'official'
   },
   {
+    id: 'ralph-kids',
+    title: 'Ralph the Camel (Kids)',
+    artist: 'My Favourite- Ralph you are my Hero',
+    duration: '2:30',
+    thumbnail: '/assets/images/earlyconcept2.png',
+    audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
+    description: 'My Favourite- Ralph you are my Hero',
+    category: 'new',
+    lyrics: `[Intro]
+Oh, oh, oh, Ralph the Camel, yeah, he's got that glow,
+Trained in the desert, where the fire winds blow,
+From the sands to the skies, he's a legend we know,
+Ralph the Emberglow, he's got that fire to show.
+
+[Verse 1]
+In the heart of the desert, he started his ride,
+A simple camel, but with fire inside,
+Trained by the flames, under moonlit skies,
+He became the hero, no one could deny.
+
+[Chorus]
+Ralph the Emberglow, with fire in his soul,
+Turning desert nights to a burning glow,
+Oh, he's the hero, the legend of old,
+Ralph the Emberglow, watch his story unfold.
+
+[Verse 2]
+Through the dunes and the storms, he found his way,
+A mythical beast with powers to slay,
+When the desert called, he never turned away,
+Ralph the Emberglow, he'd light up the day.
+
+[Chorus]
+Ralph the Emberglow, with fire in his soul,
+Turning desert nights to a burning glow,
+Oh, he's the hero, the legend of old,
+Ralph the Emberglow, watch his story unfold.
+
+[Bridge]
+From the depths of the night, to the dawn of the sun,
+He knew what he had to do, his journey had begun,
+With every flame that flickered, his power grew strong,
+Ralph the Emberglow, he couldn't go wrong.
+
+[Chorus]
+Ralph the Emberglow, with fire in his soul,
+Turning desert nights to a burning glow,
+Oh, he's the hero, the legend of old,
+Ralph the Emberglow, watch his story unfold.
+
+[Outro]
+Oh, Ralph, the fire's in you,
+Now the desert knows it's true,
+Ralph, the Emberglow, we sing to you.`
+  },
+  {
     id: 'zac-ember',
     title: 'ZacEmber',
     artist: 'Zac giving it a blast :)',
@@ -593,63 +649,7 @@ Oh, Ralph, the fire's in you,
 Now the desert knows it's true,
 Ralph, the Emberglow, we sing to you.`
   },
-  {
-    id: 'ralph-kids',
-    title: 'Ralph the Camel (Kids)',
-    artist: 'My Favourite- Ralph you are my Hero',
-    duration: '2:30',
-    thumbnail: '/assets/images/earlyconcept2.png',
-    audioUrl: '/music/Ralph_the_Camel_Kids.m4a',
-    description: 'My Favourite- Ralph you are my Hero',
-    category: 'new',
-    lyrics: `[Intro]
-Oh, oh, oh, Ralph the Camel, yeah, he's got that glow,
-Trained in the desert, where the fire winds blow,
-From the sands to the skies, he's a legend we know,
-Ralph the Emberglow, he's got that fire to show.
-
-[Verse 1]
-In the heart of the desert, he started his ride,
-A simple camel, but with fire inside,
-Trained by the flames, under moonlit skies,
-He became the hero, no one could deny.
-
-[Chorus]
-Ralph the Emberglow, with fire in his soul,
-Turning desert nights to a burning glow,
-Oh, he's the hero, the legend of old,
-Ralph the Emberglow, watch his story unfold.
-
-[Verse 2]
-Through the dunes and the storms, he found his way,
-A mythical beast with powers to slay,
-When the desert called, he never turned away,
-Ralph the Emberglow, he'd light up the day.
-
-[Chorus]
-Ralph the Emberglow, with fire in his soul,
-Turning desert nights to a burning glow,
-Oh, he's the hero, the legend of old,
-Ralph the Emberglow, watch his story unfold.
-
-[Bridge]
-From the depths of the night, to the dawn of the sun,
-He knew what he had to do, his journey had begun,
-With every flame that flickered, his power grew strong,
-Ralph the Emberglow, he couldn't go wrong.
-
-[Chorus]
-Ralph the Emberglow, with fire in his soul,
-Turning desert nights to a burning glow,
-Oh, he's the hero, the legend of old,
-Ralph the Emberglow, watch his story unfold.
-
-[Outro]
-Oh, Ralph, the fire's in you,
-Now the desert knows it's true,
-Ralph, the Emberglow, we sing to you.`
-  },
-  {
+    {
     id: 'emberglows-fire',
     title: "Emberglow's Fire",
     artist: 'Emberglow Ensemble',
