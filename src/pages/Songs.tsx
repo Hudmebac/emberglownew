@@ -13,7 +13,7 @@ export default function Songs() {
   const [showLyrics, setShowLyrics] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'official' | 'new'>('official');
+  const [activeTab, setActiveTab] = useState<'official' | 'new'>('new');
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const filteredSongs = SONGS.filter(song => (song.category || 'new') === activeTab);
@@ -141,18 +141,8 @@ export default function Songs() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">Caravan Music & Camel Chants </h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 italic tracking-tight text-eg-sand">Ember Instrumentals & Ember Voices </h1>
             <div className="flex justify-center gap-4 mb-8">
-              <button
-                onClick={() => setActiveTab('official')}
-                className={`px-8 py-2.5 rounded-full font-mono text-xs uppercase tracking-[0.2em] transition-all border ${
-                  activeTab === 'official' 
-                    ? 'bg-eg-amber text-eg-deep border-eg-amber shadow-[0_0_20px_rgba(255,183,77,0.3)] font-bold' 
-                    : 'bg-eg-sand/5 text-eg-sand/50 border-border-primary hover:bg-eg-sand/10'
-                }`}
-              >
-                Caravan Echoes
-              </button>
               <button
                 onClick={() => setActiveTab('new')}
                 className={`px-8 py-2.5 rounded-full font-mono text-xs uppercase tracking-[0.2em] transition-all border ${
@@ -163,10 +153,20 @@ export default function Songs() {
               >
                 Camel Chants
               </button>
+              <button
+                onClick={() => setActiveTab('official')}
+                className={`px-8 py-2.5 rounded-full font-mono text-xs uppercase tracking-[0.2em] transition-all border ${
+                  activeTab === 'official' 
+                    ? 'bg-eg-amber text-eg-deep border-eg-amber shadow-[0_0_20px_rgba(255,183,77,0.3)] font-bold' 
+                    : 'bg-eg-sand/5 text-eg-sand/50 border-border-primary hover:bg-eg-sand/10'
+                }`}
+              >
+                Caravan Echoes
+              </button>
             </div>
             <p className="text-xl text-eg-sand/40 font-light h-8">
-              {activeTab === 'official' && 'Original atmospheric themes from the Emberglow Saga.'}
               {activeTab === 'new' && 'Newly discovered echoes and anthems of the fireborn.'}
+              {activeTab === 'official' && 'Original atmospheric themes from the Emberglow Saga.'}
             </p>
           </motion.div>
 
