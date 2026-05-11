@@ -163,13 +163,12 @@ export default function Home() {
   </motion.div>
 </motion.div>
             <p className="text-xl text-eg-sand/60 leading-relaxed font-light max-w-2xl mb-12">
-              Emberglow is a huge, exciting fantasy world where Ralph - a normal camel -
-              discovers he’s meant for something incredible. He’s chosen by starlight,
-              shaped by ancient magic, and thrown into adventures across glowing deserts,
-              stormy skies, and places full of mystery.
+              Discover the legend of Emberglow - a mythical camel chosen by the stars.
+              In a world where magic begins with a spark and the desert hides ancient secrets,
+              one hero rises to restore the balance of the sands.
               <br/><br/>
-              If you love big stories, cool creatures, and worlds that feel alive,
-              you’re in the right place.
+              If you love epic journeys, cosmic mystery, and worlds that glow with wonder,
+              your adventure starts here.
             </p>
 
             <div className="flex items-center gap-10">
@@ -265,27 +264,6 @@ export default function Home() {
           <div className="w-1 h-6 bg-eg-gold/40 rounded-full animate-bounce" />
           <span className="text-[10px] tracking-[0.2em] text-eg-sand/40 mt-2">SCROLL</span>
         </motion.div>
-      </section>
-
-      {/* Meet Ralph Section */}
-      <section className="px-12 py-24 bg-eg-deep/40 backdrop-blur-sm border-t border-eg-gold/10">
-        <div className="max-w-5xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight">
-            Meet <span className="text-eg-gold font-normal">Ralph</span>
-          </h2>
-          <p className="text-lg text-eg-sand/60 leading-relaxed max-w-3xl mx-auto">
-            Ralph isn’t your usual camel. He’s curious, brave, and always getting into trouble.
-            One night, something strange happens - a burst of starlight chooses him,
-            changing his life forever.
-            <br/><br/>
-            Now he’s on a journey across magical deserts, ancient ruins, and glowing skies,
-            discovering powers he never knew he had.
-          </p>
-
-          <Link to="/about" className="eg-btn eg-btn-secondary mt-4">
-            Learn More 
-          </Link>
-        </div>
       </section>
 
     </PageTransition>
