@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Heart, ShoppingBag, Coffee, ExternalLink, Sparkles } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 
 export default function Support() {
   const stripeLink = "https://buy.stripe.com/4gM4gyaov9KYavo2lK9sk00";
-  const amazonLink = "https://www.amazon.com/dp/B0DJLYT5G8"; // Representative link for the collection
 
   return (
     <PageTransition>
@@ -71,16 +71,14 @@ export default function Support() {
                 </div>
                 <h2 className="text-3xl font-bold mb-4 italic text-eg-sand">Lore Artifacts</h2>
                 <p className="text-eg-sand/50 mb-8 font-light lg:min-h-[60px]">
-                  Own a piece of the history. Visit the Amazon store to purchase the core volumes and guidebooks.
+                  Own a piece of history. Explore the core volumes and guidebooks of the Emberglow Saga.
                 </p>
-                <a
-                  href={amazonLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/books"
                   className="eg-btn eg-btn-ghost w-full flex items-center justify-center gap-2"
                 >
-                  Shop on Amazon <ExternalLink size={14} />
-                </a>
+                  View Books
+                </Link>
               </motion.div>
             </div>
 
