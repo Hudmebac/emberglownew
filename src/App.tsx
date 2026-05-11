@@ -22,6 +22,7 @@ import ThankYou from './pages/ThankYou';
 import GalleryDetail from './pages/GalleryDetail';
 import Original from './pages/Original';
 import Songs from './pages/Songs';
+import Support from './pages/Support';
 import CartoonReader from './pages/CartoonReader';
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
                 <Route path="/original" element={<Original />} />
                 <Route path="/cartoon" element={<CartoonReader />} />
                 <Route path="/songs" element={<Songs />} />
+                <Route path="/support" element={<Support />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/newsletter" element={<Newsletter />} />
