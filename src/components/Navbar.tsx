@@ -16,7 +16,8 @@ import {
   Info,
   Mail,
   BookOpen,
-  Heart
+  Heart,
+  ChevronDown
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -33,14 +34,49 @@ const NAV_LINKS = [
   { name: 'About', path: '/about', icon: Info },
 ];
 
+const DESKTOP_GROUPS = [
+  { name: 'Books', path: '/books', icon: Book },
+  { 
+    name: 'The World', 
+    icon: Users,
+    items: [
+      { name: 'Characters', path: '/characters', icon: Users, desc: 'Meet the legends' },
+      { name: 'Elements', path: '/elements', icon: Sparkles, desc: 'Primal forces' },
+      { name: 'Lore', path: '/lore', icon: History, desc: 'Ancient history' },
+    ]
+  },
+  {
+    name: 'Concept',
+    icon: ImageIcon,
+    items: [
+      { name: 'Original', path: '/original', icon: Scroll, desc: 'The first sparks' },
+      { name: 'Galleries', path: '/galleries', icon: ImageIcon, desc: 'Visual journey' },
+      { name: 'Cartoons', path: '/cartoon', icon: BookOpen, desc: 'Animated visions' },
+    ]
+  },
+  {
+    name: 'Creative',
+    icon: Music,
+    items: [
+      { name: 'Original', path: '/original', icon: Scroll, desc: 'Legacy works' },
+      { name: 'Cartoon', path: '/cartoon', icon: BookOpen, desc: 'Visual stories' },
+      { name: 'Songs', path: '/songs', icon: Music, desc: 'Melodies of dust' },
+    ]
+  },
+  { name: 'About', path: '/about', icon: Info },
+  { name: 'Support', path: '/support', icon: Heart },
+];
+
 export default function Navbar() {
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   // Close menu on route change
   useEffect(() => {
     setIsMenuOpen(false);
+    setActiveDropdown(null);
   }, [location.pathname]);
 
   // Prevent scroll when menu is open
@@ -63,26 +99,82 @@ export default function Navbar() {
               className="w-10 h-10 object-cover rounded-full shadow-[0_0_15px_rgba(230,138,69,0.3)] group-hover:scale-110 transition-transform"
               referrerPolicy="no-referrer"
             />
-            <span className="text-lg font-bold tracking-tight uppercase group-hover:text-eg-gold transition-colors text-eg-sand hidden sm:block">
+            <span className="text-xs font-bold tracking-[0.3em] uppercase group-hover:text-eg-gold transition-colors text-eg-sand hidden xl:block">
               EMBERGLOW
             </span>
           </Link>
 
-          {/* Desktop Links - Optimized Spacing */}
-          <div className="hidden xl:flex items-center gap-6">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`eg-nav-link text-[10px] tracking-[0.15em] whitespace-nowrap ${location.pathname === link.path ? 'eg-nav-link-active' : ''}`}
+          {/* Desktop Links - Grouped & Clean */}
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8">
+            {DESKTOP_GROUPS.map((group) => (
+              <div 
+                key={group.name}
+                className="relative"
+                onMouseEnter={() => group.items && setActiveDropdown(group.name)}
+                onMouseLeave={() => group.items && setActiveDropdown(null)}
               >
-                {link.name}
-              </Link>
+                {group.path ? (
+                  <Link
+                    to={group.path}
+                    className={`eg-nav-link text-[10px] tracking-[0.2em] whitespace-nowrap py-4 flex items-center gap-2 ${location.pathname === group.path ? 'eg-nav-link-active' : ''}`}
+                  >
+                    {group.name}
+                  </Link>
+                ) : (
+                  <button className={`eg-nav-link text-[10px] tracking-[0.2em] whitespace-nowrap py-4 flex items-center gap-1.5 transition-colors ${activeDropdown === group.name ? 'text-eg-gold' : ''}`}>
+                    {group.name}
+                    <ChevronDown size={10} className={`transition-transform duration-300 ${activeDropdown === group.name ? 'rotate-180' : ''}`} />
+                  </button>
+                )}
+
+                {/* Dropdown menu */}
+                <AnimatePresence>
+                  {group.items && activeDropdown === group.name && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                      className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+                    >
+                      <div className="bg-eg-deep/95 border border-border-primary rounded-2xl p-3 min-w-[240px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
+                        <div className="grid gap-1">
+                          {group.items.map((item) => (
+                            <Link
+                              key={item.path}
+                              to={item.path}
+                              className={`flex items-center gap-4 p-3 rounded-xl transition-all group/item ${
+                                location.pathname === item.path 
+                                  ? 'bg-eg-gold/10 text-eg-gold' 
+                                  : 'hover:bg-eg-sand/5 text-eg-sand/70 hover:text-eg-sand'
+                              }`}
+                            >
+                              <div className={`w-8 h-8 rounded-lg flex items-center justify-center p-1.5 transition-colors ${
+                                location.pathname === item.path ? 'bg-eg-gold/20 text-eg-gold' : 'bg-eg-sand/5 text-eg-gold'
+                              }`}>
+                                <item.icon size={16} />
+                              </div>
+                              <div className="flex flex-col">
+                                <span className="text-[10px] font-bold tracking-[0.1em] uppercase">
+                                  {item.name}
+                                </span>
+                                {item.desc && (
+                                  <span className="text-[9px] text-eg-sand/30 font-medium tracking-wide">
+                                    {item.desc}
+                                  </span>
+                                )}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             ))}
           </div>
 
           <div className="flex items-center gap-3 sm:gap-6">
-            {/* Theme Toggle - Desktop Only */}
             <button 
               onClick={toggleTheme}
               className="hidden md:flex items-center gap-2 px-2 py-1 bg-eg-sand/5 border border-border-primary rounded-full hover:bg-eg-sand/10 transition-colors group relative"
@@ -128,7 +220,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8"
+                className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8"
               >
                 {NAV_LINKS.map((link, index) => (
                   <motion.div
