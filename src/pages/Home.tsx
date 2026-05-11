@@ -266,6 +266,27 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Meet Ralph Section */}
+      <section className="px-12 py-24 bg-eg-deep/40 backdrop-blur-sm border-t border-eg-gold/10 relative z-10">
+        <div className="max-w-5xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight">
+            Meet <span className="text-eg-gold font-normal">Ralph</span>
+          </h2>
+          <p className="text-lg text-eg-sand/60 leading-relaxed max-w-3xl mx-auto">
+            Ralph isn’t your usual camel. He’s curious, brave, and always getting into trouble.
+            One night, something strange happens - a burst of starlight chooses him,
+            changing his life forever.
+            <br/><br/>
+            Now he’s on a journey across magical deserts, ancient ruins, and glowing skies,
+            discovering powers he never knew he had.
+          </p>
+
+          <Link to="/about" className="eg-btn eg-btn-secondary mt-4">
+            Learn More 
+          </Link>
+        </div>
+      </section>
+
     </PageTransition>
   );
 }
